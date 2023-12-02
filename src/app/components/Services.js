@@ -26,7 +26,7 @@ const servicesData = [
 export default function Services() {
     return (
       <div className="mt-20">
-        <h1 className="text-center text-xl m-12">SZOLGÁLTATÁSOK</h1>
+        <h1 className="text-center text-2xl m-12">SZOLGÁLTATÁSOK</h1>
         <div className="flex flex-wrap gap-4">
           {servicesData.map((service, index) => (
             <div key={index} className="relative">

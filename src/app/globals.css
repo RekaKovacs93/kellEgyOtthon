@@ -138,3 +138,17 @@ body {
 #hover-underline:hover::after {
   transform: scaleX(1);
 }
+
+#fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

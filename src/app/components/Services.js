@@ -2,18 +2,18 @@ import Image from "next/image";
 
 const servicesData = [
     {
-        title: "Profi Fotózás",
-        description: "Valami szoveg lesz itt par mondat ami kitolt ennyi teret",
+        title: "Profi Fotós",
+        description: "Profi fotós fotózza be az ingatlanát, hogy már a képek alapján is ellenállhatatlan legyen.",
         imageURL: "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
     },
     {
-        title: "Video Cucc",
-        description: "Ez is egy szoveg ami kitolti a teret.",
+        title: "Home Staging",
+        description: "Úgy csinosítjuk az otthonát, vagy úgy bútorozzuk be, hogy beleszeretős harmóniát teremtsünk.",
         imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
     },
     {
-        title: "Service III",
-        description: "Meg egy szoveg content content content",
+        title: "3D-s Ingatlanséta",
+        description: "Virtuálisan körbesétálhatóvá tesszük az ingatlanát, hogy minden részletét megismerhessék a megtekintés előtt",
         imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
     },
     {

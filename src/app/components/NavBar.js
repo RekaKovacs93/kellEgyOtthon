@@ -22,16 +22,16 @@ export default function NavBar() {
         </Link>
 
         <div className="hidden md:flex flex-grow items-center justify-end space-x-4">
-          <Link href="/#about" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="/#about" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
-          <Link href="/#services" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="/#services" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             SZOLGÁLTATÁSOK
           </Link>
-          <Link href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             BLOG
           </Link>
-          <Link href="/#contact" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="/#contact" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
         </div>
@@ -52,7 +52,7 @@ export default function NavBar() {
             </svg>
           </label>
 
-          <div className={`menu bg-white absolute top-full right-0 mt-2 rounded-md border shadow-md ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <div className={`menu fixed top-0 left-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
             <Link href="/#about" onClick={closeMenu} className="block py-2 px-2">
               RÓLUNK
             </Link>

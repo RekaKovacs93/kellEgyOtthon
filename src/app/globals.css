@@ -116,3 +116,25 @@ body {
 #card:hover #title{
   opacity: 0%;
 }
+
+#hover-underline {
+  position: relative;
+  text-decoration: none;
+  color: rgb(121, 116, 112); /* Set your desired text color */
+}
+
+#hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: rgb(121, 116, 112); /* Change this to your desired underline color */
+  transform: scaleX(0);
+  transition:  0.4s ease-in-out;
+}
+
+#hover-underline:hover::after {
+  transform: scaleX(1);
+}

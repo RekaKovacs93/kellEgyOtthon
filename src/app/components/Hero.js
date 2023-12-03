@@ -13,9 +13,10 @@ export default function Hero() {
                     height={500}
                 />
                 <div className="absolute top-0 left-0 w-1/3 h-full bg-black bg-opacity-60 flex flex-col items-center justify-center">
-                    <h1 className="text-white text-center text-xl mb-6"><b>Hello</b></h1>
-                    <p className="text-white px-8 text-lg">Itt lesz a szoveg, call to action meg ilyesmi. Itt lesz a szoveg, call to action meg ilyesmi. Itt lesz a szoveg, call to action meg ilyesmi. Itt lesz a szoveg, call to action meg ilyesmi</p>
-                    <button className="mt-12 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="/#contact">Lepjen kapcsolatba!</a></button>
+                    <h1 className="text-white text-center text-3xl mb-10"><b>Üdvözöljük a Kell Egy Otthon honlapján!</b></h1>
+                    <p className="text-white px-8 text-lg">Fedezze fel a Kell Egy Otthon kivételes szolgáltatásait és találja meg álmai otthonát velünk! Kérdése van vagy személyre szabott segítségre van szüksége? Forduljon hozzánk bizalommal!
+</p>
+                    <button className="mt-5 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="/#contact">Lepjen kapcsolatba!</a></button>
                 </div>
             </div>
             {/* Mobile and Tablet Layout */}

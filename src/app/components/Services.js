@@ -17,16 +17,18 @@ const servicesData = [
         imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
     },
     {
-        title: "Another Service",
-        description: "Valami szolgaltatas ami itt le lesz irva",
+        title: "Drónfelvétel",
+        description: "Ha szükséges drónt is bevetünk, hogy az ingatlan környékét is be tudjuk mutatni.",
         imageURL: "https://cdn.pixabay.com/photo/2023/09/10/11/58/bedroom-8244727_1280.jpg"
     }
 ];
 
 export default function Services() {
     return (
-      <div className="mt-20">
-        <h1 className="text-center text-2xl m-12">SZOLGÁLTATÁSOK</h1>
+      <div className="mt-20 items-center w-full">
+
+        <h1 className="text-center text-3xl">Szeretné az alábbi <b>ingyenes</b> szolgáltatásokat?</h1>
+        <h1 className="text-center text-xl mb-10">Költségei a mi pénztárcánkat terhelik!</h1>
         <div className="flex flex-wrap gap-4">
           {servicesData.map((service, index) => (
             <div key={index} className="relative">
@@ -41,13 +43,18 @@ export default function Services() {
                     <h1 id="title" className="absolute text-2xl text-white opacity-100 text-center">{service.title}</h1>
                     <div id="desc" className="opacity-0">
                         <h1 className="text-center text-2xl text-white">{service.title}</h1>
-                        <p className="text-white text-center px-5">{service.description}</p>
+                        <p className="text-white text-base text-center px-5">{service.description}</p>
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <div className="flex justify-center mt-12">
+            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+              <a href="/#contact">Lepjen kapcsolatba!</a>
+            </button>
+          </div>
       </div>
     );
   }

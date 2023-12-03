@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white z-10">
-      <div className="flex items-center justify-between px-6 md:px-8 py-3 md:py-6">
+      <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6">
         <Link href="/" className="font-bold text-xl">
           KELL EGY OTTHON
         </Link>

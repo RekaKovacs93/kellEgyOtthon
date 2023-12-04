@@ -107,6 +107,7 @@ body {
   font-family: 'Inter Tight', sans-serif;
   letter-spacing: "widest";
   justify-content: center;
+  overflow-x: hidden;
 }
 
 #card:hover #desc{

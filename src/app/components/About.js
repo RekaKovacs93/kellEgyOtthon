@@ -32,8 +32,8 @@ export default function About() {
       </div>
 
       {/* Desktop View */}
-      <div className="hidden md:flex items-center mt-20 mb-10">
-        <div className="w-2/5 mx-20 px-8">
+      <div className="hidden md:flex items-center justify-center min-h-screen">
+        <div className="w-2/5 mx-20 px-8 py-10 border">
           <h1 className="text-2xl text-center mb-12">
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
@@ -53,7 +53,7 @@ export default function About() {
           </div>
           <div>
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#about">Vevő vagyok</a>
+              <a href="/#vevo">Vevő vagyok</a>
             </button>
           </div>
         </div>

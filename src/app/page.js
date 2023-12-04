@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import Blog from './components/Blog'
 import Tudta from './components/Tudta'
 import Choose from './components/Choose' 
+import Vevo from './components/Vevo'
+import Nyer from './components/Nyer'
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       <div id="about" className="min-h-screen"><About></About></div>
       <div id="services" className="min-h-screen"><Services></Services></div>
       <div className="w-full relative min-h-screen"><Tudta></Tudta></div>
+      <div id="vevo" className="min-h-screen justify-center"><Vevo></Vevo></div>
+      <div><Nyer></Nyer></div>
       {/* <div id="blog"><Blog></Blog></div> */}
       <div id="contact" className="min-h-screen"><Contact></Contact></div>
       <div id="footer"><Footer></Footer></div>

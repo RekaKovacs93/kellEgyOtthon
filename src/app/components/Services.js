@@ -52,7 +52,7 @@ export default function Services() {
         </div>
         <div className="flex justify-center mt-12">
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#contact">Lepjen kapcsolatba!</a>
+              <a href="/#contact">Kérem az ingyenes szolgáltatásokat</a>
             </button>
           </div>
       </div>

@@ -6,6 +6,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import Blog from './components/Blog'
 import Tudta from './components/Tudta'
+import Choose from './components/Choose' 
 
 export default function Home() {
   return (
@@ -14,11 +15,12 @@ export default function Home() {
       <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
     
       <div id="home" className="w-full relative"><Hero></Hero></div>
-      <div id="about"><About></About></div>
-      <div id="services"><Services></Services></div>
-      <div className="w-full relative"><Tudta></Tudta></div>
-      <div id="blog"><Blog></Blog></div>
-      <div id="contact"><Contact></Contact></div>
+      {/* <div><Choose></Choose></div> */}
+      <div id="about" className="min-h-screen"><About></About></div>
+      <div id="services" className="min-h-screen"><Services></Services></div>
+      <div className="w-full relative min-h-screen"><Tudta></Tudta></div>
+      {/* <div id="blog"><Blog></Blog></div> */}
+      <div id="contact" className="min-h-screen"><Contact></Contact></div>
       <div id="footer"><Footer></Footer></div>
       
     </main>

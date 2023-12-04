@@ -28,9 +28,9 @@ export default function NavBar() {
           <Link id="hover-underline" href="/#services" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             SZOLGÁLTATÁSOK
           </Link>
-          <Link id="hover-underline" href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          {/* <Link id="hover-underline" href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             BLOG
-          </Link>
+          </Link> */}
           <Link id="hover-underline" href="/#contact" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
@@ -60,9 +60,9 @@ export default function NavBar() {
             <Link href="/#services" onClick={closeMenu} className="block py-2 px-2 border-b">
               SZOLGÁLTATÁSOK
             </Link>
-            <Link href="/blogPage" onClick={closeMenu} className="block py-2 px-2 border-b">
+            {/* <Link href="/blogPage" onClick={closeMenu} className="block py-2 px-2 border-b">
               BLOG
-            </Link>
+            </Link> */}
             <Link href="/#contact" onClick={closeMenu} className="block py-2 px-2 border-b">
               KAPCSOLAT
             </Link>

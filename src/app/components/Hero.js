@@ -20,7 +20,7 @@ export default function Hero() {
                 </div>
             </div>
             {/* Mobile and Tablet Layout */}
-            <div className="w-full relative md:hidden items-center" >
+            <div className="h-full relative md:hidden items-center" >
                 <Image
                     src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
                     alt="Interior Photo"

@@ -20,13 +20,13 @@ export default function Hero() {
                 </div>
             </div>
             {/* Mobile and Tablet Layout */}
-            <div className="h-full relative md:hidden items-center" >
+            {/* Mobile and Tablet Layout */}
+            <div className="h-screen relative md:hidden flex items-center">
                 <Image
                     src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
                     alt="Interior Photo"
-                    layout="responsive"
-                    width={2048}
-                    height={1400}
+                    layout="fill" // Use layout="fill" to fill the container
+                    objectFit="cover" // Maintain aspect ratio and cover the container
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 flex flex-col items-center justify-center text-center p-14">
                     <h1 className="text-white text-xl mb-6"><b>Üdvözöljük a Kell Egy Otthon honlapján!</b></h1>
@@ -36,6 +36,7 @@ export default function Hero() {
                     </button>
                 </div>
             </div>
+
         </div>
     );
 }

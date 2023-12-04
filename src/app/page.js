@@ -22,7 +22,7 @@ export default function Home() {
       <div id="services" className="min-h-screen"><Services></Services></div>
       <div className="w-full relative min-h-screen"><Tudta></Tudta></div>
       <div id="vevo" className="min-h-screen justify-center"><Vevo></Vevo></div>
-      <div><Nyer></Nyer></div>
+      <div className="min-h-screen w-full justify-center"><Nyer></Nyer></div>
       {/* <div id="blog"><Blog></Blog></div> */}
       <div id="contact" className="min-h-screen"><Contact></Contact></div>
       <div id="footer"><Footer></Footer></div>

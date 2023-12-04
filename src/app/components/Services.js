@@ -53,9 +53,9 @@ export default function Services() {
       </div>
 
       {/* Mobile layout */}
-      <div className="flex flex-col sm:hidden gap-4">
+      <div className="flex flex-col sm:hidden gap-4 p-10">
         {servicesData.map((service, index) => (
-          <div key={index} className="border p-4">
+          <div key={index} className="p-4">
             <div className="h-48 relative rounded-lg overflow-hidden">
               <Image
                 src={service.imageURL}

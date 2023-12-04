@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Tudta() {
   return (
     <div className="relative w-full mt-20">
-      <div className="w-full">
+      <div className="w-full hidden md:block">
         <Image
           src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
           alt="Interior Photo"
@@ -62,6 +62,48 @@ export default function Tudta() {
               </div>
             </div>
             <div className="flex justify-center mt-12">
+              <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+                <a href="/#contact">Szeretném eladni az ingatlanom!</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Mobile Layout */}
+      <div className="relative md:hidden h-screen">
+          <Image
+            src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
+            alt="Interior Photo"
+            layout="fill"
+            objectFit="cover"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center justify-center text-center p-4">
+            <h1 className="text-white text-xl mb-4"><b>Az eddig amatőr módon feladott hirdetések ideje lejárt.</b></h1>
+            <p className="text-white text-lg px-4">
+              Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
+            </p>
+            <div className="bg-white mt-10 ">
+            <div className="flex w-screen p-10">
+              <div className="mr-6">
+                <h2 className="text-lg mb-5"><b>Ezért van ránk szüksége</b></h2>
+                <ul className="list-none list-inside text-left px-2">
+                  <li className="mb-1">&#10003; Profi lakberendező által berendezett lakás</li>
+                  <li className="mb-1">&#10003; Átlagból kiemelkedő hirdetési szöveg</li>
+                  <li className="mb-1">&#10003; Profi fotó</li>
+                  <li className="mb-1">&#10003; Drónfelvétel</li>
+                  <li>&#10003; 3D-s ingatlanséta</li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-lg mb-5"><b>Ez már sajnos nem elég</b></h2>
+                <ul className="list-none px-2 text-left">
+                  <li className="mb-1">&#10005; Üres, vagy átlagos berendezésű lakás</li>
+                  <li className="mb-1">&#10005; Amatőr megfogalmazás</li>
+                  <li>&#10005; Telefonos képek</li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex justify-center my-6">
               <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
                 <a href="/#contact">Szeretném eladni az ingatlanom!</a>
               </button>

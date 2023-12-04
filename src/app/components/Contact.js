@@ -44,7 +44,7 @@ export default function Contact() {
         />
         
         </div>
-        <h1 className="text-center text-lg"><b>Vezetek Kereszt</b></h1>
+        <h3 className="text-center text-lg"><b>Vezetek Kereszt</b></h3>
         <a href="mailto:email@gmail.com" className="text-center">email@gmail.com</a>
         </div>
         

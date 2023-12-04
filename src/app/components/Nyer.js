@@ -32,7 +32,7 @@ export default function Nyer(){
     return(
         // <div className="flex flex-col items-center w-full justify-center min-h-screen">
     <div className="relative w-full">
-      <div className="w-full">
+      <div className="w-full hidden sm:flex flex-col sm:flex-row">
         <Image
           src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
           alt="Interior Photo"
@@ -45,7 +45,7 @@ export default function Nyer(){
             <div className="flex flex-wrap gap-4 justify-center">
                 {vevoData.map((vevo, index) => (
                     <div key={index} className="relative">
-                        <div className="h-48 w-48 md:h-44 md:w-96 relative bg-white rounded-lg py-8 flex flex-col justify-center">
+                        <div className="h-48 w-48 md:h-44 md:w-96 relative bg-white rounded-lg py- flex flex-col justify-center">
                             
                                 <h1 className="text-xl text-center">{vevo.title}</h1>
                                 {/* <h1 className="text-center text-2xl text-white">{vevo.title}</h1> */}
@@ -62,7 +62,41 @@ export default function Nyer(){
                 </div>
         </div>
         </div>
+              {/* Mobile View */}
+      <div className="sm:hidden w-full h-screen relative">
+      <div
+          className="absolute bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://cdn.pixabay.com/photo/2021/04/22/18/50/frames-6199828_1280.jpg')",
+          }}
+        >
+        <div className=" bg-black bg-opacity-80 p-10">
+        <h1 className="text-3xl text-center mb-10 text-white pt-10">Mit nyer vele?</h1>
+          <div className="h-full flex flex-col justify-center items-center">
+            {vevoData.map((vevo, index) => (
+              <div key={index} className="bg-white py-8 my-2 px-4">
+                <h1 className="text-xl text-center">{vevo.title}</h1>
+                <p className="text-sm text-center">{vevo.description}</p>
+              </div>
+            ))}
+          </div>
+          <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+            <a href="/#contact">Szeretném megtalálni álmaim otthonát</a>
+          </button>
         </div>
-        // </div>
-    )
+      </div>
+      </div>
+    </div>
+  );
 }
+       
+
+        {/* <div className="absolute inset-0 overflow-hidden">
+          {/* <Image
+            src="https://cdn.pixabay.com/photo/2021/04/22/18/50/frames-6199828_1280.jpg"
+            alt="Interior Photo"
+            layout="fill"
+            objectFit="cover"
+            className="h-full w-full"
+          /> 
+        </div> */}

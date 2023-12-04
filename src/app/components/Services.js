@@ -25,7 +25,7 @@ const servicesData = [
 
 export default function Services() {
     return (
-      <div className="mt-20 items-center w-full">
+      <div className="flex flex-col items-center w-full justify-center min-h-screen">
 
         <h1 className="text-center text-3xl">Szeretné az alábbi <b>ingyenes</b> szolgáltatásokat?</h1>
         <h1 className="text-center text-xl mb-10">Költségei a mi pénztárcánkat terhelik!</h1>

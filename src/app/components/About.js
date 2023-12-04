@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="">
       {/* Mobile View */}
-      <div className="md:hidden">
+      <div className="md:hidden flex items-center justify-center min-h-screen">
         <div className="relative">
 
         </div>

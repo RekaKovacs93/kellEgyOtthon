@@ -15,7 +15,7 @@ export default function Tudta() {
           <div className="absolute w-3/4 h-3/4 bg-white z-5 flex flex-col items-center justify-center">
             <h1 className="px-20 text-center">Az eddig amatőr módon feladott hirdetések ideje lejárt.</h1>
             <p className="px-20 text-center text-lg">
-              Jelenleg kínálati piac van, vagyis több az eladó ingatlan, mint a vásárló. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
+              Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
             </p>
             <div className="flex mt-10">
               <div className="mr-20">
@@ -63,7 +63,7 @@ export default function Tudta() {
             </div>
             <div className="flex justify-center mt-12">
               <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-                <a href="/#contact">Lepjen kapcsolatba!</a>
+                <a href="/#contact">Szeretném eladni az ingatlanom!</a>
               </button>
             </div>
           </div>

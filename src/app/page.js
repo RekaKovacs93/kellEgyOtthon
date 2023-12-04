@@ -19,12 +19,11 @@ export default function Home() {
       <div id="home" className="w-full relative"><Hero></Hero></div>
       {/* <div><Choose></Choose></div> */}
       <div id="about" className="min-h-screen"><About></About></div>
-      <div id="services" className="min-h-screen"><Services></Services></div>
-      <div className="w-full relative min-h-screen"><Tudta></Tudta></div>
-      <div id="vevo" className="min-h-screen justify-center"><Vevo></Vevo></div>
-      <div className="min-h-screen w-full justify-center overflow"><Nyer></Nyer></div>
-      <div className="min-h-screen" id="blog"></div>
-      <div id="contact" className="min-h-screen"><Contact></Contact></div>
+      <div id="services" className="md:min-h-screen"><Services></Services></div>
+      <div className="w-full relative md:min-h-screen"><Tudta></Tudta></div>
+      <div id="vevo" className="md:min-h-screen justify-center"><Vevo></Vevo></div>
+      <div className="md:min-h-screen w-full justify-center overflow-y-auto"><Nyer></Nyer></div>
+      <div id="contact"><Contact></Contact></div>
       <div id="footer"><Footer></Footer></div>
       
     </main>

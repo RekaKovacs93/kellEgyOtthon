@@ -77,12 +77,12 @@ export default function Tudta() {
             layout="fill"
             objectFit="cover"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center justify-center text-center p-4">
-            <h1 className="text-white text-xl mb-12"><b>Az eddig amatőr módon feladott hirdetések ideje lejárt.</b></h1>
+          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center text-center p-4">
+            <h1 className="text-white text-xl my-14"><b>Az eddig amatőr módon feladott hirdetések ideje lejárt.</b></h1>
             <p className="text-white text-lg px-4">
               Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
             </p>
-            <div className="bg-white mt-10 ">
+            <div className="bg-white mt-10 absolute bottom-0">
             <div className="flex w-screen p-10">
               <div className="mr-6">
                 <h2 className="text-lg mb-5"><b>Ezért van ránk szüksége</b></h2>

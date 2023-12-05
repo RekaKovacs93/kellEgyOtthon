@@ -12,13 +12,13 @@ export default function Vevo() {
             </button>
           </div>
         </div>
-        <div className="hidden sm:block w-2/3 relative flex justify-end">
+        <div className="w-2/3 relative flex justify-end hidden md:block">
           <div className="aspect-w-6 aspect-h-4 items-right">
             <Image
-              src="https://cdn.pixabay.com/photo/2023/09/10/11/58/bedroom-8244727_1280.jpg"
-              alt="image of bedroom"
-              width={600} // Add width here
-              height={400} // Add height here
+            src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+            alt="image of bedroom"
+            width={1200} // Add width here
+            height={800} // Add height here
             />
           </div>
         </div>

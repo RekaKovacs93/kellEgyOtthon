@@ -6,7 +6,7 @@ export default function Hero() {
             {/* Computer Layout */}
             <div className="w-full relative hidden md:block">
                 <Image
-                    src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
+                    src="https://cdn.pixabay.com/photo/2016/06/24/11/49/architecture-1477103_1280.jpg"
                     alt="Interior Photo"
                     layout="responsive"
                     width={1024}
@@ -23,7 +23,7 @@ export default function Hero() {
             {/* Mobile and Tablet Layout */}
             <div className="h-screen relative md:hidden flex items-center">
                 <Image
-                    src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
+                    src="https://cdn.pixabay.com/photo/2016/06/24/11/49/architecture-1477103_1280.jpg"
                     alt="Interior Photo"
                     layout="fill" // Use layout="fill" to fill the container
                     objectFit="cover" // Maintain aspect ratio and cover the container

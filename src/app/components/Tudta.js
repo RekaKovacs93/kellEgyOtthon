@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Tudta() {
   return (
-    <div className="relative w-full mt-20">
+    <div className="relative w-full md:mt-20 mt-10">
       <div className="w-full hidden md:block">
         <Image
           src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
@@ -12,7 +12,7 @@ export default function Tudta() {
           height={500}
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center">
-          <div className="absolute w-3/4 h-3/4 bg-white z-5 flex flex-col items-center justify-center">
+          <div className="absolute w-3/4 1/2 bg-white z-5 flex flex-col items-center">
             <h1 className="px-20 text-center">Az eddig amatőr módon feladott hirdetések ideje lejárt.</h1>
             <p className="px-20 text-center text-lg">
               Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
@@ -70,23 +70,24 @@ export default function Tudta() {
         </div>
       </div>
       {/* Mobile Layout */}
-      <div className="relative md:hidden h-screen">
+      <div className="md:hidden h-screen">
           <Image
             src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
             alt="Interior Photo"
             layout="fill"
             objectFit="cover"
+            className="absolute top-0 left-0 w-full h-full"
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center text-center p-4">
-            <h1 className="text-white text-xl my-14"><b>Az eddig amatőr módon feladott hirdetések ideje lejárt.</b></h1>
+          <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center text-center px-4">
+            <h1 className="text-white text-xl my-4"><b>Az eddig amatőr módon feladott hirdetések ideje lejárt.</b></h1>
             <p className="text-white text-lg px-4">
               Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
             </p>
-            <div className="bg-white mt-10 absolute bottom-0">
-            <div className="flex w-screen p-10">
+            <div className="bg-white absolute bottom-0">
+            <div className="flex w-screen px-10">
               <div className="mr-6">
-                <h2 className="text-lg mb-5"><b>Ezért van ránk szüksége</b></h2>
-                <ul className="list-none list-inside text-left px-2">
+                <h2 className="text-lg mb-5 pt-2"><b>Ezért van ránk szüksége</b></h2>
+                <ul className="list-none list-inside text-left">
                   <li className="mb-1">&#10003; Profi lakberendező által berendezett lakás</li>
                   <li className="mb-1">&#10003; Átlagból kiemelkedő hirdetési szöveg</li>
                   <li className="mb-1">&#10003; Profi fotó</li>
@@ -95,7 +96,7 @@ export default function Tudta() {
                 </ul>
               </div>
               <div>
-                <h2 className="text-lg mb-5"><b>Ez már sajnos nem elég</b></h2>
+                <h2 className="text-lg mb-5 pt-2"><b>Ez már sajnos nem elég</b></h2>
                 <ul className="list-none px-2 text-left">
                   <li className="mb-1">&#10005; Üres, vagy átlagos berendezésű lakás</li>
                   <li className="mb-1">&#10005; Amatőr megfogalmazás</li>

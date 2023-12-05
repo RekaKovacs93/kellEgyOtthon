@@ -19,15 +19,15 @@ const servicesData = [
     {
         title: "Drónfelvétel",
         description: "Ha szükséges drónt is bevetünk, hogy az ingatlan környékét is be tudjuk mutatni.",
-        imageURL: "https://cdn.pixabay.com/photo/2023/09/10/11/58/bedroom-8244727_1280.jpg"
+        imageURL: "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
     }
 ];
 
 export default function Services() {
   return (
     <div className="flex flex-col items-center w-full justify-center min-h-screen">
-      <h1 className="text-center text-3xl px-10 py-5">Szeretné az alábbi <b>ingyenes</b> szolgáltatásokat?</h1>
-      <h1 className="text-center text-xl mb-14 px-10">Költségei a mi pénztárcánkat terhelik!</h1>
+      <h1 className="text-center  text-3xl px-10 md:py-5 py-3">Szeretné az alábbi <b>ingyenes</b> szolgáltatásokat?</h1>
+      <h1 className="text-center md:text-xl md:mb-14 md:px-10">Költségei a mi pénztárcánkat terhelik!</h1>
 
       {/* Desktop layout */}
       <div className="hidden sm:flex flex-col sm:flex-row justify-center gap-4">
@@ -53,10 +53,10 @@ export default function Services() {
       </div>
 
       {/* Mobile layout */}
-      <div className="flex flex-col sm:hidden gap-4 p-10">
+      <div className="flex flex-col sm:hidden gap-4 px-10 py-5 ">
         {servicesData.map((service, index) => (
-          <div key={index} className="p-4">
-            <div className="h-48 relative rounded-lg overflow-hidden">
+          <div key={index} className="border rounded-lg">
+            <div className="h-48 relative rounded-t-lg">
               <Image
                 src={service.imageURL}
                 alt={service.title}
@@ -67,14 +67,14 @@ export default function Services() {
                 {service.title}
               </div>
             </div>
-            <div className="text-center mt-4">
+            <div className="text-center my-2 px-4">
               <p className="text-base">{service.description}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-8">
         <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
           <a href="/#contact">Kérem az ingyenes szolgáltatásokat</a>
         </button>

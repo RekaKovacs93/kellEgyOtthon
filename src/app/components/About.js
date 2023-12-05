@@ -4,11 +4,11 @@ export default function About() {
   return (
     <div className="">
       {/* Mobile View */}
-      <div className="md:hidden flex items-center justify-center min-h-screen">
+      <div className="md:hidden flex items-center justify-center">
         <div className="relative">
 
         </div>
-        <div className="text-center px-8 mt-5">
+        <div className="text-center px-8 my-16">
           <h1 className="text-2xl mb-10">
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
@@ -33,7 +33,7 @@ export default function About() {
 
       {/* Desktop View */}
       <div className="hidden md:flex items-center justify-center min-h-screen">
-        <div className="w-2/5 mx-20 px-8 py-10 border">
+        <div className="w-2/5 mx-20 px-8 py-10">
           <h1 className="text-2xl text-center mb-12">
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
@@ -61,10 +61,10 @@ export default function About() {
         <div className="w-2/3 relative flex justify-end">
           <div className="aspect-w-6 aspect-h-4 items-right">
             <Image
-            src="https://cdn.pixabay.com/photo/2023/09/10/11/58/bedroom-8244727_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
             alt="image of bedroom"
-            width={600} // Add width here
-            height={400} // Add height here
+            width={1200} // Add width here
+            height={800} // Add height here
             />
           </div>
         </div>

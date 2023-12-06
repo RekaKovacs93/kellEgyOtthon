@@ -4,31 +4,29 @@ export default function About() {
   return (
     <div className="">
       {/* Mobile View */}
-      <div className="md:hidden flex items-center justify-center">
-        <div className="relative">
-
-        </div>
-        <div className="text-center px-8 my-16">
-          <h1 className="text-2xl mb-10">
+      <div className="md:hidden flex flex-col items-center justify-between h-screen px-8 text-center">
+        {/* <div className="text-center px-8 my-16"> */}
+          <h1 className="sm:text-3xl xs:text-xl mt-20">
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
-          <p className="text-lg mb-5">
-            A Kell Egy Otthon csapatának tagjai több évtizedes sikeres szakmai múlttal rendelkeznek. Biztosak vagyunk abban, hogy az Ön ingatlanát is el fogjuk adni, ezért az ehhez szükséges extra szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.
+          <p className="sm:text-lg xs:text-sm mb-5">
+          A Kell Egy Otthon csapatának tagjai több évtizedes sikeres szakmai múlttal rendelkeznek.
+Biztosak vagyunk abban, hogy az Ön ingatlanát is el fogjuk adni, ezért az ehhez szükséges extra
+szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.
+Vevőink számára küldetésünk, hogy megtaláljuk azt az otthont, amely tökéletesen illeszkedik
+álmaikhoz és igényeikhez. Egyedi szolgáltatásainkkal és szakértelmünkkel azon dolgozunk, hogy
+az ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtató élmény legyen
+számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásában!
           </p>
-          <div className="flex justify-center mt-5">
+          <div className="flex justify-center mb-20">
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#contact">Lepjen kapcsolatba!</a>
+              <a href="/#about">Eladó vagyok</a>
+            </button>
+            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+              <a href="/#about">Vevő vagyok</a>
             </button>
           </div>
-          {/* <div className="aspect-w-6 aspect-h-4">
-            <Image
-              src="https://cdn.pixabay.com/photo/2023/09/10/11/58/bedroom-8244727_1280.jpg"
-              alt="image of bedroom"
-              width={600} // Add width here
-                height={400} // Add height here
-            />
-          </div> */}
-        </div>
+        {/* </div> */}
       </div>
 
       {/* Desktop View */}
@@ -38,7 +36,13 @@ export default function About() {
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
           <p className="text-lg text-center">
-            A Kell Egy Otthon csapatának tagjai több évtizedes sikeres szakmai múlttal rendelkeznek. Biztosak vagyunk abban, hogy az Ön ingatlanát is el fogjuk adni, ezért az ehhez szükséges extra szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.
+          A Kell Egy Otthon csapatának tagjai több évtizedes sikeres szakmai múlttal rendelkeznek.
+Biztosak vagyunk abban, hogy az Ön ingatlanát is el fogjuk adni, ezért az ehhez szükséges extra
+szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.
+Vevőink számára küldetésünk, hogy megtaláljuk azt az otthont, amely tökéletesen illeszkedik
+álmaikhoz és igényeikhez. Egyedi szolgáltatásainkkal és szakértelmünkkel azon dolgozunk, hogy
+az ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtató élmény legyen
+számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásában!
           </p>
           {/* <div className="flex justify-center mt-12">
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">

@@ -1,9 +1,31 @@
 'use client'
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function NavBar() {
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isMobileView = window.innerWidth < 768; // Set your mobile breakpoint width here
+      if (isMobileView) {
+        setVisible(currentScrollPos < prevScrollPos || currentScrollPos < 10);
+        setPrevScrollPos(currentScrollPos);
+      }
+    };
+
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +37,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white z-10">
+    <nav className={`fixed top-0 w-full bg-white z-10 transition-opacity duration-3000 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6">
         <Link href="/" className="font-bold text-xl">
           KELL EGY OTTHON
@@ -52,7 +74,7 @@ export default function NavBar() {
             </svg>
           </label>
 
-          <div className={`menu fixed top-0 left-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'}`}>
+          <div className={`menu fixed top-0 left-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
             <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs">X  Close</button>
             <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               RÓLUNK

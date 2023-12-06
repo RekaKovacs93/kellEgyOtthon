@@ -11,7 +11,7 @@ const vevoData = [
     },
     {
         title: "Szakmai tanácsadás",
-        description: "A vásárlási folyamat minden lépésében, szakmai tanácsokkal támogatjuk Önt, hogy nyugodtan tudja meghozni a legjobb döntésket."
+        description: "A vásárlási folyamat minden lépésében, szakmai tanácsokkal támogatjuk Önt, hogy nyugodtan tudja meghozni a legjobb döntéseket."
     },
 
     {
@@ -20,7 +20,7 @@ const vevoData = [
     },
     {
         title: "Hitelközvetítés",
-        description: "Banki háttér, amelyik bank a legjobbat kínálja lehetőségeihez képest, CSOK +1"
+        description: "Amennyiben hitelre van szüksége, Banki háttér, amelyik bank a legjobbat kínálja lehetőségeihez képest, CSOK +1"
     },
     {
         title: "Áralku és tranzakció menedzselése",
@@ -57,7 +57,7 @@ export default function Nyer(){
             </div>
             <div className="flex items-center justify-center mt-10">
             <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                        <a href="/#contact">Szeretném megtalálni álmaim otthonát</a>
+                        <a href="/#contact">Kérem A Profi Segítséget!</a>
                     </button>
                 </div>
         </div>
@@ -81,7 +81,7 @@ export default function Nyer(){
             ))}
           </div>
           <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-            <a href="/#contact">Szeretném megtalálni álmaim otthonát</a>
+            <a href="/#contact">Kérem A Profi Segítséget!</a>
           </button>
         </div>
       </div>

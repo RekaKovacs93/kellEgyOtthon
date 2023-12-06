@@ -3,23 +3,33 @@ import Image from "next/image";
 const servicesData = [
     {
         title: "Profi Fotós",
-        description: "Profi fotós fotózza be az ingatlanát, hogy már a képek alapján is ellenállhatatlan legyen.",
+        description: "Tapasztalt, ingatlanokra szakosodott fotósunk készíti el a fényképeket, így hirdetése garantáltan kiemelkedik a többi közül.",
         imageURL: "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
     },
     {
         title: "Home Staging",
-        description: "Úgy csinosítjuk az otthonát, vagy úgy bútorozzuk be, hogy beleszeretős harmóniát teremtsünk.",
+        description: "Home Staging szolgáltatásunkkal úgy dekoráljuk, vagy rendezzük be ingatlanát, hogy az megteremtse az otthon ellenállhatatlan vonzerejét potenciális vevői számára.",
         imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
     },
     {
         title: "3D-s Ingatlanséta",
-        description: "Virtuálisan körbesétálhatóvá tesszük az ingatlanát, hogy minden részletét megismerhessék a megtekintés előtt",
+        description: "A 3D-s ingatlanséta egy virtuális túra, amely lehetővé teszi a hirdetését megtekintők számára, hogy online térben sétálják körbe egy ingatlanát, mintha valóságban lennének ott. Így megtekinhetik az egész teret háromdimenziós formában.",
         imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
     },
     {
         title: "Drónfelvétel",
-        description: "Ha szükséges drónt is bevetünk, hogy az ingatlan környékét is be tudjuk mutatni.",
+        description: "A drónfelvételeink lenyűgöző és részletes légi nézetet biztosítanak, kiemelik az ingatlan környezetét és egyedi perspektívát nyújtanak, növelve ezzel az otthonának vonzerejét és értékét.",
         imageURL: "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+    },
+    {
+      title: "Hivatalos értékbecslő",
+      description: "Szeretnénk, hogy teljes biztonságban érezze magát az egész folyamat során. Amennyiben kétségei merülnek fel az általunk meghatározott reális eladási árral kapcsolatban, igénybe vesszük egy értékbecslő szakvéleményét is.",
+      imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
+    },
+    {
+      title: "Alacsony jutalék",
+      description: "A nagy hálózatok jutalékszintje alatt dolgozom - elégedett lesz a mértékével.",
+      imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
     }
 ];
 
@@ -30,9 +40,9 @@ export default function Services() {
       <h1 className="text-center md:text-xl md:mb-14 md:px-10">Költségei a mi pénztárcánkat terhelik!</h1>
 
       {/* Desktop layout */}
-      <div className="hidden sm:flex flex-col sm:flex-row justify-center gap-4">
+      <div className="hidden sm:flex flex-col sm:flex-row flex-wrap justify-center gap-40 items-center">
         {servicesData.map((service, index) => (
-          <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 mb-4">
+          <div key={index} className=" items-center">
             <div className="h-48 w-48 md:h-64 md:w-64 relative">
               <Image
                 src={service.imageURL}

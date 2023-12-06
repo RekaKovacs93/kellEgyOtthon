@@ -12,9 +12,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      minHeight: {
-        mobile: '120vh', // Sets the height to 120% of the viewport height
-      }
+      screens: {
+        'xs': '375px', // Extra small devices (like smaller mobile phones)
+        'sm': '640px', // Small devices (like most mobile phones)
+        'md': '768px', // Medium devices (like tablets)
+        'lg': '1024px', // Large devices (like laptops)
+        'xl': '1280px', // Extra-large devices (like desktops)
+        // Add more breakpoints as needed
+      },
     },
     letterSpacing: {
       tightest: '-.075em',
@@ -23,7 +28,7 @@ module.exports = {
       normal: '0',
       wide: '.025em',
       wider: '.05em',
-      widest: '.1em',
+      // widest: '.1em',
       widest: '.25em',
     }
   },

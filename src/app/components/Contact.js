@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="h-screen flex flex-col justify-center items-center">
+    <div className="h-screen flex flex-col justify-center items-center min-h-screen">
       <h1 className="text-center text-2xl m-12">Lépjen kapcsolatba cegünk képviselőjével</h1>
       <div className="flex flex-col justify-center items-center gap-20">
         <div className="items-center text-center">

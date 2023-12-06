@@ -63,14 +63,14 @@ export default function Nyer(){
         </div>
         </div>
               {/* Mobile View */}
-      <div className="sm:hidden w-full h-screen relative">
+      <div className="sm:hidden w-full min-h-screen relative mb-20">
       <div
-          className="absolute bg-cover bg-center"
+          className="absolute bg-cover bg-center "
           style={{
             backgroundImage: "url('https://cdn.pixabay.com/photo/2021/04/22/18/50/frames-6199828_1280.jpg')",
           }}
         >
-        <div className=" bg-black bg-opacity-80 p-10">
+        <div className="flex flex-col justify-center items-center h-full bg-black bg-opacity-80 p-10">
         <h1 className="text-3xl text-center mb-10 text-white pt-10">Mit nyer vele?</h1>
           <div className="h-full flex flex-col justify-center items-center">
             {vevoData.map((vevo, index) => (

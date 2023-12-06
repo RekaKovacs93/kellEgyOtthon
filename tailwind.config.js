@@ -12,6 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      minHeight: {
+        mobile: '120vh', // Sets the height to 120% of the viewport height
+      }
     },
     letterSpacing: {
       tightest: '-.075em',

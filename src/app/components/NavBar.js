@@ -37,7 +37,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className={`fixed top-0 w-full bg-white z-10 transition-opacity duration-3000 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+    <nav className={`fixed top-0 w-full bg-white z-10 transition-opacity duration-1000 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6">
         <Link href="/" className="font-bold text-xl">
           KELL EGY OTTHON

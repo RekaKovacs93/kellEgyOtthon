@@ -9,6 +9,10 @@ import Tudta from './components/Tudta'
 import Choose from './components/Choose' 
 import Vevo from './components/Vevo'
 import Nyer from './components/Nyer'
+import Eladas from './components/Eladas'
+import Ingatlan from './components/Ingatlan'
+import Hitel from './components/Hitel'
+import Viktor from './components/Viktor'
 
 export default function Home() {
   return (
@@ -19,12 +23,15 @@ export default function Home() {
       <div id="home" className="w-full relative"><Hero></Hero></div>
       {/* <div><Choose></Choose></div> */}
       <div id="about" className="md:min-h-screen"><About></About></div>
+      <div id="eladas" className="md:min-h-screen w-full"><Eladas></Eladas></div>
+      <div className="md:min-h-screen w-full"><Ingatlan></Ingatlan></div>
       <div id="services" className="md:min-h-screen"><Services></Services></div>
       <div className="w-full relative min-h-screen"><Tudta></Tudta></div>
       <div id="vevo" className="md:min-h-screen justify-center"><Vevo></Vevo></div>
       <div className="md:min-h-screen w-full justify-center"><Nyer></Nyer></div>
-      <div className="md:min-h-screen" id="contact"><Contact></Contact></div>
-      <div id="footer"><Footer></Footer></div>
+      <div className="md:min-h-screen w-full justify-center"><Hitel></Hitel></div>
+      <div className="md:min-h-screen w-full justify-center"><Viktor></Viktor></div>
+      <div className=" w-full justify-center" id="contact"><Contact></Contact></div>
       
     </main>
   )

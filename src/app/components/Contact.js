@@ -2,30 +2,45 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="h-screen flex flex-col justify-center items-center min-h-screen">
-      <h1 className="text-center text-2xl m-12">Lépjen kapcsolatba cegünk képviselőjével</h1>
-      <div className="flex flex-col justify-center items-center gap-20">
-        <div className="items-center text-center">
-          <div
-            className="w-48 h-48 rounded-full overflow-hidden"
-            style={{
-              border: "5px solid #fff", // Border around the circle
-            }}
-          >
-            <Image
-              src="https://cdn.pixabay.com/photo/2017/02/16/12/08/business-woman-2071334_1280.jpg"
-              alt="Contact"
-              width={1900} // Specify the width
-              height={1900} // Specify the height
-              objectFit="cover"
-              className="rounded-full"
-            />
+    <div className="relative w-full h-1/3 overflow-clip mt-20">
+        <Image
+          src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
+          alt="Interior Photo"
+          layout="responsive"
+          width={1024}
+          height={100}
+        />
+        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center mb-20">
+        <h1 className="text-center text-3xl text-white my-20">Lépjen kapcsolatba cegünk képviselőjével</h1>
+        <div className=" bg-white rounded-lg  flex flex-col justify-center z-5">
+        <div className="flex flex-col justify-center py-10 px-20">
+          
+          <div className="text-center justify-center">
+            <h3 className="text-xl mb-5"><b>Mezei Viktor</b></h3>
+            <div className="mb-2">
+              <span className="mr-2 text-3xl">&#x2709;</span>
+              <span className="text-lg">Email</span>
+            </div>
+            <a href="mailto:email@gmail.com" className="text-2xl">
+              email@gmail.com
+            </a>
+            <div className="mb-2 mt-10">
+              <span className="mr-2 text-lg">&#128222;</span>
+              <span className="text-lg">Phone</span>
+            </div>
+            <p className="text-2xl">+36 70 3413478</p>
           </div>
-          <h3 className="text-center text-xl mt-10"><b>Vezetek Kereszt</b></h3>
-          <a href="mailto:email@gmail.com" className="text-center underline">email@gmail.com</a>
-          <p className="text-base">+36 20 9876543</p>
         </div>
       </div>
+      <div className="absolute bottom-0 flex w-screen mt-20 bg-black px-14 py-10 md:px-8">
+            <div className="text-left items-center justify-center flex-grow">
+                <h1 className="text-xl font-bold">KELL EGY OTTHON</h1>
+            </div>
+            <div className="text-right items-end flex-grow">
+                <a href="">Adatkezelési Tájékoztató</a>
+            </div>
+        </div>
+    </div>
     </div>
   );
 }

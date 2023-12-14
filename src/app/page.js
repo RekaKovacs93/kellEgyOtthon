@@ -28,9 +28,9 @@ export default function Home() {
       <div id="services" className="md:min-h-screen"><Services></Services></div>
       <div className="w-full relative min-h-screen"><Tudta></Tudta></div>
       <div id="vevo" className="md:min-h-screen justify-center"><Vevo></Vevo></div>
-      <div className="md:min-h-screen w-full justify-center"><Nyer></Nyer></div>
-      <div className="md:min-h-screen w-full justify-center"><Hitel></Hitel></div>
-      <div className="md:min-h-screen w-full justify-center"><Viktor></Viktor></div>
+      <div className="min-h-screen md:w-full md:justify-center"><Nyer></Nyer></div>
+      <div className="min-h-screen md:w-full md:justify-center"><Hitel></Hitel></div>
+      <div className="md:min-h-screen md:w-full justify-center"><Viktor></Viktor></div>
       <div className=" w-full justify-center" id="contact"><Contact></Contact></div>
       
     </main>

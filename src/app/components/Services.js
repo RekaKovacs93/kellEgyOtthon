@@ -40,7 +40,7 @@ export default function Services() {
       <h1 className="text-center md:text-xl md:mb-14 md:px-10">Költségei a mi pénztárcánkat terhelik!</h1>
 
       {/* Desktop layout */}
-      <div className="hidden sm:flex flex-col sm:flex-row flex-wrap justify-center gap-40 items-center">
+      <div className="hidden sm:flex flex-col sm:flex-row flex-wrap justify-center gap-x-20 gap-y-5 items-center mx-40">
         {servicesData.map((service, index) => (
           <div key={index} className=" items-center">
             <div className="h-48 w-48 md:h-64 md:w-64 relative">
@@ -63,7 +63,7 @@ export default function Services() {
       </div>
 
       {/* Mobile layout */}
-      <div className="flex flex-col sm:hidden gap-4 px-10 py-5 ">
+      <div className="flex flex-col sm:hidden gap-10 px-10 py-5 ">
         {servicesData.map((service, index) => (
           <div key={index} className="border rounded-lg">
             <div className="h-48 relative rounded-t-lg">

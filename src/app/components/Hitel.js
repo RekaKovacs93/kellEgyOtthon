@@ -4,15 +4,15 @@ const hitelek = ["Lakáshitel", "Személyi Kölcsön", "Bankszámla", "Megtakar�
 
 export default function Hitel(){
     return(
-    <div className="relative w-full justify-center">
+    <div className="relative w-full min-h-screen md:justify-center">
       <div className="w-full hidden sm:flex flex-col mt-20 items-center">
-            <h1 className="text-3xl text-center mb-5">Vágjon bele az első ingatlanába akár 10% önerővel!</h1>
-            <p className="text-lg mb-10 mx-20 text-center">Pénzügyi szolgáltatásainkkal teljes körű támogatást nyújtunk, segítünk hitele intézésében és minden pénzügyi részletben. Építse fel álmai otthonát könnyedén velünk!</p>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <h1 className="text-3xl text-center mb-10">Vágjon bele az első ingatlanába akár 10% önerővel!</h1>
+            <p className="text-xl mb-10 mx-40 text-center">Pénzügyi szolgáltatásainkkal teljes körű támogatást nyújtunk, segítünk hitele intézésében és minden pénzügyi részletben. Építse fel álmai otthonát könnyedén velünk!</p>
+            <div className="flex flex-wrap gap-4 justify-center mx-40">
                 {hitelek.map((hitel, index) => (
-                    <div key={index} className="relative">
-                        <div className="h-48 w-48 md:h-44 md:w-96 relative bg-white rounded-lg py- flex flex-col justify-center">
-                                <h1 className="text-xl text-center">{hitel}</h1>
+                    <div key={index} style={{ backgroundColor: "rgb(121, 116, 112)" }} className="relative rounded-lg">
+                        <div className="h-48 w-48 md:h-44 md:w-72 relative rounded-lg py- flex flex-col justify-center">
+                                <h1 className="text-2xl text-white text-center">{hitel}</h1>
                                 {/* <h1 className="text-center text-2xl text-white">{vevo.title}</h1> */}
                             </div>
                         </div>
@@ -20,25 +20,25 @@ export default function Hitel(){
                 ))}
             </div>
             <div className="flex items-center justify-center mt-10">
-            <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                        <a href="/#contact">Elindulok az otthonvásárlás útján!</a>
-                    </button>
-                </div>
+            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+              <a href="/#contact">Elindulok az otthonvásárlás útján!</a>
+            </button>
+          </div>
         </div>
               {/* Mobile View */}
-      <div className="sm:hidden w-full min-h-screen relative mb-20">
-        <h1 className="text-3xl text-center mb-10 text-white pt-10">Vágjon bele az első ingatlanába akár 10% önerővel!</h1>
-        <p>Pénzügyi szolgáltatásainkkal teljes körű támogatást nyújtunk, segítünk hitele intézésében és minden pénzügyi részletben. Építse fel álmai otthonát könnyedén velünk!</p>
+      <div className="sm:hidden mt-10 mx-10">
+        <h1 className="text-3xl text-center mb-10 ">Vágjon bele az első ingatlanába akár 10% önerővel!</h1>
+        <p className="text-center mb-5">Pénzügyi szolgáltatásainkkal teljes körű támogatást nyújtunk, segítünk hitele intézésében és minden pénzügyi részletben. Építse fel álmai otthonát könnyedén velünk!</p>
           <div className="h-full flex flex-col justify-center items-center">
             {hitelek.map((hitel, index) => (
-              <div key={index} className="bg-white py-8 my-2 px-4">
-                <h1 className="text-xl text-center">{hitel}</h1>
+              <div key={index} style={{ backgroundColor: "rgb(121, 116, 112)" }} className="rounded-lg w-60 py-8 my-2 px-4">
+                <h1 className="text-xl text-center text-white">{hitel}</h1>
               </div>
             ))}
           </div>
-          <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-            <a href="/#contact">Elindulok az otthonvásárlás útján!</a>
-          </button>
+          <button className="border border-darkgrey mt-10 mb-20 hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+              <a href="/#contact">Elindulok az otthonvásárlás útján!</a>
+            </button>
       </div>
     </div>
   );

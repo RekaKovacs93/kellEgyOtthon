@@ -31,7 +31,7 @@ const vevoData = [
 export default function Nyer(){
     return(
         // <div className="flex flex-col items-center w-full justify-center min-h-screen">
-    <div className="relative w-full">
+    <div className="relative w-full ">
       <div className="w-full hidden sm:flex flex-col sm:flex-row">
         <Image
           src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
@@ -63,9 +63,9 @@ export default function Nyer(){
         </div>
         </div>
               {/* Mobile View */}
-      <div className="sm:hidden w-full min-h-screen relative mb-20">
+      <div className="sm:hidden min-h-screen">
       <div
-          className="absolute bg-cover bg-center "
+          className=" bg-cover bg-center "
           style={{
             backgroundImage: "url('https://cdn.pixabay.com/photo/2021/04/22/18/50/frames-6199828_1280.jpg')",
           }}

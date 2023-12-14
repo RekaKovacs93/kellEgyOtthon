@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Viktor() {
   return (
-    <div className="flex items-center justify-center w-full min-h-screen">
-      <div className="w-full sm:w-3/5 px-8">
-        <h1 className="text-3xl text-center mb-2">Kedves Érdeklődő!</h1>
-        <div className="px-20">
+    <div className="flex items-center justify-center md:w-full min-h-screen">
+      <div className="md:w-full sm:w-3/5 md:px-8 px-10">
+        <h1 className="text-3xl text-center md:mb-2 mb-5">Kedves Érdeklődő!</h1>
+        <div className="md:px-20">
         <p className="text-xl mb-10 text-center">Örömmel üdvözlöm a Mindenkinek Kell Egy Otthon honlapján</p> 
 <p>Mezei Viktor vagyok, az alapító, több, mint 20 éves szakmai tapasztalattal rendelkezem az ingatlan és pénzügyi területeken. Küldetésem, hogy segítsek Önnek az ingatlanügyleteiben, legyen szó eladásról, vásárlásról, vagy a hozzá tartozó finanszírozásról.</p>
 

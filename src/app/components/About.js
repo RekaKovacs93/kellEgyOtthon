@@ -6,10 +6,10 @@ export default function About() {
       {/* Mobile View */}
       <div className="md:hidden flex flex-col items-center justify-between h-screen px-8 text-center">
         {/* <div className="text-center px-8 my-16"> */}
-          <h1 className="sm:text-3xl xs:text-xl mt-20">
+          <h1 className="text-3xl mt-20">
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
-          <p className="sm:text-lg xs:text-sm mb-5">
+          <p className="text-sm mb-5">
           A Kell Egy Otthon csapatának tagjai több évtizedes sikeres szakmai múlttal rendelkeznek.
 Biztosak vagyunk abban, hogy az Ön ingatlanát is el fogjuk adni, ezért az ehhez szükséges extra
 szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.

@@ -74,7 +74,7 @@ export default function Nyer(){
         <h1 className="text-3xl text-center mb-10 text-white pt-10">Mit nyer vele?</h1>
           <div className="h-full flex flex-col justify-center items-center">
             {vevoData.map((vevo, index) => (
-              <div key={index} className="bg-white py-8 my-2 px-4">
+              <div key={index} className="bg-white rounded-lg py-8 my-2 px-4">
                 <h1 className="text-xl text-center">{vevo.title}</h1>
                 <p className="text-sm text-center">{vevo.description}</p>
               </div>

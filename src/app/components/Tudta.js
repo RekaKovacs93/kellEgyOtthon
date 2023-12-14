@@ -77,7 +77,7 @@ export default function Tudta() {
 
 
       {/* Mobile Layout */}
-      <div className="md:hidden  min-h-screen mx-10">
+      <div className="md:hidden  mx-10 mt-20">
           {/* <Image
             src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
             alt="Interior Photo"

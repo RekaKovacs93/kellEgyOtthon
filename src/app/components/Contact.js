@@ -10,25 +10,26 @@ export default function Contact() {
           width={1024}
           height={100}
         />
-        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center mb-20">
-        <h1 className="text-center text-3xl text-white my-20 mt-40">Lépjen kapcsolatba cegünk képviselőjével</h1>
-        <div className=" bg-white rounded-lg  flex flex-col justify-center z-5">
-        <div className="flex flex-col justify-center py-10 px-40">
+        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center mb-20 ">
+        <h1 className="text-center text-3xl justify-center text-white mt-40 mb-10">Lépjen kapcsolatba cegünk képviselőjével</h1>
+        <div className=" bg-white rounded-lg flex justify-center z-5 mx-20">
+        <div className="flex gap-x-80 justify-center items-center py-10">
+        <div className=" justify-left w-1/4">
+            <h3 className="text-2xl mb-5"><b>Ingyenes kozultáció</b></h3>
+            <p className="text-lg">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek.Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
+          </div>
           
-          <div className="text-center justify-center">
-            <h3 className="text-2xl mb-5"><b>Mezei Viktor</b></h3>
+          <div className="text-right justify-right">
+            <h3 className="text-xl mb-5">Mezei Viktor</h3>
+            <div className="mb-2 flex">
+            <p className="text-3xl mr-2">&#x2709;</p>
+            <a href="mailto:email@gmail.com" className="text-lg mt-1">email@gmail.com</a>
+              {/* <span className="text-2xl">Email</span> */}
+            </div>
             <div className="mb-2">
-              <span className="mr-2 text-3xl">&#x2709;</span>
-              <span className="text-2xl">Email</span>
+              <span className="mr-2 text-lg">&#128222; +36 70 3413478</span>
+              {/* <span className="text-2xl">Phone</span> */}
             </div>
-            <a href="mailto:email@gmail.com" className="text-lg">
-              email@gmail.com
-            </a>
-            <div className="mb-2 mt-10">
-              <span className="mr-2 text-lg">&#128222;</span>
-              <span className="text-2xl">Phone</span>
-            </div>
-            <p className="text-lg">+36 70 3413478</p>
           </div>
         </div>
       </div>

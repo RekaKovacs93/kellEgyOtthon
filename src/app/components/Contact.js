@@ -13,7 +13,7 @@ export default function Contact() {
           className="hidden md:block"
         />
         <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center mb-20 ">
-        <h1 className="text-center text-3xl justify-center text-white mt-40 mb-40">Lépjen kapcsolatba cegünk képviselőjével</h1>
+        <h1 className="text-center text-4xl justify-center text-white mt-60 mb-40">Lépjen kapcsolatba cegünk képviselőjével</h1>
         <div className=" bg-white rounded-lg flex justify-center z-5 mx-20">
         <div className="flex gap-x-80 justify-center items-center py-10">
         <div className=" justify-left w-2/5">

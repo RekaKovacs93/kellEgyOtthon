@@ -18,12 +18,12 @@ Vevőink számára küldetésünk, hogy megtaláljuk azt az otthont, amely tök�
 az ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtató élmény legyen
 számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásában!
           </p>
-          <div className="flex justify-center mb-20">
+          <div className="flex justify-center mb-20 gap-x-5">
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#about">Eladó vagyok</a>
+              <a href="/#eladas">Eladó vagyok</a>
             </button>
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#about">Vevő vagyok</a>
+              <a href="/#vevo">Vevő vagyok</a>
             </button>
           </div>
         {/* </div> */}
@@ -52,12 +52,12 @@ számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásá
           <div className="flex gap-5 justify-center mt-10">
           <div>
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#eladas">Eladó vagyok</a>
+              <a href="/#eladas" className="text-xl">Eladó vagyok</a>
             </button>
           </div>
           <div>
             <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#vevo">Vevő vagyok</a>
+              <a href="/#vevo" className="text-xl">Vevő vagyok</a>
             </button>
           </div>
         </div>

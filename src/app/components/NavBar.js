@@ -24,6 +24,7 @@ export default function NavBar() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+
   }, [prevScrollPos]);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,7 +77,8 @@ export default function NavBar() {
             </svg>
           </label>
 
-          <div className={`menu fixed top-0 left-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+          <div className={`menu fixed top-0 right-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+
             <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs">X  Close</button>
             <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               RÓLUNK

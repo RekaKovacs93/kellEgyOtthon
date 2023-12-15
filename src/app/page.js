@@ -31,7 +31,7 @@ export default function Home() {
       <div className="min-h-screen md:w-full md:justify-center"><Nyer></Nyer></div>
       <div className="min-h-screen md:w-full md:justify-center"><Hitel></Hitel></div>
       <div className="md:min-h-screen md:w-full justify-center"><Viktor></Viktor></div>
-      <div className=" w-full justify-center" id="contact"><Contact></Contact></div>
+      <div className="w-full justify-center" id="contact"><Contact></Contact></div>
       
     </main>
   )

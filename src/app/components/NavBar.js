@@ -45,7 +45,7 @@ export default function NavBar() {
         </Link>
 
         <div className="hidden md:flex flex-grow items-center justify-end space-x-4">
-          <Link id="hover-underline" href="/#about" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="/" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
           <Link id="hover-underline" href="./elado" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">

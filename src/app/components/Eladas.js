@@ -31,7 +31,7 @@ export default function Eladas() {
             <li>Ingatlanát áralku nélkül, vagy azt minimálisra csökkentve tudjuk eladni</li>
         </ul>
           <div className="flex justify-center my-10">
-            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+            <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="/#contact">Kérem A Szakértői Támogatást</a>
             </button>
           </div>
@@ -87,7 +87,7 @@ export default function Eladas() {
           <p className="text-white text-center mt-10">Ha velünk szerződik olyan minőségi, hatékony szolgáltatásban lesz része, hogy ingatlana a legjobb áron és a legrövidebb időn belül kerül eladásra. Levesszünk Önről az ezzel járó terheket, így értékes idejét és energiáját, másra tudja fordítani. Szaktudásunkkal menedzseljük a folyamatot a kezdetektől a birtokbaadásig. Szándékunk, hogy az ingatlan eladása ne csupán hatékony, hanem örömteli folyamat is legyen az Ön számára. </p>
           <div className="flex gap-5 justify-center mt-5">
           <div>
-          <button className="mt-5 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="/#contact">Kérem A Szakértői Támogatást</a></button>
+          <button className="mt-5 border-2 border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="/#contact">Kérem A Szakértői Támogatást</a></button>
           </div>
         </div>
         </div>

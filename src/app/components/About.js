@@ -19,10 +19,10 @@ az ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtat
 számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásában!
           </p>
           <div className="flex justify-center mb-20 gap-x-5">
-            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+            <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="/#eladas">Eladó vagyok</a>
             </button>
-            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+            <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="/#vevo">Vevő vagyok</a>
             </button>
           </div>
@@ -51,12 +51,12 @@ számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásá
           </div> */}
           <div className="flex gap-5 justify-center mt-10">
           <div>
-            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+            <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="./elado" className="text-xl">Eladó vagyok</a>
             </button>
           </div>
           <div>
-            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+            <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="./vevo" className="text-xl">Vevő vagyok</a>
             </button>
           </div>

@@ -57,8 +57,8 @@ export default function Contact() {
           <p className="text-center">Ingatlanértékesítés másképp</p>
           <p className="mt-10 text-lg text-center">Mezei Viktor</p>
             <div className=" flex justify-center items-center">
-            <p className="text-3xl mr-2">&#x2709;</p>
-            <a href="mailto:email@gmail.com" className=" text-center mt-2 hover:underline">email@gmail.com</a>
+            <p className="text-4xl mr-2">&#x2709;</p>
+            <a href="mailto:email@gmail.com" className=" text-center mt-2">email@gmail.com</a>
               {/* <span className="text-2xl">Email</span> */}
             </div>
               <a href="tel:+447761321590" className="text-center">&#128222; +36 70 3413478</a>
@@ -69,7 +69,7 @@ export default function Contact() {
         {/* <div className="text-left items-center justify-center flex-grow">
                 <h1 className="text-xl font-bold">KELL EGY OTTHON</h1>
             </div> */}
-            <div className="text-right items-end flex-grow text-sm">
+            <div className="text-right items-end flex-grow text-xs">
                 <a href="">Adatkezelési Tájékoztató</a>
             </div>
         </div>

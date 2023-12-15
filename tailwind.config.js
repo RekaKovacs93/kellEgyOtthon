@@ -20,6 +20,9 @@ module.exports = {
         'xl': '1280px', // Extra-large devices (like desktops)
         // Add more breakpoints as needed
       },
+      colors: {
+        customBlack: 'rgba(96, 92, 89)', // Adjust opacity as needed
+      }
     },
     letterSpacing: {
       tightest: '-.075em',

@@ -48,11 +48,11 @@ export default function NavBar() {
           <Link id="hover-underline" href="/#about" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
-          <Link id="hover-underline" href="/#vevo" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
-            VEVŐKNEK
-          </Link>
-          <Link id="hover-underline" href="/#eladas" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="./elado" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             ELADÓKNAK
+          </Link>
+          <Link id="hover-underline" href="./vevo" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+            VEVŐKNEK
           </Link>
           {/* <Link id="hover-underline" href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             BLOG
@@ -80,18 +80,19 @@ export default function NavBar() {
             </svg>
           </label>
 
-          <div className={`menu fixed top-0 right-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-300 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+          <div className={`menu fixed top-0 right-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
 
             <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs">X  Close</button>
             <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               RÓLUNK
             </Link>
-            <Link href="/#vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-              VEVŐKNEK
-            </Link>
-            <Link href="/#eladas" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            <Link href="/elado" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               ELADÓKNAK
             </Link>
+            <Link href="/vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              VEVŐKNEK
+            </Link>
+
             
             {/* <Link href="/blogPage" onClick={closeMenu} className="block py-2 px-2 border-b">
               BLOG

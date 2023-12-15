@@ -53,7 +53,7 @@ export default function Contact() {
           <h3 className="text-2xl mb-5 text-center"><b>Ingyenes kozultáció</b></h3>
           <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek.Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
           <div className="text-center justify-center">
-          <h1 className="text-2xl text-center mt-10 font-bold">KELL EGY OTTHON</h1>
+          <h1 className="text-2xl text-center mt-40 font-bold">KELL EGY OTTHON</h1>
           <p className="text-center">Ingatlanértékesítés másképp</p>
           <p className="mt-10 text-lg text-center">Mezei Viktor</p>
             <div className=" flex justify-center items-center">

@@ -48,8 +48,11 @@ export default function NavBar() {
           <Link id="hover-underline" href="/#about" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
-          <Link id="hover-underline" href="/#services" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
-            SZOLGÁLTATÁSOK
+          <Link id="hover-underline" href="/#vevo" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+            VEVŐKNEK
+          </Link>
+          <Link id="hover-underline" href="/#eladas" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+            ELADÓKNAK
           </Link>
           {/* <Link id="hover-underline" href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             BLOG
@@ -83,9 +86,13 @@ export default function NavBar() {
             <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               RÓLUNK
             </Link>
-            <Link href="/#services" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-              SZOLGÁLTATÁSOK
+            <Link href="/#vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              VEVŐKNEK
             </Link>
+            <Link href="/#eladas" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              ELADÓKNAK
+            </Link>
+            
             {/* <Link href="/blogPage" onClick={closeMenu} className="block py-2 px-2 border-b">
               BLOG
             </Link> */}

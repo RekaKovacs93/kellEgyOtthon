@@ -52,7 +52,7 @@ export default function Contact() {
         {/* <div className="bg-white rounded-lg py-8 px-4 sm:px-8"> */}
           <h3 className="text-2xl mb-5 text-center"><b>Ingyenes kozultáció</b></h3>
           <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek.Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
-          <div className="text-right justify-center">
+          <div className="text-center justify-center">
           <h1 className="text-2xl text-center mt-10 font-bold">KELL EGY OTTHON</h1>
           <p className="text-center">Ingatlanértékesítés másképp</p>
           <p className="mt-10 text-lg text-center">Mezei Viktor</p>
@@ -61,7 +61,7 @@ export default function Contact() {
             <a href="mailto:email@gmail.com" className=" text-center mt-2 hover:underline">email@gmail.com</a>
               {/* <span className="text-2xl">Email</span> */}
             </div>
-              <a href="tel:+447761321590" className=" text-center">&#128222; +36 70 3413478</a>
+              <a href="tel:+447761321590" className="text-center">&#128222; +36 70 3413478</a>
               {/* <span className="text-2xl">Phone</span> */}
             </div>
         {/* </div> */}

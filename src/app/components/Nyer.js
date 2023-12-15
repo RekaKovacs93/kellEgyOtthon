@@ -34,13 +34,13 @@ export default function Nyer(){
     <div className="relative w-full ">
       <div className="w-full hidden sm:flex flex-col sm:flex-row">
         <Image
-          src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
+          src="https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148898_1280.jpg"
           alt="Interior Photo"
           layout="responsive"
           width={1024}
           height={500}
         />
-        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center mb-20">
+        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center justify-center mb-20">
             <h1 className="text-3xl text-center mb-10 text-white">Mit nyer vele?</h1>
             <div className="flex flex-wrap gap-4 justify-center">
                 {vevoData.map((vevo, index) => (
@@ -67,10 +67,10 @@ export default function Nyer(){
       <div
           className=" bg-cover bg-center "
           style={{
-            backgroundImage: "url('https://cdn.pixabay.com/photo/2021/04/22/18/50/frames-6199828_1280.jpg')",
+            backgroundImage: "url('https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148898_1280.jpg')",
           }}
         >
-        <div className="flex flex-col justify-center items-center h-full bg-black bg-opacity-80 p-10">
+        <div className="flex flex-col justify-center items-center h-full bg-black bg-opacity-60 p-10">
         <h1 className="text-3xl text-center mb-10 text-white pt-10">Mit nyer vele?</h1>
           <div className="h-full flex flex-col justify-center items-center">
             {vevoData.map((vevo, index) => (

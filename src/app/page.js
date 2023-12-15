@@ -20,17 +20,17 @@ export default function Home() {
 
       <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
     
-      <div id="home" className="w-full relative"><Hero></Hero></div>
+      <div id="home" className="w-full h-screen relative"><Hero></Hero></div>
       {/* <div><Choose></Choose></div> */}
       <div id="about" className="md:min-h-screen"><About></About></div>
-      <div id="eladas" className="md:min-h-screen w-full"><Eladas></Eladas></div>
-      <div className="md:min-h-screen w-full"><Ingatlan></Ingatlan></div>
+      {/* <div id="eladas" className="md:min-h-screen min-h-full w-full"><Eladas></Eladas></div>
+      <div className="md:min-h-screen min-h-full w-full"><Ingatlan></Ingatlan></div>
       <div id="services" className="md:min-h-screen"><Services></Services></div>
       <div className="w-full relative md:min-h-screen"><Tudta></Tudta></div>
       <div id="vevo" className="md:min-h-screen justify-center"><Vevo></Vevo></div>
       <div className="min-h-screen md:w-full md:justify-center"><Nyer></Nyer></div>
       <div className="min-h-screen md:w-full md:justify-center"><Hitel></Hitel></div>
-      <div className="md:min-h-screen md:w-full justify-center"><Viktor></Viktor></div>
+      <div className="md:min-h-screen md:w-full justify-center"><Viktor></Viktor></div> */}
       <div className="w-full justify-center" id="contact"><Contact></Contact></div>
       
     </main>

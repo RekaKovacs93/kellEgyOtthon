@@ -2,23 +2,23 @@ import Image from "next/image";
 
 const servicesData = [
     {
-        title: "Profi Fotós",
-        description: "Tapasztalt, ingatlanokra szakosodott fotósunk készíti el a fényképeket, így hirdetése garantáltan kiemelkedik a többi közül.",
+        title: "Profi fotós",
+        description: "Tapasztalt, ingatlanokra szakosodott fotós csapat készíti el a fényképeket, így otthona garantáltan kiemelkedik a többi közül.",
         imageURL: "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
     },
     {
-        title: "Home Staging",
-        description: "Home Staging szolgáltatásunkkal úgy dekoráljuk, vagy rendezzük be ingatlanát, hogy az megteremtse az otthon ellenállhatatlan vonzerejét potenciális vevői számára.",
+        title: "Ingatlan felkészítés",
+        description: "Ingatlan felkészítés szolgáltatásunkkal úgy dekoráljuk, vagy rendezzük be ingatlanát, hogy az megteremtse az otthon ellenállhatatlan vonzerejét potenciális vevői számára.",
         imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
     },
     {
-        title: "3D-s Ingatlanséta",
-        description: "A 3D-s ingatlanséta egy virtuális túra, amely lehetővé teszi a hirdetését megtekintők számára, hogy online térben sétálják körbe egy ingatlanát, mintha valóságban lennének ott. Így megtekinhetik az egész teret háromdimenziós formában.",
+        title: "3D-s ingatlanséta",
+        description: "A 3D-s ingatlanséta egy virtuális túra, amely lehetővé teszi a hirdetést megtekintők számára, hogy online térben sétálják körbe az ingatlanát, mintha valóságban is ott lennének. Így megtekinhetik az egész teret háromdimenziós formában.",
         imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
     },
     {
         title: "Drónfelvétel",
-        description: "A drónfelvételeink lenyűgöző és részletes légi nézetet biztosítanak, kiemelik az ingatlan környezetét és egyedi perspektívát nyújtanak, növelve ezzel az otthonának vonzerejét és értékét.",
+        description: "A drónfelvételeink lenyűgöző és részletes légi nézetet biztosítanak, kiemelik az ingatlan környezetét és egyedi perspektívát nyújtanak, növelve ezzel otthonának vonzerejét és értékét.",
         imageURL: "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
     },
     {
@@ -28,7 +28,7 @@ const servicesData = [
     },
     {
       title: "Alacsony jutalék",
-      description: "A nagy hálózatok jutalékszintje alatt dolgozom - elégedett lesz a mértékével.",
+      description: "Ebben is arra törekszünk, hogy partnereink elégedettek legyenek. Magasabb szintű szolgáltatást kínálunk, miközben alacsonyabb jutalékszintet számolunk fel, mint a nagy hálózatok.",
       imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
     }
 ];

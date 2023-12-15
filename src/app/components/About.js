@@ -30,7 +30,7 @@ számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásá
       </div>
 
       {/* Desktop View */}
-      <div className="hidden md:flex items-center justify-center min-h-screen">
+      <div className="hidden md:flex items-center justify-center min-h-screen mt-20">
         <div className="w-2/5 mx-20 px-8 py-10">
           <h1 className="text-2xl text-center mb-12">
             Miben vagyunk mások, mint a többi ingatlanközvetítő cég?

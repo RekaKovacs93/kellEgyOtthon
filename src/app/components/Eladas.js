@@ -6,7 +6,7 @@ export default function Eladas() {
       {/* Mobile View */}
       <div className="md:hidden flex flex-col items-center justify-between min-h-screen px-8 ">
         {/* <div className="text-center px-8 my-16"> */}
-          <h1 className="text-3xl my-10 text-center">
+          <h1 className="text-3xl my-10 text-center mt-20">
           Egy ingatlan eladása teljes munkaidős állás
           </h1>
           <p className="text-sm text-center mb-10">

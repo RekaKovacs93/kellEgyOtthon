@@ -17,7 +17,7 @@ export default function Vevo() {
         <div className="w-2/3 relative justify-end hidden md:block">
           <div className="aspect-w-6 aspect-h-4 items-right">
             <Image
-            src="https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_1280.jpg"
+            src="https://cdn.pixabay.com/photo/2023/11/06/02/20/kitchen-8368661_1280.jpg"
             alt="image of bedroom"
             width={1200} // Add width here
             height={800} // Add height here

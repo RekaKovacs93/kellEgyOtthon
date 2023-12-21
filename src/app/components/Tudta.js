@@ -5,7 +5,7 @@ export default function Tudta() {
 <div className="relative w-full md:mt-20 mt-10 ">
   <div className="w-full hidden md:block">
     <Image
-      src="https://cdn.pixabay.com/photo/2017/07/30/23/59/garlic-2556022_1280.jpg"
+      src="https://cdn.pixabay.com/photo/2023/11/13/11/51/living-room-8385326_1280.jpg"
       alt="Interior Photo"
       layout="responsive"
       width={1024}

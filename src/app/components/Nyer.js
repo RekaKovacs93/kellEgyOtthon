@@ -34,7 +34,7 @@ export default function Nyer(){
     <div className="relative w-full ">
       <div className="w-full hidden sm:flex flex-col sm:flex-row">
         <Image
-          src="https://cdn.pixabay.com/photo/2019/04/23/09/04/indoor-4148898_1280.jpg"
+          src="https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg"
           alt="Interior Photo"
           layout="responsive"
           width={1024}

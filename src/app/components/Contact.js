@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="md:relative w-full md:h-1/3 md:overflow-clip mt-20">
     <div className="hidden md:block">
         <Image
-          src="https://cdn.pixabay.com/photo/2020/06/25/10/21/architecture-5339245_1280.jpg"
+          src="https://cdn.pixabay.com/photo/2015/01/08/18/25/startup-593324_1280.jpg"
           alt="Interior Photo"
           layout="responsive"
           width={1024}

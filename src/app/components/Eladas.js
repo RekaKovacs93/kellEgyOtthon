@@ -42,7 +42,7 @@ export default function Eladas() {
       <div className="relative w-full my-20">
       <div className="hidden md:flex items-center justify-center min-h-screen"
           style={{
-            backgroundImage: `url('https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg')`,
+            backgroundImage: `url('https://cdn.pixabay.com/photo/2023/11/21/11/38/table-8403065_1280.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}>
@@ -52,7 +52,7 @@ export default function Eladas() {
           // layout="responsive"
           fill="true"
         /> */}
-        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-70 flex items-center justify-center px-20">
+        <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center justify-center px-20">
         {/* <div className="absolute w-3/4 1/2 bg-white z-5 flex flex-col items-center p-20"> */}
           <h1 className="text-3xl text-center mb-10 text-white">
           Egy ingatlan eladása teljes munkaidős állás

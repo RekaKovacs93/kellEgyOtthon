@@ -19,7 +19,7 @@ const servicesData = [
     {
         title: "Drónfelvétel",
         description: "A drónfelvételeink lenyűgöző és részletes légi nézetet biztosítanak, kiemelik az ingatlan környezetét és egyedi perspektívát nyújtanak, növelve ezzel otthonának vonzerejét és értékét.",
-        imageURL: "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+        imageURL: "https://cdn.pixabay.com/photo/2017/08/06/03/04/drone-2588156_1280.jpg"
     },
     {
       title: "Hivatalos értékbecslő",

@@ -72,20 +72,20 @@ export default function Ingatlan() {
           />  */}
           {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center text-center px-4"> */}
             <h1 className=" text-3xl text-center mb-10">Ingatlana eladása valószínűleg élete egyik legnagyobb pénzügyi döntése lesz</h1>
-            <p className="text-sm px-4 mb-10">
+            <p className=" px-4 mb-10">
             Egy otthon eladása a tulajdonos számára gyakran érzelmi kihívásokkal jár. Sok esetben az érzelmi kötődés miatt hajlamosak vagyunk túlbecsülni otthonunk értékét, vagy éppen nem megfontoltan reagálni az elképzelésünktől eltérő  vételi ajánlatra, mert az az önérzetünket érinti.
             </p>
-            <p className="text-sm px-4 mb-10 text-center">
+            <p className=" px-4 mb-10 text-center">
             <b>Ezek a hibák az eladási folyamat hatékonyságát csökkentik.</b>
             </p>
-            <p className="text-sm px-4 mb-10">
+            <p className=" px-4 mb-10">
             Professzionális segítségünkkel lehetőség van a tárgyilagos megközelítésre és az érzelmi tényezők kiszűrésére az árképzésnél. Továbbá, segítünk az ingatlan optimalizált bemutatásában, növelve ezzel az érdeklődők számát, és hatékonyan kezeljük az alku folyamatot, hogy a tulajdonos a lehető legjobb ajánlatot kapja.
             </p>
-            <p className="text-sm px-4 mb-10">
+            <p className=" px-4 mb-10">
             Emellett, jogi problémák is felmerülhetnek, például hiányzó vagy hibás dokumentáció  és számtalan egyéb buktató. Szolgáltatásunk részeként gondoskodunk arról, hogy a tulajdonost elkerülje az esetleges jogi kihívásokat. Széles vevőkörrel rendelkezünk, így nem csak hirdetés, hanem ajánlás útján is hatékony az értékesítésünk.
             </p>
             {/* <div className="bg-white absolute bottom-0"> */}
-            <div className="flex px-10">
+            <div className="flex mx-5">
               <div className="mr-6">
                 <ul className="list-none list-inside text-left">
                   <li className="mb-2">&#10003; Objektív szemlélet</li>

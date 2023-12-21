@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="md:relative w-full md:h-1/3 md:overflow-clip mt-20">
-    <div className="hidden md:block">
+    <div className="lg:relative w-full md:h-1/3 md:overflow-clip mt-20">
+    <div className="hidden lg:block">
         <Image
           src="https://cdn.pixabay.com/photo/2015/01/08/18/25/startup-593324_1280.jpg"
           alt="Interior Photo"
@@ -13,7 +13,10 @@ export default function Contact() {
           className="hidden md:block"
         />
         <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center mb-20 ">
-        <h1 className="text-center text-4xl justify-center text-white mt-60 mb-40">Lépjen kapcsolatba cegünk képviselőjével</h1>
+        <div className="justify-center">
+
+     
+        <h1 className="text-center text-4xl justify-center text-white mt-40 mb-40">Lépjen kapcsolatba cegünk képviselőjével</h1>
         <div className=" bg-white rounded-lg flex justify-center z-5 mx-20">
         <div className="flex gap-x-80 justify-center items-center py-10">
         <div className=" justify-left w-2/5">
@@ -37,6 +40,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      </div>
       <div className="absolute bottom-0 bg-black bg-opacity-70 flex w-screen mt-20 px-14 py-10 md:px-8">
             <div className="text-left items-center justify-center flex-grow">
                 <h1 className="text-xl font-bold">KELL EGY OTTHON</h1>
@@ -48,7 +52,7 @@ export default function Contact() {
     </div>
     </div>
     {/* Mobile View */}
-    <div className="sm:hidden mt-20 ">
+    <div className="lg:hidden mt-20 ">
         {/* <div className="bg-white rounded-lg py-8 px-4 sm:px-8"> */}
           <h3 className="text-2xl mb-5 text-center"><b>Ingyenes kozultáció</b></h3>
           <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek.Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>

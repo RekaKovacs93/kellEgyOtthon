@@ -32,7 +32,7 @@ export default function Nyer(){
     return(
         // <div className="flex flex-col items-center w-full justify-center min-h-screen">
     <div className="relative w-full ">
-      <div className="w-full hidden sm:flex flex-col sm:flex-row">
+      <div className="w-full hidden lg:flex flex-col lg:flex-row">
         <Image
           src="https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg"
           alt="Interior Photo"
@@ -45,7 +45,7 @@ export default function Nyer(){
             <div className="flex flex-wrap gap-4 justify-center">
                 {vevoData.map((vevo, index) => (
                     <div key={index} className="relative">
-                        <div className="h-48 w-48 md:h-44 md:w-96 relative bg-white rounded-lg py- flex flex-col justify-center">
+                        <div className="h-48 w-48 lg:h-44 lg:w-96 relative bg-white rounded-lg py- flex flex-col justify-center">
                             
                                 <h1 className="text-xl text-center">{vevo.title}</h1>
                                 {/* <h1 className="text-center text-2xl text-white">{vevo.title}</h1> */}
@@ -55,7 +55,7 @@ export default function Nyer(){
                     
                 ))}
             </div>
-            <div className="flex items-center justify-center mt-10">
+            <div className="flexx items-center justify-center mt-10">
             <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
                         <a href="/#contact">Szeretném megtalálni álmaim otthonát</a>
                     </button>
@@ -63,7 +63,7 @@ export default function Nyer(){
         </div>
         </div>
               {/* Mobile View */}
-      <div className="sm:hidden min-h-screen">
+      <div className="lg:hidden min-h-screen">
       <div
           className=" bg-cover bg-center "
           style={{

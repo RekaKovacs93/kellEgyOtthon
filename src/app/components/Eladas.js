@@ -4,13 +4,13 @@ export default function Eladas() {
   return (
     <div className="">
       {/* Mobile View */}
-      <div className="md:hidden flex flex-col items-center justify-between min-h-screen px-8 ">
+      <div className="lg:hidden flex flex-col items-center justify-between min-h-screen px-8 ">
         {/* <div className="text-center px-8 my-16"> */}
           <h1 className="text-3xl my-10 text-center mt-20">
           Egy ingatlan eladása teljes munkaidős állás
           </h1>
-          <p className="text-sm text-center mb-10">
-          Amikor valaki úgy dönt, hogy saját maga szeretné eladni ingatlanát általában nem látja előre, hogy mennyi időbfektetéssel és stresszel jár. Kínálati piac van, tehát több az eladó ingatlan, mint a vásárló. Ha nem cselekszik azonnal a vevő továbbáll, hívja a következőt. 
+          <p className=" text-center mb-10">
+          Amikor valaki úgy dönt, hogy saját maga szeretné eladni ingatlanát általában nem látja előre, hogy mennyi időbfektetéssel és stresszel jár. Kínálati piac van, tehát <b>több az eladó ingatlan, mint a vásárló.</b> Ha nem cselekszik azonnal a vevő továbbáll, hívja a következőt. 
           </p>
           <p className="text-lg"><b>Ehhez azonban az kell hogy…</b></p>
           <ul className="list-disc list-inside mt-5 mb-10">
@@ -40,7 +40,7 @@ export default function Eladas() {
 
       {/* Desktop View */}
       <div className="relative w-full my-20">
-      <div className="hidden md:flex items-center justify-center min-h-screen"
+      <div className="hidden lg:flex items-center justify-center min-h-screen"
           style={{
             backgroundImage: `url('https://cdn.pixabay.com/photo/2023/11/21/11/38/table-8403065_1280.jpg')`,
             backgroundSize: 'cover',

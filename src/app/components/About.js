@@ -20,7 +20,7 @@ számukra. Várjuk, hogy segíthessünk Önnek az ideális otthon megtalálásá
           </p>
           <div className="flex justify-center mb-20 gap-x-5">
             <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="./eladas">Eladó vagyok</a>
+              <a href="./elado">Eladó vagyok</a>
             </button>
             <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="./vevo">Vevő vagyok</a>

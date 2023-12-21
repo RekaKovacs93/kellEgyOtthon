@@ -91,7 +91,7 @@ body {
 
 #fade-in {
   opacity: 0;
-  animation: fadeInAnimation 1s ease-in-out forwards;
+  animation: fadeInAnimation 3s ease-in-out forwards;
 }
 
 @keyframes fadeInAnimation {

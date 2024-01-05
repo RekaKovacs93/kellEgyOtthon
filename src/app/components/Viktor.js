@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Viktor() {
   return (
-    <div className="flex items-center justify-center md:w-full min-h-screen">
+    <div className="flex items-center justify-center md:w-full min-h-screen mt-20">
       <div className="md:w-full sm:w-3/5 md:px-8 px-10">
         <h1 className="text-3xl text-center md:mb-2 mb-5">Kedves Érdeklődő!</h1>
         <div className="md:px-20">

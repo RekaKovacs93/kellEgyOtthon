@@ -4,7 +4,7 @@ const servicesData = [
     {
         title: "Profi fotós",
         description: "Tapasztalt, ingatlanokra szakosodott fotós csapat készíti el a fényképeket, így otthona garantáltan kiemelkedik a többi közül.",
-        imageURL: "https://cdn.pixabay.com/photo/2014/05/22/22/05/photo-351528_1280.jpg",
+        imageURL: "https://cdn.pixabay.com/photo/2014/08/22/18/46/photographer-424620_1280.jpg",
     },
     {
         title: "Home Staging",

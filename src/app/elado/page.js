@@ -14,7 +14,7 @@ export default function Home() {
       <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
     
 
-      <div id="eladas" className="md:min-h-screen min-h-full w-full"><Eladas></Eladas></div>
+      <div id="eladas" className="md:min-h-screen w-full"><Eladas></Eladas></div>
       <div className="md:min-h-screen min-h-full w-full"><Ingatlan></Ingatlan></div>
       <div id="services" className="md:min-h-screen"><Services></Services></div>
       <div className="w-full relative md:min-h-screen"><Tudta></Tudta></div>

@@ -43,7 +43,7 @@ export default function Contact() {
       </div>
       <div className="absolute bottom-0 bg-black bg-opacity-70 flex w-screen mt-20 px-14 py-10 md:px-8">
             <div className="text-left items-center justify-center flex-grow">
-                <h1 className="text-xl font-bold">KELL EGY OTTHON</h1>
+                <h1 className="text-xl font-bold">MINDENKINEK KELL EGY OTTHON</h1>
             </div>
             <div className="text-right items-end flex-grow">
                 <a href="">Adatkezelési Tájékoztató</a>

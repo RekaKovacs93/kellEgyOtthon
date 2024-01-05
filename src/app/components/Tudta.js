@@ -67,7 +67,7 @@ export default function Tudta() {
       </div>
       <div className="flex items-center justify-center mt-20">
           <button className="border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-            <a href="/#contact">Kérem a Profi Segítséget!</a>
+            <a href="/#contact">Szeretnék kiemelkedni!</a>
           </button>
         </div>
     </div>
@@ -78,19 +78,12 @@ export default function Tudta() {
 
       {/* Mobile Layout */}
       <div className="lg:hidden  mx-10 mt-20">
-          {/* <Image
-            src="https://cdn.pixabay.com/photo/2023/08/26/13/54/room-8215035_1280.jpg"
-            alt="Interior Photo"
-            layout="fill"
-            objectFit="cover"
-            className="absolute top-0 left-0 w-full h-full"
-          /> */}
-          {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center text-center px-4"> */}
+          
+          
             <h1 className=" text-3xl mb-10 text-center">Az eddig amatőr módon feladott hirdetések ideje lejárt.</h1>
             <p className="  text-center mb-10">
               Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
             </p>
-            {/* <div className="bg-white absolute bottom-0"> */}
             <div className="flex">
               <div className="mr-8 ">
                 <h2 className=" mb-5 pt-2"><b>Ezért van ránk szüksége</b></h2>
@@ -113,11 +106,9 @@ export default function Tudta() {
             </div>
             <div className="flex justify-center my-10 ">
               <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-                <a href="/#contact">Kérem a Profi Segítséget!</a>
+                <a href="/#contact">Szeretnék kiemelkedni'</a>
               </button>
             </div>
-          {/* </div> */}
-        {/* </div> */}
       </div>
     </div>
   );

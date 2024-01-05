@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="flex gap-x-80 justify-center items-center py-10">
         <div className=" justify-left w-2/5">
             <h3 className="text-2xl mb-5"><b>Ingyenes kozultáció</b></h3>
-            <p className="text-lg">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek.Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
+            <p className="text-lg">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek. Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
           </div>
           
           <div className="text-right justify-right">
@@ -55,7 +55,7 @@ export default function Contact() {
     <div className="lg:hidden mt-20 ">
         {/* <div className="bg-white rounded-lg py-8 px-4 sm:px-8"> */}
           <h3 className="text-2xl mb-5 text-center"><b>Ingyenes kozultáció</b></h3>
-          <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek.Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
+          <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek. Ha velünk szerződik, a kínálati piac bőségéből kiválsztjuk az ön igényeinek legmegfelelőbb ingatlant, ingatlanokat.</p>
           <div className="text-center justify-center">
           <h1 className="text-2xl text-center mt-40 font-bold">KELL EGY OTTHON</h1>
           <p className="text-center">Ingatlanértékesítés másképp</p>

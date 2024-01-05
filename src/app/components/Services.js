@@ -4,17 +4,17 @@ const servicesData = [
     {
         title: "Profi fotós",
         description: "Tapasztalt, ingatlanokra szakosodott fotós csapat készíti el a fényképeket, így otthona garantáltan kiemelkedik a többi közül.",
-        imageURL: "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
+        imageURL: "https://cdn.pixabay.com/photo/2014/05/22/22/05/photo-351528_1280.jpg",
     },
     {
         title: "Home Staging",
         description: "Home Staging szolgáltatásunkkal úgy dekoráljuk, vagy rendezzük be ingatlanát, hogy az megteremtse az otthon ellenállhatatlan vonzerejét potenciális vevők számára.",
-        imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
+        imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
     },
     {
         title: "3D-s ingatlanséta",
         description: "A 3D-s ingatlanséta egy virtuális túra, amely lehetővé teszi a hirdetést megtekintők számára, hogy online térben sétálják körbe az ingatlanát, mintha valóságban is ott lennének. Így megtekinthetik az egész teret háromdimenziós formában.",
-        imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
+        imageURL: "https://cdn.pixabay.com/photo/2014/02/25/22/06/staircase-274614_1280.jpg"
     },
     {
         title: "Drónfelvétel",
@@ -24,12 +24,12 @@ const servicesData = [
     {
       title: "Hivatalos értékbecslő",
       description: "Szeretnénk, hogy teljes biztonságban érezze magát az egész folyamat során. Amennyiben kétségei merülnek fel az általunk meghatározott reális eladási árral kapcsolatban, igénybe vesszük egy értékbecslő szakvéleményét is.",
-      imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
+      imageURL: "https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"
     },
     {
       title: "Alacsony jutalék",
       description: "Ebben is arra törekszünk, hogy partnereink elégedettek legyenek. Magasabb szintű szolgáltatást kínálunk, miközben alacsonyabb jutalékszintet számolunk fel, mint a nagy hálózatok.",
-      imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
+      imageURL: "https://cdn.pixabay.com/photo/2018/01/28/10/08/purchase-3113198_1280.jpg"
     }
 ];
 
@@ -86,7 +86,7 @@ export default function Services() {
 
       <div className="flex justify-center mt-8">
         <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-          <a href="/#contact">Kérem az ingyenes szolgáltatásokat</a>
+          <a href="/#contact">Kérem az ingyenes szolgáltatásokat!</a>
         </button>
       </div>
     </div>

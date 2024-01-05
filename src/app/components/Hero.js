@@ -14,8 +14,7 @@ export default function Hero() {
                 />
                 <div className="absolute top-0 left-0 w-2/5 h-full bg-black bg-opacity-60 flex flex-col items-center justify-center p-12">
                     <h1 className="text-white text-center text-3xl mb-10"><b>Üdvözöljük a Mindenkinek Kell Egy Otthon honlapján!</b></h1>
-                    <p className="text-white px-8 text-lg">Fedezze fel a Mindenkinek Kell Egy Otthon kivételes szolgáltatásait és találja meg álmai
-otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk bizalommal!</p>
+                    <p className="text-white px-8 text-lg">Fedezze fel a Mindenkinek Kell Egy Otthon kivételes szolgáltatásait, és találja meg álmai otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk bizalommal!</p>
                     <button className="mt-5 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="/#contact">Hívjon minket most!</a></button>
                 </div>
             </div>
@@ -29,8 +28,7 @@ otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk biza
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-customBlack bg-opacity-70 flex flex-col items-center justify-center text-center px-14">
                     <h1 className="text-white text-3xl mb-6"><b>Üdvözöljük a Mindenkinek Kell Egy Otthon honlapján!</b></h1>
-                    <p className="text-white text- px-4">Fedezze fel a Mindenkinek Kell Egy Otthon kivételes szolgáltatásait és találja meg álmai
-otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk bizalommal!</p>
+                    <p className="text-white text- px-4">Fedezze fel a Mindenkinek Kell Egy Otthon kivételes szolgáltatásait, és találja meg álmai otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk bizalommal!</p>
                     <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
                         <a href="/#contact">Hívjon minket most!</a>
                     </button>

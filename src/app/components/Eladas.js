@@ -10,7 +10,7 @@ export default function Eladas() {
           Egy ingatlan eladása teljes munkaidős állás
           </h1>
           <p className=" text-center mb-10">
-          Amikor valaki úgy dönt, hogy saját maga szeretné eladni ingatlanát általában nem látja előre, hogy mennyi időbfektetéssel és stresszel jár. Kínálati piac van, tehát <b>több az eladó ingatlan, mint a vásárló.</b> Ha nem cselekszik azonnal a vevő továbbáll, hívja a következőt. 
+          Amikor valaki úgy dönt, hogy saját maga szeretné eladni ingatlanát, általában nem látja előre, hogy mennyi időbefektetéssel és stresszel jár. <b>Kínálati piac van, tehát több az eladó ingatlan, mint a vásárló. Ha nem cselekszik azonnal, a vevő továbbáll, hívja a következőt.</b>
           </p>
           <p className="text-lg"><b>Ehhez azonban az kell hogy…</b></p>
           <ul className="list-disc list-inside mt-5 mb-10">
@@ -58,7 +58,7 @@ export default function Eladas() {
           Egy ingatlan eladása teljes munkaidős állás
           </h1>
           <p className="text-lg text-center text-white mb-10">
-          Amikor valaki úgy dönt, hogy saját maga szeretné eladni ingatlanát általában nem látja előre, hogy mennyi időbfektetéssel és stresszel jár. Kínálati piac van, tehát több az eladó ingatlan, mint a vásárló. Ha nem cselekszik azonnal a vevő továbbáll, hívja a következőt. 
+          Amikor valaki úgy dönt, hogy saját maga szeretné eladni ingatlanát, általában nem látja előre, hogy mennyi időbefektetéssel és stresszel jár. <b>Kínálati piac van, tehát több az eladó ingatlan, mint a vásárló. Ha nem cselekszik azonnal, a vevő továbbáll, hívja a következőt.</b> 
           </p>
           <div className="flex gap-10 mb-5">
           <div className=" bg-white z-5 w-3/5 flex rounded-lg flex-col items-center px-10 py-5">
@@ -84,7 +84,7 @@ export default function Eladas() {
               </ul>
           </div>
           </div>
-          <p className="text-white text-center mt-10">Ha velünk szerződik olyan minőségi, hatékony szolgáltatásban lesz része, hogy ingatlana a legjobb áron és a legrövidebb időn belül kerül eladásra. Levesszünk Önről az ezzel járó terheket, így értékes idejét és energiáját, másra tudja fordítani. Szaktudásunkkal menedzseljük a folyamatot a kezdetektől a birtokbaadásig. Szándékunk, hogy az ingatlan eladása ne csupán hatékony, hanem örömteli folyamat is legyen az Ön számára. </p>
+          <p className="text-white text-center mt-10">Ha velünk szerződik, olyan minőségi, hatékony szolgáltatásban lesz része, hogy ingatlana a legjobb áron és a legrövidebb időn belül kerül eladásra. Levesszük Önről az ezzel járó terheket, így értékes idejét és energiáját, másra tudja fordítani. Szaktudásunkkal menedzseljük a folyamatot a kezdetektől a birtokbaadásig. Szándékunk, hogy az ingatlan eladása ne csupán hatékony, hanem örömteli folyamat is legyen az Ön számára.</p>
           <div className="flex gap-5 justify-center mt-5">
           <div>
           <button className="mt-5 border-2 border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="/#contact">Kérem A Szakértői Támogatást</a></button>

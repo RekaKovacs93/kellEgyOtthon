@@ -7,13 +7,13 @@ const servicesData = [
         imageURL: "https://cdn.pixabay.com/photo/2019/09/11/04/43/interior-design-4467768_1280.jpg",
     },
     {
-        title: "Ingatlan felkészítés",
-        description: "Ingatlan felkészítés szolgáltatásunkkal úgy dekoráljuk, vagy rendezzük be ingatlanát, hogy az megteremtse az otthon ellenállhatatlan vonzerejét potenciális vevői számára.",
+        title: "Home Staging",
+        description: "Home Staging szolgáltatásunkkal úgy dekoráljuk, vagy rendezzük be ingatlanát, hogy az megteremtse az otthon ellenállhatatlan vonzerejét potenciális vevők számára.",
         imageURL: "https://cdn.pixabay.com/photo/2022/04/14/13/36/bedroom-7132434_1280.jpg"
     },
     {
         title: "3D-s ingatlanséta",
-        description: "A 3D-s ingatlanséta egy virtuális túra, amely lehetővé teszi a hirdetést megtekintők számára, hogy online térben sétálják körbe az ingatlanát, mintha valóságban is ott lennének. Így megtekinhetik az egész teret háromdimenziós formában.",
+        description: "A 3D-s ingatlanséta egy virtuális túra, amely lehetővé teszi a hirdetést megtekintők számára, hogy online térben sétálják körbe az ingatlanát, mintha valóságban is ott lennének. Így megtekinthetik az egész teret háromdimenziós formában.",
         imageURL: "https://cdn.pixabay.com/photo/2023/04/13/07/27/bedroom-7921915_1280.jpg"
     },
     {

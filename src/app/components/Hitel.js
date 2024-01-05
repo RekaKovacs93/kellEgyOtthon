@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const hitelek = ["Lakáshitel", "Személyi Kölcsön", "Bankszámla", "Megtakarítások", "CSOK +", "Babaváró Hitel" ]
+const hitelek = ["Lakáshitel", "Személyi Kölcsön", "Bankszámla", "Megtakarítások", "CSOK + *", "Babaváró Hitel" ]
 
 export default function Hitel(){
     return(
@@ -19,6 +19,7 @@ export default function Hitel(){
                     
                 ))}
             </div>
+            <p className="mt-5">* További informaciókért kattintson <a target="/blank" href="https://www.portfolio.hu/bank/20240102/megerkezett-a-csok-plusz-2024-es-feltetelek-tablazatok-reszletek-egy-helyen-660543" className="underline">ide</a></p>
             <div className="flex items-center justify-center mt-10">
             <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="/#contact">Elindulok az otthonvásárlás útján!</a>

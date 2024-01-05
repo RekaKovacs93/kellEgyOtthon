@@ -3,28 +3,28 @@ import Image from "next/image"
 const vevoData = [
     {
         title: "Személyre szabott szolgáltatás",
-        description: "Tapasztalt ingatlan tanácsadóink az Ön igényeihez igazított személyre szabott szolgáltatást nyújtják. Figyelembe veszik elvárásait, költségvetését és az egyedi kívánságait, hogy segítsenek megtalálni álmai otthonát"
+        description: "Tapasztalatunkkal az Ön igényeihez igazított személyre szabott szolgáltatást tudunk nyújtani. Figyelembe vesszük elvárásait, költségvetését és az egyedi kívánságait, hogy segítségünkkel megtalálja álmai otthonát."
     },
     {
         title: "Időmegtakarítás",
-        description: "Elvégezzük Ön helyett a bőséges kínálati piacról az Önnek megfelelő ingatlanok kiválasztását. Tanácsadóink segítenek a folyamat lezajlásának zökkenőmentességében, és az adminisztratív feladatokat ellátásában."
+        description: "Elkísérjük Önt a folyamat minden pontján, az ingatlan megtekintésétől a birtokbavételig. Felderítjük a kiválasztott ingatlan jogi hátterét, hogy nyugodt szívvel vásárolhasson. Segítünk a folyamat lezajlásának zökkenőmentességében, és az adminisztratív feladatok ellátásában. Így örömteli és minden stressztől mentes vásárlást tudunk biztosítani."
     },
     {
         title: "Szakmai tanácsadás",
-        description: "A vásárlási folyamat minden lépésében, szakmai tanácsokkal támogatjuk Önt, hogy nyugodtan tudja meghozni a legjobb döntéseket."
+        description: "A vásárlási folyamat minden lépésében szakmai tanácsokkal támogatjuk , hogy nyugodtan tudja meghozni a legjobb döntéseket."
     },
 
     {
         title: "Jogbiztonság",
-        description: "Kizárólag megfelelő jogi háttérrel rendelkező ingatlant fogunk ajánlani és az adás-vételi szerződéshez megbízható ügyvédeink rendelkezésre állnak."
+        description: "Kizárólag megfelelő jogi háttérrel rendelkező ingatlant fogunk ajánlani, és az adásvételi szerződéshez megbízható ügyvédeink rendelkezésére állnak."
     },
     {
         title: "Hitelközvetítés",
-        description: "Banki háttér, amelyik bank a legjobbat kínálja lehetőségeihez képest, CSOK +1"
+        description: "Hitelközvetítés terén segítünk Önnek a legmegfelelőbb hitelajánlat megtalálásában, optimalizálva a pénzügyi lehetőségeit és egyszerűsítve a hitelbeszerzés folyamatát."
     },
     {
         title: "Áralku és tranzakció menedzselése",
-        description: "Ügynökeink több évtizedes tapasztalattal rendelkeznek, így megfelelően tudnak segíteni Önnek a tranzakció zökkenőmentes lebonyolításában az ügylet lezárásáig."
+        description: "Több éves tapasztalattal rendelkezünk, így megfelelően tudunk segíteni Önnek a tranzakció zökkenőmentes lebonyolításában az ügylet lezárásáig."
     }
 ]
 
@@ -57,7 +57,7 @@ export default function Nyer(){
             </div>
             <div className="flexx items-center justify-center mt-10">
             <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                        <a href="/#contact">Szeretném megtalálni álmaim otthonát</a>
+                        <a href="/#contact">Beköltözöm álmaim otthonába!</a>
                     </button>
                 </div>
         </div>
@@ -81,7 +81,7 @@ export default function Nyer(){
             ))}
           </div>
           <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-            <a href="/#contact">Szeretném megtalálni álmaim otthonát</a>
+            <a href="/#contact">Beköltözöm álmaim otthonába!</a>
           </button>
         </div>
       </div>

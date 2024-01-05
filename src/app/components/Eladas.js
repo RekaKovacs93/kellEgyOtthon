@@ -40,18 +40,15 @@ export default function Eladas() {
 
       {/* Desktop View */}
       <div className="relative w-full my-20">
-      <div className="hidden lg:flex items-center justify-center min-h-screen"
-          style={{
-            backgroundImage: `url('https://cdn.pixabay.com/photo/2023/11/21/11/38/table-8403065_1280.jpg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}>
-      {/* <Image
-          src="https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_1280.jpg"
-          alt="Interior Photo"
-          // layout="responsive"
-          fill="true"
-        /> */}
+      <div className="hidden lg:flex items-center justify-center min-h-screen">
+
+            <Image
+      src="https://cdn.pixabay.com/photo/2023/11/21/11/38/table-8403065_1280.jpg"
+      alt="Interior Photo"
+      layout="responsive"
+      width={1024}
+      height={500}
+    />
         <div className="absolute flex-col top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center justify-center px-20">
         {/* <div className="absolute w-3/4 1/2 bg-white z-5 flex flex-col items-center p-20"> */}
           <h1 className="text-3xl text-center mb-10 text-white">

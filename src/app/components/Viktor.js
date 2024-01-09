@@ -11,7 +11,7 @@ export default function Viktor() {
 
 <p className="my-2"><b>Miért érdemes velünk együttműködni?</b></p>
 
-<p>Egyszerűen azért, mert nem csak az ingatlanokat, hanem ügyfeleink boldogságát is szem előtt tartjuk. Úgy értékesítjük az Ön ingatlanát, hogy az az Ön elégedettségére és örömére szolgáljon. Nem a mennyiség, hanem a minőség a fontos számunkra, és mindig arra törekszünk, hogy az ügyfeleink elégedetten távozzanak. Csapatom tagjaival folyamatosan fejlesztjük magunkat, hogy mindig naprakészek és felkészültek legyünk a változó piaci helyzetre.</p>
+<p>Egyszerűen azért, mert nem csak az ingatlanokat, hanem ügyfeleink boldogságát is szem előtt tartjuk. Úgy értékesítjük az Ön ingatlanát, hogy az az Ön elégedettségére és örömére szolgáljon. Nem a mennyiség, hanem a minőség a fontos számunkra, és mindig arra törekszünk, hogy az ügyfeleink elégedetten távozzanak. Csapatunk tagjaival folyamatosan fejlesztjük magunkat, hogy mindig naprakészek és felkészültek legyünk a változó piaci helyzetre.</p>
 <p className="my-2">Az ügyfeleinkkel való együttműködés során fontosnak tartjuk az egyéni igények és tervek felmérését, hogy együtt kialakíthassunk egy hatékony értékesítési stratégiát.</p>
 <p>Reméljük, hogy hamarosan személyesen is találkozunk, és együtt dolgozhatunk az Ön ingatlanügyleteiben.</p>
 <p className="my-2">Bízunk benne, hogy közös együttműködésünk során sikeresen dolgozunk majd együtt.</p>

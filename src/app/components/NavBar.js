@@ -54,9 +54,9 @@ export default function NavBar() {
           <Link id="hover-underline" href="./vevo" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             VEVŐKNEK
           </Link>
-          {/* <Link id="hover-underline" href="/blogPage" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
-            BLOG
-          </Link> */}
+          <Link id="hover-underline" href="./references" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+            REFERENCIÁK
+          </Link>
           <Link id="hover-underline" href="/#contact" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>

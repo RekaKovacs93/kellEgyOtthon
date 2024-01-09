@@ -27,7 +27,7 @@ const servicesData = [
       imageURL: "https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"
     },
     {
-      title: "Alacsony jutalék",
+      title: "Rugalmas díjazás",
       description: "Ebben is arra törekszünk, hogy partnereink elégedettek legyenek. Magasabb szintű szolgáltatást kínálunk, miközben alacsonyabb jutalékszintet számolunk fel, mint a nagy hálózatok.",
       imageURL: "https://cdn.pixabay.com/photo/2018/01/28/10/08/purchase-3113198_1280.jpg"
     }
@@ -86,7 +86,7 @@ export default function Services() {
 
       <div className="flex justify-center mt-8">
         <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-          <a href="/#contact">Kérem az ingyenes szolgáltatásokat!</a>
+          <a href="/#contact">Érdekelnek az ingyenes szolgáltatások!</a>
         </button>
       </div>
     </div>

@@ -6,17 +6,17 @@ import Image from 'next/image';
 export default function MyCarousel () {
 
 const images = [
-    "/static/Matyas01.jpg",
-    "/static/Matyas02.jpg",
-    "/static/Matyas03.jpg",
-    "/static/Matyas04.jpg",
-    "/static/Matyas05.jpg",
-    "/static/Matyas06.jpg",
-    "/static/Matyas07.jpg",
-    "/static/Matyas08.jpg",
-    "/static/Matyas09.jpg",
-    "/static/Matyas10.jpg",
-    "/static/Matyas11.jpg"                
+    "/static/Matyas01-min.jpg",
+    "/static/Matyas02-min.jpg",
+    "/static/Matyas03-min.jpg",
+    "/static/Matyas04-min.jpg",
+    "/static/Matyas05-min.jpg",
+    "/static/Matyas06-min.jpg",
+    "/static/Matyas07-min.jpg",
+    "/static/Matyas08-min.jpg",
+    "/static/Matyas09-min.jpg",
+    "/static/Matyas10-min.jpg",
+    "/static/Matyas11-min.jpg"                
 ]    
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,7 +37,7 @@ const images = [
 
   return (
     <div className="relative overflow-hidden py-40">
-      <div className="flex transition-transform duration-500 ease-in-out">
+      <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {/* {images.map((image, index) => ( */}
           <div className='h-screen'>
           <Image

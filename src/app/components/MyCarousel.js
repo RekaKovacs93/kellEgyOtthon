@@ -20,13 +20,14 @@ const images = [
 ]    
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const showSlide = (index) => {
-    setCurrentIndex(index);
-  };
+//   const showSlide = (index) => {
+//     setCurrentIndex(index);
+//   };
 
   const nextSlide = () => {
     const totalSlides = images.length;
     setCurrentIndex((currentIndex + 1) % totalSlides);
+    console.log(currentIndex)
   };
 
   const prevSlide = () => {
@@ -36,18 +37,17 @@ const images = [
 
   return (
     <div className="relative overflow-hidden py-40">
-      <div className="flex container gap-x-10  transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {images.map((image, index) => (
-          <div key={index}  >
+      <div className="flex transition-transform duration-500 ease-in-out">
+        {/* {images.map((image, index) => ( */}
+          <div className='h-screen'>
           <Image
-                src={image}
+                src={images[currentIndex]}
                 alt="kep"
-                height= {2000}
-                width= {2000}
-                className="rounded-lg"
+                layout='fill'
+                className="rounded-lg object-cover"
               />
           </div>
-        ))}
+        {/* ))} */}
       </div>
 
       <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={prevSlide}>❮</button>

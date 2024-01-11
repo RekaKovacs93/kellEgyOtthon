@@ -92,6 +92,9 @@ export default function NavBar() {
             <Link href="/vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               VEVŐKNEK
             </Link>
+            <Link href="./references" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            REFERENCIÁK
+          </Link>
 
             
             {/* <Link href="/blogPage" onClick={closeMenu} className="block py-2 px-2 border-b">

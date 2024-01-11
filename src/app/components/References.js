@@ -1,4 +1,9 @@
+'use client'
+
 import Image from "next/image"
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import MyCarousel from "./MyCarousel";
 
 export default function References (){
     const references = [
@@ -6,48 +11,74 @@ export default function References (){
             title: "Mátyás utca",
             video: "/source",
             images: [
-                "/source", "/source", "/source"
-            ]
-        },
-        {
-            title: "Mátyás utca",
-            video: "/source",
-            images: [
-                "/source", "/source", "/source"
-            ]
-        },
-        {
-            title: "Mátyás utca",
-            video: "/source",
-            images: [
-                "/source", "/source", "/source"
+                "/static/Matyas01.jpg",
+                "/static/Matyas02.jpg",
+                "/static/Matyas03.jpg",
+                "/static/Matyas04.jpg",
+                "/static/Matyas05.jpg",
+                "/static/Matyas06.jpg",
+                "/static/Matyas07.jpg",
+                "/static/Matyas08.jpg",
+                "/static/Matyas09.jpg",
+                "/static/Matyas10.jpg",
+                "/static/Matyas11.jpg"                
             ]
         }
     ]
     return (
         <div className="flex flex-col items-center w-full justify-center min-h-screen">
-      <h1 className="text-center  text-3xl px-10 md:py-5 py-3">Így dolgozunk mi</h1>
+      <h1 className="text-center text-3xl px-10 md:py-5 py-3 mb-10">Így dolgozunk mi</h1>
       
       {/* Desktop layout */}
-      <div className="hidden sm:flex flex-col sm:flex-row flex-wrap justify-center gap-x-20 gap-y-5 items-center mx-40">
+      <div className="flex  items-center mx-40">
         {references.map((reference, index) => (
-          <div key={index} className=" items-center">
-          <h1>{reference.title}</h1>
-            <div className="h-48 w-48 md:h-64 md:w-64 relative">
+          <div key={index}>
+          <h1 className="text-xl my-5">{reference.title}</h1>
+            {/* */}
+            {/* <Image
+                      src={reference.images[0]} // Assuming the first image is the main one
+                      alt={reference.title}
+                      height={500} // Adjust the height of the main image as needed
+                      width={800} // Adjust the width of the main image as needed
+                      className="rounded-lg object-cover"
+                    />  */}
+            {/* <Carousel
+              showArrows={true}
+                    showStatus={false}
+                    showThumbs={true}
+                    infiniteLoop={true}
+                    autoPlay={true}
+                    axis='horizontal'
+                    selectedItem={0} // Index of the initially selected item
+                    thumbWidth={80} // Adjust the width of thumbnails as needed
+                    className="thumbnails-carousel items-center"
+                  
+              >
+
+            {reference.images.map((image, index) => (
+              <div key={index}> 
               <Image
-                src={reference.imageURL}
+                src={image}
                 alt={reference.title}
-                layout="fill"
+                height= {2000}
+                width= {2000}
                 className="rounded-lg object-cover"
               />
-              <div id="card" className="absolute inset-0 rounded-lg flex flex-col items-center justify-center bg-black bg-opacity-50">
+              </div>
+              
+            ))}
+
+            </Carousel> */}
+            <MyCarousel></MyCarousel>
+
+              {/* <div id="card" className="absolute inset-0 rounded-lg flex flex-col items-center justify-center bg-black bg-opacity-50">
                 <h1 id="title" className="absolute text-2xl text-white opacity-100 text-center">{reference.title}</h1>
                 <div id="desc" className="opacity-0">
                   <h1 className="text-center text-2xl text-white">{reference.title}</h1>
                   <p className="text-white text-base text-center px-5">{reference.description}</p>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         ))}
       </div>

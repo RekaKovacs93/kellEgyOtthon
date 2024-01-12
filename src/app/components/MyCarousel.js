@@ -49,7 +49,7 @@ export default function MyCarousel ({images}) {
         <div className="relative">
         
             <div className="flex justify-center"> 
-                <div className='h-full '>
+                <div className='h-full'>
                 <Image
                         src={images[currentIndex]}
                         alt="kep"
@@ -65,15 +65,15 @@ export default function MyCarousel ({images}) {
         <button className="absolute top-1/2 left-72 transform -translate-y-1/2  bg-white bg-opacity-50 text-white p-2 rounded text-4xl" onClick={prevSlide}>❮</button>
         <button className="absolute top-1/2 right-72 transform -translate-y-1/2 bg-white bg-opacity-50 text-white p-2 rounded text-3xl" onClick={nextSlide}>❯</button>
         </div>
-        <div className='flex justify-center mt-5 gap-x-1 w-880'>
+        <div className='flex justify-center mt-5 gap-x-3'>
             {images.map((image, index) => (
-                <div key={index} className='hover:scale-110'>
+                <div key={index} className='hover:scale-150 hover:border-2 border-0 border-white'>
                 <button onClick={() => setCurrentIndex(index)} value={index}>
                     <Image
                         src={image}
                         alt="kep"
-                        width={60}
-                        height={60}
+                        width={70}
+                        height={70}
                         priority={true}
                         className="rounded-lg "
                         quality={80}
@@ -83,12 +83,14 @@ export default function MyCarousel ({images}) {
         
             ))}
         </div>
-        <div className='flex justify-center mt-20'>
+        <div className='flex flex-col items-center mt-20'>
+        {/* <p className='text-lg mb-5'>Ingatlanséta</p> */}
             <iframe
-                width="600"
-                height="450"
+                width={885}
+                height={600}
                 src="https://ths.li/PSWyMGc"
-                allowFullScreen>
+                className='rounded-lg'
+                >
             </iframe>
         </div>
     </div>

@@ -40,26 +40,35 @@ export default function MyCarousel ({images}) {
   };
 
   return (
-    <div className="relative overflow-hidden py-40">
-      <div className="flex">
-        {/* {images.map((image, index) => ( */}
-          <div className='h-screen'>
-          <Image
-                src={images[currentIndex]}
-                alt="kep"
-                height={591}
-                width={885}
-                priority={true}
-                
-                className="rounded-lg object-cover"
-                quality={80}
-              />
-          </div>
-        {/* ))} */}
-      </div>
+    <div className=''>
+        <h1 className="text-center text-3xl px-10 md:py-5 py-40 mt-40">Így dolgozunk mi</h1>
+        <p className='text-center'>Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik szolgáltatásaink minőségét</p>
+        <div className="relative py-20">
+            <div className="flex justify-center"> 
+                <div className='h-full '>
+                <Image
+                        src={images[currentIndex]}
+                        alt="kep"
+                        width={885}
+                        height={591}
+                        priority={true}
+                        className="rounded-lg "
+                        quality={80}
+                    />
+                </div>
+            </div>
 
-      <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={prevSlide}>❮</button>
-      <button className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={nextSlide}>❯</button>
+        <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={prevSlide}>❮</button>
+        <button className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={nextSlide}>❯</button>
+        </div>
+        <div className='flex justify-center'>
+            <iframe
+                width="600"
+                height="450"
+                src="https://ths.li/PSWyMGc"
+                allowFullScreen>
+            </iframe>
+        </div>
     </div>
  
  

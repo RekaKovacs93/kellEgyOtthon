@@ -34,7 +34,7 @@ export default function ReferencesPage () {
         {images.map((image, index) => (
           <link key={index} rel="preload" href={image} as="image" />
         ))}
-      </Head>
+        </Head>
         <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
         {/* <References></References> */}
         <div><MyCarousel images={images}></MyCarousel></div>

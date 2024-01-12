@@ -1,23 +1,27 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import Image from 'next/image';
 
-export default function MyCarousel () {
 
-const images = [
-    "/static/Matyas01-min.jpg",
-    "/static/Matyas02-min.jpg",
-    "/static/Matyas03-min.jpg",
-    "/static/Matyas04-min.jpg",
-    "/static/Matyas05-min.jpg",
-    "/static/Matyas06-min.jpg",
-    "/static/Matyas07-min.jpg",
-    "/static/Matyas08-min.jpg",
-    "/static/Matyas09-min.jpg",
-    "/static/Matyas10-min.jpg",
-    "/static/Matyas11-min.jpg"                
-]    
+// const images = [
+//     "/Matyas01.jpg",
+//     "/Matyas02.jpg",
+//     "/Matyas03.jpg",
+//     "/Matyas04.jpg",
+//     "/Matyas05.jpg",
+//     "/Matyas06.jpg",
+//     "/Matyas07.jpg",
+//     "/Matyas08.jpg",
+//     "/Matyas09.jpg",
+//     "/Matyas10.jpg",
+//     "/Matyas11.jpg"                
+// ]
+
+export default function MyCarousel ({images}) {
+
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
 //   const showSlide = (index) => {
@@ -37,14 +41,18 @@ const images = [
 
   return (
     <div className="relative overflow-hidden py-40">
-      <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="flex">
         {/* {images.map((image, index) => ( */}
           <div className='h-screen'>
           <Image
                 src={images[currentIndex]}
                 alt="kep"
-                layout='fill'
+                height={591}
+                width={885}
+                priority={true}
+                
                 className="rounded-lg object-cover"
+                quality={80}
               />
           </div>
         {/* ))} */}

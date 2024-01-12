@@ -39,18 +39,22 @@ export default function MyCarousel ({images}) {
     setCurrentIndex((currentIndex - 1 + totalSlides) % totalSlides);
   };
 
+
+
   return (
     <div className=''>
         <h1 className="text-center text-3xl px-10 md:py-5 py-40 mt-40">Így dolgozunk mi</h1>
         <p className='text-center'>Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik szolgáltatásaink minőségét</p>
-        <div className="relative py-20">
+        <p className='text-center text-lg mt-20 pb-5'><b>Mátyás tér, VIII. kerület</b></p>
+        <div className="relative">
+        
             <div className="flex justify-center"> 
                 <div className='h-full '>
                 <Image
                         src={images[currentIndex]}
                         alt="kep"
                         width={885}
-                        height={591}
+                        height={600}
                         priority={true}
                         className="rounded-lg "
                         quality={80}
@@ -58,10 +62,28 @@ export default function MyCarousel ({images}) {
                 </div>
             </div>
 
-        <button className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={prevSlide}>❮</button>
-        <button className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded" onClick={nextSlide}>❯</button>
+        <button className="absolute top-1/2 left-72 transform -translate-y-1/2  bg-white bg-opacity-50 text-white p-2 rounded text-4xl" onClick={prevSlide}>❮</button>
+        <button className="absolute top-1/2 right-72 transform -translate-y-1/2 bg-white bg-opacity-50 text-white p-2 rounded text-3xl" onClick={nextSlide}>❯</button>
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mt-5 gap-x-1 w-880'>
+            {images.map((image, index) => (
+                <div key={index} className='hover:scale-110'>
+                <button onClick={() => setCurrentIndex(index)} value={index}>
+                    <Image
+                        src={image}
+                        alt="kep"
+                        width={60}
+                        height={60}
+                        priority={true}
+                        className="rounded-lg "
+                        quality={80}
+                    />
+                </button>
+                </div>
+        
+            ))}
+        </div>
+        <div className='flex justify-center mt-20'>
             <iframe
                 width="600"
                 height="450"

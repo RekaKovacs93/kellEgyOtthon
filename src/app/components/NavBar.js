@@ -44,9 +44,9 @@ export default function NavBar() {
       {/* <div > */}
         <Link href="/" className="font-bold text-xl">
           <Image
-            src="/Mindenkinek (1).png"
+            src="/Mindenkinek.png"
                 alt='kep'
-                width={200}
+                width={250}
                 height={70}
                 priority={true}
                 className='md:rounded-lg rounded scale-110 md:scale-100'

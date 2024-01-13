@@ -7,7 +7,7 @@ export default function Viktor() {
         <h1 className="text-3xl text-center md:mb-2 mb-5">Kedves Érdeklődő!</h1>
         <div className="md:px-20">
         <p className="text-xl mb-10 text-center">Örömmel üdvözlöm a Mindenkinek Kell Egy Otthon honlapján!</p> 
-<p>Mezei Viktor vagyok, az alapító, több, mint 20 éves szakmai tapasztalattal rendelkezem az ingatlan és pénzügyi területeken. Csapatunkkal küldetésünk, hogy segítsünk Önnek az ingatlanügyleteiben, legyen szó eladásról, vásárlásról, vagy a hozzá tartozó finanszírozásról.</p>
+<p>Mezei Viktor vagyok, az alapító. Több, mint 20 éves szakmai tapasztalattal rendelkezem az ingatlan és pénzügyi területeken. Csapatunkkal küldetésünk, hogy segítsünk Önnek az ingatlanügyleteiben, legyen szó eladásról, vásárlásról, vagy a hozzá tartozó finanszírozásról.</p>
 
 <p className="my-2"><b>Miért érdemes velünk együttműködni?</b></p>
 

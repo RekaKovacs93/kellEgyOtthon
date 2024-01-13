@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -41,7 +42,15 @@ export default function NavBar() {
     <nav className={`fixed top-0 w-full bg-white z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6">
         <Link href="/" className="font-bold text-xl">
-          MINDENKINEK KELL EGY OTTHON
+          <Image
+            src="/MindenkinekKlellEgyOtthonLogo.png"
+                alt='kep'
+                width={200}
+                height={70}
+                priority={true}
+                className='md:rounded-lg rounded scale-110 md:scale-100'
+                quality={80}
+          />
         </Link>
 
         <div className="hidden md:flex flex-grow items-center justify-end space-x-4">

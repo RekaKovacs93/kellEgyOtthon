@@ -4,7 +4,7 @@ import './globals.css'
 const inter = Red_Hat_Display({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Kell Egy Otthon',
+  title: 'Mindenkinek Kell Egy Otthon',
   description: 'Ingatlan adás - vétel',
 }
 

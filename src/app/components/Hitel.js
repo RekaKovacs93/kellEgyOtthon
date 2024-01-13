@@ -51,9 +51,22 @@ export default function Hitel(){
               </div>
             ))}
           </div>
-          <button className="border-2 border-darkgrey mt-10 mb-20 hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
+          <p className="mt-5">* További informaciókért kattintson <button onClick={() => setSelectedUrl("https://www.portfolio.hu/bank/20240102/megerkezett-a-csok-plusz-2024-es-feltetelek-tablazatok-reszletek-egy-helyen-660543")} className="text-center underline mt-2 cursor-pointer">
+            <b>IDE</b>
+          </button></p>
+            <div className="flex items-center justify-center mt-10">
+            <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
               <a href="/#contact">Elindulok az otthonvásárlás útján!</a>
             </button>
+          </div>
+          {selectedUrl && (
+        <div className="overlay" onClick={() => setSelectedUrl('')}>
+          <div className="modal">
+            <iframe title="Popup" width={250} height={400} src={selectedUrl}></iframe>
+          </div>
+        </div>
+      )}
+
       </div>
     </div>
   );

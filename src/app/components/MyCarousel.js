@@ -88,8 +88,7 @@ export default function MyCarousel({ images }) {
         </button>
       </div>
       <div>
-        <h1 className='text-center text-3xl px-5 md:px-10 md:py-5 py-20 mt-20'>
-          Ügyfeleink ezt mondták rólunk
+        <h1 className='text-center text-3xl px-5 md:px-10 md:py-5 py-20 mt-20'>Ügyfeleink ezt mondták rólunk
         </h1>
         <div className='flex flex-wrap justify-center gap-5 mt-10'>
           <div style={{ backgroundColor: 'rgb(121, 116, 112)' }} className='w-full md:w-80 h-50 text-white rounded-lg py-10 px-5'>

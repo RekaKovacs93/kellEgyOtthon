@@ -12,11 +12,11 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      const isMobileView = window.innerWidth < 768; // Set your mobile breakpoint width here
-      if (isMobileView) {
+      // const isMobileView = window.innerWidth < 768; // Set your mobile breakpoint width here
+      // if (isMobileView) {
         setVisible(currentScrollPos < prevScrollPos || currentScrollPos < 150);
         setPrevScrollPos(currentScrollPos);
-      }
+      // }
     };
 
 
@@ -41,9 +41,10 @@ export default function NavBar() {
   return (
     <nav className={`fixed top-0 w-full bg-white z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6">
+      {/* <div > */}
         <Link href="/" className="font-bold text-xl">
           <Image
-            src="/MindenkinekKlellEgyOtthonLogo.png"
+            src="/Mindenkinek (1).png"
                 alt='kep'
                 width={200}
                 height={70}
@@ -69,6 +70,7 @@ export default function NavBar() {
           <Link id="hover-underline" href="./kapcsolat" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
+        {/* </div> */}
         </div>
 
         

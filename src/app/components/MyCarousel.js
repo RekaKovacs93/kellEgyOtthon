@@ -93,19 +93,19 @@ export default function MyCarousel({ images }) {
         </h1>
         <div className='flex flex-wrap justify-center gap-5 mt-10'>
           <div style={{ backgroundColor: 'rgb(121, 116, 112)' }} className='w-full md:w-80 h-50 text-white rounded-lg py-10 px-5'>
-            <h1 className='text-xl'>&quot;Legjobb szolgaltatas nagyon meg voltam elegedve, profik, kedvesek"</h1>
+            <h1 className='text-xl'>&quot;Legjobb szolgaltatas nagyon meg voltam elegedve, profik, kedvesek&quot;</h1>
             <p className='text-right mt-5'>
               <i>-Vadasz Robert</i>
             </p>
           </div>
           <div style={{ backgroundColor: 'rgb(121, 116, 112)' }} className='w-full md:w-80 h-50 text-white rounded-lg py-10 px-5'>
-            <h1 className='text-xl'>&quot;Legjobb szolgaltatas nagyon meg voltam elegedve, profik, kedvesek"</h1>
+            <h1 className='text-xl'>&quot;Legjobb szolgaltatas nagyon meg voltam elegedve, profik, kedvesek&quot;</h1>
             <p className='text-right mt-5'>
               <i>-Vadasz Robert</i>
             </p>
           </div>
           <div style={{ backgroundColor: 'rgb(121, 116, 112)' }} className='w-full md:w-80 h-50 text-white rounded-lg py-10 px-5'>
-            <h1 className='text-xl'>&quot;Legjobb szolgaltatas nagyon meg voltam elegedve, profik, kedvesek"</h1>
+            <h1 className='text-xl'>&quot;Legjobb szolgaltatas nagyon meg voltam elegedve, profik, kedvesek&quot;</h1>
             <p className='text-right mt-5'>
               <i>-Vadasz Robert</i>
             </p>

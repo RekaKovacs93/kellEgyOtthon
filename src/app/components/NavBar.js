@@ -54,7 +54,7 @@ export default function NavBar() {
           <Link id="hover-underline" href="./vevo" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             VEVŐKNEK
           </Link>
-          <Link id="hover-underline" href="./referenciák" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="./referenciak" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
             REFERENCIÁK
           </Link>
           <Link id="hover-underline" href="./kapcsolat" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
@@ -92,7 +92,7 @@ export default function NavBar() {
             <Link href="./vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               VEVŐKNEK
             </Link>
-            <Link href="./referenciák" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            <Link href="./referenciak" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
             REFERENCIÁK
             </Link>
             <Link href="./kapcsolat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">

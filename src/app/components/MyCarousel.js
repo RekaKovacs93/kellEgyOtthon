@@ -9,7 +9,6 @@ export default function MyCarousel({ images }) {
   const nextSlide = () => {
     const totalSlides = images.length;
     setCurrentIndex((currentIndex + 1) % totalSlides);
-    console.log(currentIndex);
   };
 
   const prevSlide = () => {
@@ -67,7 +66,7 @@ export default function MyCarousel({ images }) {
                 width={70}
                 height={70}
                 priority={true}
-                className='md:rounded-lg rounded scale-110 md:scale-100'
+                className={`md:rounded-lg scale-110 rounded ${currentIndex === index ? 'scale-150 mx-5' : 'md:scale-100'}`}
                 quality={80}
               />
             </button>

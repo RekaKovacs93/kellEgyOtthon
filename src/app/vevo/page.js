@@ -12,7 +12,7 @@ export default function VevoPage() {
       <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
     
      
-      <div id="vevo" className="md:min-h-screen justify-center"><Vevo></Vevo></div>
+      <div id="vevo" className="md:min-h-screen justify-center mt-10 md:mt-0"><Vevo></Vevo></div>
       <div className="min-h-screen md:w-full md:justify-center"><Nyer></Nyer></div>
       <div className="min-h-screen md:w-full md:justify-center"><Hitel></Hitel></div>
       <div className="md:min-h-screen md:w-full justify-center"><Viktor></Viktor></div>

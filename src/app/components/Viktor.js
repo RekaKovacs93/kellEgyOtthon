@@ -27,7 +27,6 @@ export default function Viktor() {
         </div>
       </div>
       <div className="hidden md:flex sm:w-2/5">
-        {/* <div className="relative" style={{ width: "600px", height: "400px" }}> */}
           <Image
             src="https://cdn.pixabay.com/photo/2015/08/05/10/42/andrew-ronalds-876138_1280.jpg"
             alt="image of Viktor"
@@ -35,7 +34,6 @@ export default function Viktor() {
             height={400}
             layout="responsive"
           />
-        {/* </div> */}
       </div>
     </div>
   );

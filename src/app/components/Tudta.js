@@ -20,7 +20,24 @@ export default function Tudta() {
           Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
         </p>
         <div className="flex mt-10 ">
-          <div className="mr-20">
+        <div className="mr-20">
+            <h2 className="text-xl mb-5"><b>Ez már sajnos nem elég</b></h2>
+            <ul className="list-none px-4">
+              <li className="mb-2 flex items-center">
+                <span className="mr-2 text-lg">&#10005;</span>
+                Üres, vagy átlagos berendezésű lakás
+              </li>
+              <li className="mb-2 flex items-center">
+                <span className="mr-2 text-lg">&#10005;</span>
+                Amatőr megfogalmazás
+              </li>
+              <li className="mb-2 flex items-center">
+                <span className="mr-2 text-lg">&#10005;</span>
+                Telefonos képek
+              </li>
+            </ul>
+          </div>
+          <div>
             <h2 className="text-xl mb-5"><b>Ezért van ránk szüksége</b></h2>
             <ul className="list-disc list-inside px-4">
               <li className="mb-2 flex items-center">
@@ -45,23 +62,7 @@ export default function Tudta() {
               </li>
             </ul>
           </div>
-          <div>
-            <h2 className="text-xl mb-5"><b>Ez már sajnos nem elég</b></h2>
-            <ul className="list-none px-4">
-              <li className="mb-2 flex items-center">
-                <span className="mr-2 text-lg">&#10005;</span>
-                Üres, vagy átlagos berendezésű lakás
-              </li>
-              <li className="mb-2 flex items-center">
-                <span className="mr-2 text-lg">&#10005;</span>
-                Amatőr megfogalmazás
-              </li>
-              <li className="mb-2 flex items-center">
-                <span className="mr-2 text-lg">&#10005;</span>
-                Telefonos képek
-              </li>
-            </ul>
-          </div>
+          
         </div>
 
       </div>
@@ -85,7 +86,15 @@ export default function Tudta() {
               Jelenleg kínálati piac van, vagyis <b>több az eladó ingatlan, mint a vásárló</b>. Ha azt szeretné, hogy az Ön ingatlanát válasszák, akkor hirdetésének ki kell emelkednie a többi közül.
             </p>
             <div className="flex">
-              <div className="mr-8 ">
+            <div className="text-left mr-8">
+                <h2 className=" mb-5 pt-2"><b>Ez már sajnos nem elég</b></h2>
+                <ul className="list-none text-left">
+                  <li className="mb-2">&#10005; Üres, vagy átlagos berendezésű lakás</li>
+                  <li className="mb-2">&#10005; Amatőr megfogalmazás</li>
+                  <li>&#10005; Telefonos képek</li>
+                </ul>
+              </div>
+              <div>
                 <h2 className=" mb-5 pt-2"><b>Ezért van ránk szüksége</b></h2>
                 <ul className="list-none list-inside text-left">
                   <li className="mb-2">&#10003; Profi lakberendező által berendezett lakás</li>
@@ -95,14 +104,7 @@ export default function Tudta() {
                   <li>&#10003; 3D-s ingatlanséta</li>
                 </ul>
               </div>
-              <div className="text-left">
-                <h2 className=" mb-5 pt-2"><b>Ez már sajnos nem elég</b></h2>
-                <ul className="list-none text-left">
-                  <li className="mb-2">&#10005; Üres, vagy átlagos berendezésű lakás</li>
-                  <li className="mb-2">&#10005; Amatőr megfogalmazás</li>
-                  <li>&#10005; Telefonos képek</li>
-                </ul>
-              </div>
+              
             </div>
             <div className="flex justify-center my-10 ">
               <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">

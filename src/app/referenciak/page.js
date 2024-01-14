@@ -7,24 +7,24 @@ import Head from "next/head"
 
 
     const images = [
-      "/Matyas01-min.jpg",
-      "/Matyas02-min.jpg",
-      "/Matyas03-min.jpg",
-      "/Matyas04-min.jpg",
-      "/Matyas05-min.jpg",
-      "/Matyas06-min.jpg",
-      "/Matyas07-min.jpg",
-      "/Matyas08-min.jpg",
       "/Matyas09-min.jpg",
+      "/Matyas06-min.jpg",
       "/Matyas10-min.jpg",
-      "/Matyas11-min.jpg"
+      "/Matyas12-min.jpg",
+      "/Matyas04-min.jpg",
+      "/Matyas11-min.jpg",
+      "/Matyas05-min.jpg",
+      "/Matyas02-min.jpg",
+      "/Matyas08-min.jpg",
+      "/Matyas01-min.jpg",
+      "/Matyas03-min.jpg",
+      "/Matyas07-min.jpg",
     ];
   
 
 
 
 export default function ReferencesPage () {
-
 
 
     return (

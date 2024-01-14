@@ -7,7 +7,7 @@ export default function VevoPage() {
 
       <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
 
-      <div className="w-full justify-center" id="contact mt-10 md:mt-0"><Contact></Contact></div>
+      <div className="w-full justify-center" id="contact mt-20 md:mt-0"><Contact></Contact></div>
       
     </main>
   )

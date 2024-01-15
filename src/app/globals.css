@@ -70,7 +70,7 @@ body {
 #hover-underline {
   position: relative;
   text-decoration: none;
-  color: rgb(226, 206, 60); /* Set your desired text color */
+  /* color: rgb(226, 206, 60); Set your desired text color */
 }
 
 #hover-underline::after {
@@ -80,7 +80,7 @@ body {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background-color: rgb(226, 206, 60); /* Change this to your desired underline color */
+  /* background-color: rgb(226, 206, 60); Change this to your desired underline color */
   transform: scaleX(0);
   transition:  0.4s ease-in-out;
 }

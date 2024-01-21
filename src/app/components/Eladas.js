@@ -32,7 +32,7 @@ export default function Eladas() {
         </ul>
           <div className="flex justify-center my-10">
             <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="./contact">Kérem a szakértői támogatást!</a>
+              <a href="./kapcsolat">Kérem a szakértői támogatást!</a>
             </button>
           </div>
         {/* </div> */}
@@ -84,7 +84,7 @@ export default function Eladas() {
           <p className="text-white text-center mt-10"><b>Ha velünk szerződik, olyan minőségi, hatékony szolgáltatásban lesz része, hogy ingatlana a legjobb áron és a legrövidebb időn belül kerül eladásra. Levesszük Önről az ezzel járó terheket, így értékes idejét és energiáját másra tudja fordítani. Szaktudásunkkal menedzseljük a folyamatot a kezdetektől a birtokbaadásig. Szándékunk, hogy az ingatlan eladása ne csupán hatékony, hanem örömteli folyamat is legyen az Ön számára.</b></p>
           <div className="flex gap-5 justify-center mt-5">
           <div>
-          <button className="mt-5 border-2 border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="./contact">Kérem a szakértői támogatást!</a></button>
+          <button className="mt-5 border-2 border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300"><a href="./kapcsolat">Kérem a szakértői támogatást!</a></button>
           </div>
         </div>
         </div>

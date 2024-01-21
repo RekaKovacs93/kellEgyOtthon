@@ -23,7 +23,7 @@ export default function Contact() {
         <div className="justify-center">
 
      
-        <h1 className="text-center text-4xl justify-center text-white mt-40 mb-40">Lépjen kapcsolatba cegünk képviselőjével</h1>
+        <h1 className="text-center text-4xl justify-center text-white mt-40 mb-20">Lépjen kapcsolatba cegünk képviselőjével</h1>
         <div className=" bg-white rounded-lg flex justify-center z-5 mx-20 px-10">
         <div className="flex gap-x-80 justify-center items-center py-10">
         <div className=" justify-left w-2/5">
@@ -44,11 +44,7 @@ export default function Contact() {
             style={{ borderRadius: '50%' }}
           />
           <p className="mt-5 text-lg">Küri Zsuzsanna</p>
-            {/* <div className=" flex justify-end"> */}
-            {/* <p className="text-3xl mr-2">&#x2709;</p> */}
             <a href="mailto:email@gmail.com" className="mt-2 hover:underline">kuri.zsuzsa@gmail.com</a>
-              {/* <span className="text-2xl">Email</span> */}
-            {/* </div> */}
             <div className="mb-2">
               <p className="">+36 70 454 8288</p>
             </div>
@@ -64,19 +60,12 @@ export default function Contact() {
             style={{ borderRadius: '50%' }}
           />
 
-          <p className="mt-5 text-lg">Mezei Viktor</p>
-            {/* <div className=" flex justify-end "> */}
-            {/* <p className="text-3xl mr-2">&#x2709;</p> */}
+            <p className="mt-5 text-lg">Mezei Viktor</p>
             <a href="mailto:email@gmail.com" className="mt-2 hover:underline">mezvik.platina@gmail.com</a>
-              {/* <span className="text-2xl">Email</span> */}
-            {/* </div> */}
             <div className="mb-2">
-              <p className="">+36 70 341 3478</p>
+            <p className="">+36 70 630 0706</p>
             </div>
-
             </div>
-
-
           </div>
           </div>
         </div>
@@ -143,7 +132,7 @@ export default function Contact() {
               {/* <span className="text-2xl">Email</span> */}
             {/* </div> */}
             <div className="mb-2">
-              <p className="">+36 70 341 3478</p>
+              <p className="">+36 70 630 0706</p>
             </div>
 
             </div>

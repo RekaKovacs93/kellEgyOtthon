@@ -71,7 +71,7 @@ dolgozunk majd együtt.</p>
       </div>
         <div className="flex items-center justify-center mt-10">
           <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-            <a href="/#contact">Bízzon meg bennünket!</a>
+            <a href="./contact">Bízzon meg bennünket!</a>
           </button>
         </div>
       </div>

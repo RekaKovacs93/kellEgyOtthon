@@ -53,7 +53,7 @@ export default function Ingatlan() {
             </div>
             <div className="flex justify-center mt-12">
               <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-                <a href="/#contact">Kérem a profi segítséget!</a>
+                <a href="./contact">Kérem a profi segítséget!</a>
               </button>
             </div>
           </div> 
@@ -94,7 +94,7 @@ export default function Ingatlan() {
             </div>
             <div className="flex justify-center my-10">
               <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-                <a href="/#contact">Kérem a profi segítséget!</a>
+                <a href="./contact">Kérem a profi segítséget!</a>
               </button>
             </div>
       </div>

@@ -57,7 +57,7 @@ export default function Nyer(){
             </div>
             <div className="flexx items-center justify-center mt-10">
             <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                        <a href="./contact">Beköltözöm álmaim otthonába!</a>
+                        <a href="./kapcsolat">Beköltözöm álmaim otthonába!</a>
                     </button>
                 </div>
         </div>
@@ -81,7 +81,7 @@ export default function Nyer(){
             ))}
           </div>
           <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-            <a href="./contact">Beköltözöm álmaim otthonába!</a>
+            <a href="./kapcsolat">Beköltözöm álmaim otthonába!</a>
           </button>
         </div>
       </div>

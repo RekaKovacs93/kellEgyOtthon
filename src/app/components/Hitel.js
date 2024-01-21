@@ -7,6 +7,9 @@ const hitelek = ["Lakáshitel", "Személyi Kölcsön", "Bankszámla", "Megtakar�
 export default function Hitel(){
 
   const [selectedUrl, setSelectedUrl] = useState('');
+  const openDocInNewWindow = (url) => {
+    window.open(url, '_blank');
+  }
 
     return (
     <div className="relative w-full min-h-screen md:justify-center">
@@ -18,13 +21,12 @@ export default function Hitel(){
                     <div key={index} style={{ backgroundColor: "rgb(121, 116, 112)" }} className="relative rounded-lg">
                         <div className="h-48 w-48 md:h-44 md:w-72 relative rounded-lg py- flex flex-col justify-center">
                                 <h1 className="text-2xl text-white text-center">{hitel}</h1>
-                                {/* <h1 className="text-center text-2xl text-white">{vevo.title}</h1> */}
                             </div>
                         </div>
                     
                 ))}
             </div>
-            <p className="mt-5">* További informaciókért kattintson <button onClick={() => setSelectedUrl("https://www.portfolio.hu/bank/20240102/megerkezett-a-csok-plusz-2024-es-feltetelek-tablazatok-reszletek-egy-helyen-660543")} className="text-center underline mt-2 cursor-pointer">
+            <p className="mt-5">* További informaciókért kattintson <button onClick={() => setSelectedUrl("/2024-csok-plusz.html")} className="text-center underline mt-2 cursor-pointer">
             <b>IDE</b>
           </button></p>
             <div className="flex items-center justify-center mt-10">
@@ -35,7 +37,9 @@ export default function Hitel(){
           {selectedUrl && (
         <div className="overlay" onClick={() => setSelectedUrl('')}>
           <div className="modal">
-            <iframe title="Popup" width={1000} height={400} src={selectedUrl}></iframe>
+            {/* <iframe title="Popup" width={1000} height={400} src={selectedUrl}></iframe> */}
+            <embed src="/2024-csok-plusz.html" width="800px" height="2100px" />
+
           </div>
         </div>
       )}
@@ -51,7 +55,7 @@ export default function Hitel(){
               </div>
             ))}
           </div>
-          <p className="mt-5">* További informaciókért kattintson <button onClick={() => setSelectedUrl("https://www.portfolio.hu/bank/20240102/megerkezett-a-csok-plusz-2024-es-feltetelek-tablazatok-reszletek-egy-helyen-660543")} className="text-center underline mt-2 cursor-pointer">
+          <p className="mt-5">* További informaciókért kattintson <button onClick={() => openDocInNewWindow("/2024-csok-plusz.pdf")} className="text-center underline mt-2 cursor-pointer">
             <b>IDE</b>
           </button></p>
             <div className="flex items-center justify-center mt-10">
@@ -59,13 +63,13 @@ export default function Hitel(){
               <a href="./kapcsolat">Elindulok az otthonvásárlás útján!</a>
             </button>
           </div>
-          {selectedUrl && (
+          {/* {selectedUrl && (
         <div className="overlay" onClick={() => setSelectedUrl('')}>
           <div className="modal">
-            <iframe title="Popup" width={250} height={400} src={selectedUrl}></iframe>
+            <iframe title="Popup" width="100%" height={800} src="/2024-csok-plusz.html" frameborder="0"></iframe>
           </div>
         </div>
-      )}
+      )} */}
 
       </div>
     </div>
@@ -73,12 +77,3 @@ export default function Hitel(){
 }
        
 
-        {/* <div className="absolute inset-0 overflow-hidden">
-          {/* <Image
-            src="https://cdn.pixabay.com/photo/2021/04/22/18/50/frames-6199828_1280.jpg"
-            alt="Interior Photo"
-            layout="fill"
-            objectFit="cover"
-            className="h-full w-full"
-          /> 
-        </div> */}

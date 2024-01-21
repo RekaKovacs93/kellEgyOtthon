@@ -16,7 +16,7 @@ module.exports = {
         'xs': '375px', // Extra small devices (like smaller mobile phones)
         'sm': '640px', // Small devices (like most mobile phones)
         'md': '768px', // Medium devices (like tablets)
-        'lg': '1100px', // Large devices (like laptops)
+        'lg': '1200px', // Large devices (like laptops)
         'xl': '1280px', // Extra-large devices (like desktops)
         // Add more breakpoints as needed
       },

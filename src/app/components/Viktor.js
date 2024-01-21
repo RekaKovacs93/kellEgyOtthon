@@ -52,7 +52,7 @@ dolgozunk majd együtt.</p>
 <p className="my-2"><b>Mezei Viktor és Küri Zsuzsanna</b></p>
 <p>A Mindenkinek Kell Egy Otthon Alapítói</p>
 </div>
-<div className="md:hiddeen flex justify-center mt-10">
+<div className="md:hidden flex justify-center mt-10">
       <Image
             src="/Zsuzsa.png"
             alt="image of Zsuzsa"

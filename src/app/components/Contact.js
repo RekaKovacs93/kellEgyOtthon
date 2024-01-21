@@ -34,27 +34,7 @@ export default function Contact() {
           <div className="justify-right">
           
           <div  className="flex">
-          <div className="flex flex-col items-center mr-20 text-center">
-          <Image
-            src="/Zsuzsa.png"
-            alt="image of Zsuzsa"
-            width={120}
-            height={120}
-            className="rounded-full"
-            style={{ borderRadius: '50%' }}
-          />
-          <p className="mt-5 text-lg">Küri Zsuzsanna</p>
-            {/* <div className=" flex justify-end"> */}
-            {/* <p className="text-3xl mr-2">&#x2709;</p> */}
-            <a href="mailto:email@gmail.com" className="mt-2 hover:underline">kuri.zsuzsa@gmail.com</a>
-              {/* <span className="text-2xl">Email</span> */}
-            {/* </div> */}
-            <div className="mb-2">
-              <p className="">+36 70 454 8288</p>
-            </div>
-
-            </div>
-            <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center mr-20">
             <Image
             src="/Viktor.png"
             alt="image of Viktor"
@@ -75,6 +55,27 @@ export default function Contact() {
             </div>
 
             </div>
+          <div className="flex flex-col items-center  text-center">
+          <Image
+            src="/Zsuzsa.png"
+            alt="image of Zsuzsa"
+            width={120}
+            height={120}
+            className="rounded-full"
+            style={{ borderRadius: '50%' }}
+          />
+          <p className="mt-5 text-lg">Küri Zsuzsanna</p>
+            {/* <div className=" flex justify-end"> */}
+            {/* <p className="text-3xl mr-2">&#x2709;</p> */}
+            <a href="mailto:email@gmail.com" className="mt-2 hover:underline">kuri.zsuzsa@gmail.com</a>
+              {/* <span className="text-2xl">Email</span> */}
+            {/* </div> */}
+            <div className="mb-2">
+              <p className="">+36 70 454 8288</p>
+            </div>
+
+            </div>
+
           </div>
           </div>
         </div>
@@ -104,27 +105,7 @@ export default function Contact() {
         {/* <div className="bg-white rounded-lg py-8 px-4 sm:px-8"> */}
           <h3 className="text-2xl mb-5 text-center"><b>Ingyenes kozultáció</b></h3>
           <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek. Ha velünk szerződik, minden tőlünk telhetőt megteszünk azért, hogy ingatlanügyletei kezelése kellemes élmény legyen az Ön számára.</p>
-          <div className="flex flex-col items-center text-center mt-20">
-          <Image
-            src="/Zsuzsa.png"
-            alt="image of Zsuzsa"
-            width={120}
-            height={120}
-            className="rounded-full"
-            style={{ borderRadius: '50%' }}
-          />
-          <p className="mt-5 text-lg">Küri Zsuzsanna</p>
-            {/* <div className=" flex justify-end"> */}
-            {/* <p className="text-3xl mr-2">&#x2709;</p> */}
-            <a href="mailto:email@gmail.com" className="mt-2 hover:underline">kuri.zsuzsa@gmail.com</a>
-              {/* <span className="text-2xl">Email</span> */}
-            {/* </div> */}
-            <div className="mb-2">
-              <p className="">+36 70 454 8288</p>
-            </div>
-
-            </div>
-            <div className="flex flex-col items-center text-center mt-10">
+          <div className="flex flex-col items-center text-center mt-10">
             <Image
             src="/Viktor.png"
             alt="image of Viktor"
@@ -145,6 +126,27 @@ export default function Contact() {
             </div>
 
             </div>
+          <div className="flex flex-col items-center text-center mt-20">
+          <Image
+            src="/Zsuzsa.png"
+            alt="image of Zsuzsa"
+            width={120}
+            height={120}
+            className="rounded-full"
+            style={{ borderRadius: '50%' }}
+          />
+          <p className="mt-5 text-lg">Küri Zsuzsanna</p>
+            {/* <div className=" flex justify-end"> */}
+            {/* <p className="text-3xl mr-2">&#x2709;</p> */}
+            <a href="mailto:email@gmail.com" className="mt-2 hover:underline">kuri.zsuzsa@gmail.com</a>
+              {/* <span className="text-2xl">Email</span> */}
+            {/* </div> */}
+            <div className="mb-2">
+              <p className="">+36 70 454 8288</p>
+            </div>
+
+            </div>
+            
         {/* </div> */}
         <div className=" flex w-full bg-black bg-opacity-70 mt-20 px-10 py-5 sm:px-8" >
         <div className="text-left items-center justify-center flex-grow">

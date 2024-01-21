@@ -153,7 +153,7 @@ export default function Contact() {
                 <Image
               src="/Mindenkinek.png"
                 alt='kep'
-                width={250}
+                width={150}
                 height={70}
                 priority={true}
 

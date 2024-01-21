@@ -10,7 +10,7 @@ export default function About() {
           Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
           <p className="text-sm mb-5">
-          A csapatunk több évtizedes sikeres szakmai múlttal rendelkezik. Biztosak vagyunk benne, hogy az Ön ingatlanát is el fogjuk adni, <b>ezért az ehhez szükséges extra szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.</b> Vevőink számára küldetésünk, hogy megtaláljuk azt az otthont, amely tökéletesen illeszkedik álmaikhoz és igényeikhez. Egyedi szolgáltatásainkkal és szakértelmünkkel azon dolgozunk, hogy az ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtató élmény legyen számukra. Várjuk, hogy segíthessünk Önnek is az ideális otthon megtalálásában!
+          Csapatunk több évtizedes sikeres szakmai múlttal rendelkezik. Biztosak vagyunk benne, hogy az Ön ingatlanát is el fogjuk adni, <b>ezért az ehhez szükséges extra szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.</b> Vevőink számára küldetésünk, hogy megtaláljuk azt az otthont, amely tökéletesen illeszkedik álmaikhoz és igényeikhez. Egyedi szolgáltatásainkkal és szakértelmünkkel azon dolgozunk, hogy az <b>ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtató élmény legyen</b> számukra. Várjuk, hogy segíthessünk Önnek is az ideális otthon megtalálásában!
           </p>
           <div className="flex justify-center mb-20 gap-x-5">
             <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">

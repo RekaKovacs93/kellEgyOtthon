@@ -46,7 +46,8 @@ export default function NavBar() {
           <Image
             src="/Mindenkinek.png"
                 alt='kep'
-                width={250}
+                width={200}
+                
                 height={70}
                 priority={true}
                 className='md:rounded-lg rounded scale-110 md:scale-100'

@@ -4,9 +4,9 @@ export default function Eladas() {
   return (
     <div className="">
       {/* Mobile View */}
-      <div className="lg:hidden flex flex-col items-center justify-between min-h-screen px-8 ">
+      <div className="xl:hidden flex flex-col items-center justify-between min-h-screen px-8 ">
         {/* <div className="text-center px-8 my-16"> */}
-          <h1 className="text-3xl my-10 text-center mt-20">
+          <h1 className="text-3xl my-10 text-center mt-40">
           Egy ingatlan eladása teljes munkaidős állás
           </h1>
           <p className=" text-center mb-10">
@@ -40,7 +40,7 @@ export default function Eladas() {
 
       {/* Desktop View */}
       <div className="relative w-full my-20">
-      <div className="hidden lg:flex items-center justify-center min-h-screen">
+      <div className="hidden xl:flex items-center justify-center min-h-screen">
 
             <Image
       src="https://cdn.pixabay.com/photo/2023/11/21/11/38/table-8403065_1280.jpg"

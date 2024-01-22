@@ -139,7 +139,7 @@ export default function Contact() {
 
             
         {/* </div> */}
-        <div className=" flex w-full bg-black bg-opacity-70 mt-20 px-10 py-5 sm:px-8" >
+        <div className=" flex w-full bg-black bg-opacity-70 mt-20 px-5 py-5 sm:px-8" >
         <div className="text-left items-center justify-center flex-grow">
                 <Image
               src="/Mindenkinek.png"

@@ -27,7 +27,7 @@ export default function Contact() {
         <div className=" bg-white rounded-lg flex justify-center z-5 mx-20 px-10">
         <div className="flex gap-x-80 justify-center items-center py-10">
         <div className=" justify-left w-2/5">
-            <h3 className="text-2xl mb-5"><b>Ingyenes kozultáció</b></h3>
+            <h3 className="text-2xl mb-5"><b>Ingyenes konzultáció</b></h3>
             <p className="text-lg">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek. Ha velünk szerződik, minden tőlünk telhetőt megteszünk azért, hogy ingatlanügyletei kezelése kellemes élmény legyen az Ön számára.</p>
           </div>
           
@@ -93,7 +93,7 @@ export default function Contact() {
     {/* Mobile View */}
     <div className="lg:hidden mt-20 ">
         {/* <div className="bg-white rounded-lg py-8 px-4 sm:px-8"> */}
-          <h3 className="text-2xl mb-5 text-center"><b>Ingyenes kozultáció</b></h3>
+          <h3 className="text-2xl mb-5 text-center"><b>Ingyenes konzultáció</b></h3>
           <p className="text-lg text-center mx-10">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek. Ha velünk szerződik, minden tőlünk telhetőt megteszünk azért, hogy ingatlanügyletei kezelése kellemes élmény legyen az Ön számára.</p>
           <div className="flex flex-col items-center text-center mt-20">
           <Image

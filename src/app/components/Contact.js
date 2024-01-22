@@ -152,7 +152,9 @@ export default function Contact() {
           {/* <h1 className="text-xl font-bold">KELL EGY OTTHON</h1> */}
             </div> 
             <div className="flex text-right justify-center items-center flex-grow text-xs">
-                <div className="justify-center"><a href="">Adatkezelési Tájékoztató</a></div>
+            <button onClick={() => openDocInNewWindow("/AdatkezelésiTájékoztató_Ingatlanközvetítésről.pdf")} className="text-center justify-center underline mt-2 cursor-pointer">
+              <p>Adatkezelési Tájékoztató</p>
+            </button>
             </div>
         </div>
       </div>

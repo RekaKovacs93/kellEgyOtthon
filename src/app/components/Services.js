@@ -50,7 +50,7 @@ export default function Services() {
                 layout="fill"
                 className="rounded-lg object-cover"
               />
-              <div id="card" className="absolute inset-0 rounded-lg flex flex-col items-center justify-center bg-black bg-opacity-50">
+              <div id="card" className="absolute inset-0 rounded-lg flex flex-col items-center justify-center bg-black bg-opacity-60">
                 <h1 id="title" className="absolute text-2xl text-white opacity-100 text-center">{service.title}</h1>
                 <div id="desc" className="opacity-0">
                   <h1 className="text-center text-2xl text-white">{service.title}</h1>

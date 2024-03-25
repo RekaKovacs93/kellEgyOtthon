@@ -56,19 +56,19 @@ export default function NavBar() {
         </Link>
 
         <div className="hidden md:flex flex-grow items-center justify-end space-x-4">
-          <Link id="hover-underline" href="/" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="/"  className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
-          <Link id="hover-underline" href="./elado" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="./elado"  className="block md:inline-block mt-4 md:mt-0">
             ELADÓKNAK
           </Link>
-          <Link id="hover-underline" href="./vevo" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="./vevo"  className="block md:inline-block mt-4 md:mt-0">
             VEVŐKNEK
           </Link>
-          <Link id="hover-underline" href="./referenciak" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
-            REFERENCIÁK
+          <Link id="hover-underline" href="./kinalat"  className="block md:inline-block mt-4 md:mt-0">
+            INGATLANOK
           </Link>
-          <Link id="hover-underline" href="./kapcsolat" onClick={closeMenu} className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="./kapcsolat"  className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
         {/* </div> */}
@@ -104,8 +104,8 @@ export default function NavBar() {
             <Link href="./vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               VEVŐKNEK
             </Link>
-            <Link href="./referenciak" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-            REFERENCIÁK
+            <Link href="./kinalat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              KÍNÁLAT
             </Link>
             <Link href="./kapcsolat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               KAPCSOLAT

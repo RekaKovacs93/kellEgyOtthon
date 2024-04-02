@@ -5,7 +5,6 @@ export default function About() {
     <div className="">
       {/* Mobile View */}
       <div className="md:hidden flex flex-col items-center justify-between h-screen px-8 text-center">
-        {/* <div className="text-center px-8 my-16"> */}
           <h1 className="text-3xl mt-20">
           Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
@@ -20,7 +19,6 @@ export default function About() {
               <a href="./vevo">Vevő vagyok</a>
             </button>
           </div>
-        {/* </div> */}
       </div>
 
       {/* Desktop View */}
@@ -32,11 +30,6 @@ export default function About() {
           <p className="text-lg text-center">
           A csapatunk több évtizedes sikeres szakmai múlttal rendelkezik. Biztosak vagyunk benne, hogy az Ön ingatlanát is el fogjuk adni, <b>ezért az ehhez szükséges extra szolgáltatások költségét megelőlegezzük leendő jutalékunk terhére.</b> Vevőink számára küldetésünk, hogy megtaláljuk azt az otthont, amely tökéletesen illeszkedik álmaikhoz és igényeikhez. Egyedi szolgáltatásainkkal és szakértelmünkkel azon dolgozunk, hogy az <b>ingatlanvásárlás folyamata ne csak hatékony, de örömteli és megnyugtató élmény legyen</b> számukra. Várjuk, hogy segíthessünk Önnek is az ideális otthon megtalálásában!
           </p>
-          {/* <div className="flex justify-center mt-12">
-            <button className="border border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-              <a href="/#contact">Lepjen kapcsolatba!</a>
-            </button>
-          </div> */}
           <div className="flex gap-5 justify-center mt-10">
           <div>
             <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
@@ -53,10 +46,10 @@ export default function About() {
         <div className="w-2/3 relative flex justify-end">
           <div className="aspect-w-6 aspect-h-4 items-right">
             <Image
-            src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
-            alt="image of bedroom"
-            width={1200} // Add width here
-            height={800} // Add height here
+              src="https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg"
+              alt="image of bedroom"
+              width={1200} 
+              height={800} 
             />
           </div>
         </div>

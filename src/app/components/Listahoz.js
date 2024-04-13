@@ -55,9 +55,9 @@
         </select>
     </div>
     <div className="flex items-center justify-center mt-6">
-    <button className="border-2 border-darkgrey hover:bg-black hover:bg-opacity-25 text-grey font-bold py-2 px-4 rounded-full transition duration-300">
-        <a href="./">Keresés</a>
-    </button>
+    <button className="mt-6 border border-white hover:bg-white hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                        <a href="./kapcsolat">Hívjon minket most!</a>
+                    </button>
     </div>
 </div>
 {/* </div> */}

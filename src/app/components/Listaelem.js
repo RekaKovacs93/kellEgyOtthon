@@ -3,9 +3,9 @@ import Image from "next/image"
 import { useState } from "react";
 
 
-
-
 export default function Listaelem({lakas}) {
+
+
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showIframe, setShowIframe] = useState(false);
@@ -134,6 +134,43 @@ export default function Listaelem({lakas}) {
                     <p className="text-2xl mt-2">{lakas.szobak}</p>
                 </div>
                 </div>
+                <div className="flex gap-5 w-full">                        
+                <div className="px-10  py-5 border rounded-lg w-full bg-white mt-5">
+                <h1 className="text-xl"><b>Eladó {lakas.tipus}</b></h1>
+                    <div className="flex divide-x items-center justify-center">
+                        <div className="px-10">
+
+                            <p className="mt-5">Építés éve: {lakas.epites}</p>
+                            <p className="mt-2">Állapot: {lakas.allapot}</p>
+                            <p className="mt-2">Szintek: {lakas.szintek}</p>
+                        </div>
+
+                        <div className="px-10">
+                            <p className="mt-5">Építés éve: {lakas.epites}</p>
+                            <p className="mt-2">Állapot: {lakas.allapot}</p>
+                            <p className="mt-2">Szintek: {lakas.szintek}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="px-10  py-5 border rounded-lg w-full bg-white mt-5">
+                    <h1 className="text-xl"><b>Fenntarthatóság</b></h1>
+                    <div className="flex divide-x items-center justify-center">
+                        <div className="px-10">
+
+                            <p className="mt-5">Építés éve: {lakas.epites}</p>
+                            <p className="mt-2">Állapot: {lakas.allapot}</p>
+                            <p className="mt-2">Szintek: {lakas.szintek}</p>
+                        </div>
+
+                        <div className="px-10">
+                            <p className="mt-5">Építés éve: {lakas.epites}</p>
+                            <p className="mt-2">Állapot: {lakas.allapot}</p>
+                            <p className="mt-2">Szintek: {lakas.szintek}</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
             <div className=" py-8 border rounded-lg bg-white mt-5 px-16 ">
                 <div>
                     <h1 className="text-xl mb-5"><b>Leírás</b></h1>

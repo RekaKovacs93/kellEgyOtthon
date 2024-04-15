@@ -77,7 +77,7 @@ export default function Lista ({lakasok}){
         {
             return (
             <div key={index} className="border rounded-lg hover:scale-110">
-            <Link href="/{lakas.cim}">
+            <Link href={`/ingatlanok/${encodeURIComponent(lakas.ker)}`}>
                 <Image
                     alt={lakas.cim}
                     src="/heroimage.jpg"
@@ -113,8 +113,8 @@ export default function Lista ({lakasok}){
         )})}
     
                 <a className="absolute right-20 bottom-0" href="/">Következő &gt;&gt;</a>
-</div>
-     */}
+</div> */}
+    
 
         </div>
     

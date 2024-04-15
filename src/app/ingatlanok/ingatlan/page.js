@@ -120,7 +120,7 @@ const lakasok = [
     tipus: "újépítésű",
     allapot:	"nincs megadva",
     epites:	"2024",
-    szintjei:	"2",
+    szintek:	"2",
     leiras: "Már csak az egyik fele elérhető! Eladó Budapest, 16. kerület Mátyásföld Petőfikertben egy új építésű, garázsos,149 nm-es, 5 szobás /A/ ikerház saját, 450 nm-es telken. Az építkezés május végére befejeződik, ezért ideális azoknak, akik hamarosan költözni szeretnének. A tervező arra törekedett, hogy a helyiségek mérete, elosztása a legideálisabb legyen. A házak csak a garázsnál kapcsolódnak, amiből a kertre és a lakásra is nyílik ajtó. A földszinti tágas közösségi terek mellett, helyet kapott egy kis szoba, és zuhanyozós fürdőszoba. A 40 nm-es amerikai konyhás nappali, az innen nyíló burkolt terasz, kényelmes élettér nagyobb családnak is. Az itt lakók kényelmét szolgálja az emeleti 3 hálószoba, gardróbszoba és háztartási helyiség, a fürdő és külön WC. A ház mennyezeti hűtés-fűtése, padlófűtése, meleg víz ellátása energiatakarékos Daikin hőszivattyúról történik. A beruházó nagy múlttal rendelkezik, magas színvonalon dolgozik, referencia munkái megtekinthetők. A 16. kerület híres kiváló gyermekintézményeiről, sok zöldterületéről és sportolási lehetőségeiről. Teljeskörű hitelügyintézésével állunk az eladók és a vevők rendelkezésére, bármely, nem csak a nálunk vásárolt ingatlanok esetében is! Az ingatlan finanszírozásához CSOK, Babváró, illetve kedvezményes hitelkonstrukciókat kínálunk. Az adásvételi szerződés megkötéséhez igény szerint megbízható ügyvédi közreműködést biztosítunk, és segítséget nyújtunk az adásvételhez kapcsolódó ügyek intézéséhez. Hívjon a hét bármely napján!"
   
   
@@ -247,7 +247,14 @@ const lakasok = [
 
 ]
 
-export default function KinalatPage() {
+export default function Elem(slug) {
+
+
+  slug = lakasok[0].cim.toLowerCase();
+  slug = slug.replace(/\s+/g, '_');
+  slug = slug.replace(/[^a-z0-9-_]/g, '');
+
+
     return (
       <main className="flex min-h-screen flex-col items-center">
   
@@ -255,7 +262,7 @@ export default function KinalatPage() {
           
           {lakasok.map((lakas) => (
             lakas.kepek.map((image, index) => (
-            <link key={index} rel="preload" href={image} as="image" />
+            <link key={index} rel="preload" href={image} as="image"/>
           ))))}
           </Head> 
   

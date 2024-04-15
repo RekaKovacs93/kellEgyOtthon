@@ -202,12 +202,23 @@ const lakasok = [
 
 ]
 
-export default function KinalatPage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center">
 
+
+
+
+export default function Ingatlanok() {
+
+
+  let slug = lakasok[0].cim.toLowerCase();
+  slug = slug.replace(/\s+/g, '_');
+  slug = slug.replace(/[^a-z0-9-_]/g, '');
+  console.log(slug)
+
+  return (
+
+    <main className="flex min-h-screen flex-col items-center">
+ 
         <Head>
-        
         {lakasok.map((lakas) => (
           lakas.kepek.map((image, index) => (
           <link key={index} rel="preload" href={image} as="image" />
@@ -217,7 +228,6 @@ export default function KinalatPage() {
         <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
         <Lista lakasok={lakasok}></Lista>
         <div className="w-full justify-center" id="contact"><Contact></Contact></div>
-
     </main>
   )
 }

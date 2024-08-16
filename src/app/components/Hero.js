@@ -5,13 +5,16 @@ export default function Hero() {
         <div className="relative w-full mt-10">
             {/* Computer Layout */}
             <div className="w-full relative hidden md:block">
-                <Image
+                {/* <Image
                     src="https://cdn.pixabay.com/photo/2016/06/24/11/49/architecture-1477103_1280.jpg"
                     alt="Interior Photo"
                     layout="responsive"
                     width={1024}
                     height={500}
-                />
+                /> */}
+                <video playbackRate="0.1" autoPlay muted loop playsInline preload="none">
+                    <source src="/herovid.mp4" type="video/mp4" />
+                    </video>
                 <div className="absolute top-0 left-0 w-2/5 h-full bg-black bg-opacity-60 flex flex-col items-center justify-center p-12">
                     <h1 className="text-white text-center text-3xl mb-10"><b>Üdvözöljük a Mindenkinek Kell Egy Otthon honlapján!</b></h1>
                     <p className="text-white px-8 text-lg">Fedezze fel a Mindenkinek Kell Egy Otthon kivételes szolgáltatásait, és találja meg álmai otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk bizalommal!</p>

@@ -29,7 +29,7 @@ const videok = [
         title: "Gödöllő, családi ház",
         forras: "herovid.mp4"
     },
-    {
+  /*  {
         title: "17. kerület 4 szobás földszinti, új építésű lakás",
         forras: "17.%20keru%CC%88let%204%20szoba%CC%81s%20fo%CC%88ldszinti,%20u%CC%81j%20e%CC%81pi%CC%81te%CC%81su%CC%8B%20laka%CC%81s.mp4"
     },
@@ -44,7 +44,7 @@ const videok = [
     {
         title: "Kartal ikerház új építésű",
         forras: "Kartal ikerház új építésű.mp4"
-    }
+    }*/
 
 ]
 

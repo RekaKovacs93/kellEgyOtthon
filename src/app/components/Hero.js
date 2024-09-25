@@ -29,6 +29,9 @@ export default function Hero() {
                     layout="fill"
                     objectFit="cover"
                 />
+                {/* <video playbackRate="0.1" autoPlay muted loop playsInline preload="none" className="h-full">
+                    <source src="/herovid.mp4" type="video/mp4" />
+                    </video> */}
                 <div className="absolute top-0 left-0 w-full h-full bg-customBlack bg-opacity-70 flex flex-col items-center justify-center text-center px-14">
                     <h1 className="text-white text-3xl mb-6"><b>Üdvözöljük a Mindenkinek Kell Egy Otthon honlapján!</b></h1>
                     <p className="text-white text- px-4">Fedezze fel a Mindenkinek Kell Egy Otthon kivételes szolgáltatásait, és találja meg álmai otthonát velünk! Eladná ingatlanát vagy vásárolna? Forduljon hozzánk bizalommal!</p>

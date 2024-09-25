@@ -65,7 +65,7 @@ export default function Contact() {
             <p className="mt-5 text-lg">Mezei Viktor</p>
             <a href="mailto:email@gmail.com" className="mt-2 hover:underline">mezvik.platina@gmail.com</a>
             <div className="mb-2">
-            <p className="">+36 70 630 0706</p>
+            <p className="">+36 70 341 3478</p>
             </div>
             
             </div>
@@ -148,7 +148,7 @@ export default function Contact() {
             <p className="mt-5 text-lg">Mezei Viktor</p>
             <a href="mailto:email@gmail.com" className="mt-2 hover:underline">mezvik.platina@gmail.com</a>
             <div className="mb-2">
-              <p className="">+36 70 630 0706</p>
+              <p className="">+36 70 341 3478</p>
             </div>
           </div>
           <div className="flex-col flex items-center py-5 border-y mx-5 mt-10">

@@ -39,8 +39,8 @@ export default function NavBar() {
   };
 
   return (
-    <nav className={`fixed top-0 w-full bg-white z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
-      <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6">
+    <nav className={`fixed top-0 w-full lg:h-30 bg-white z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+      <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6 lg:pt-10 lg:pb-8">
       {/* <div > */}
         <Link href="/" className="font-bold text-xl">
           <Image
@@ -64,6 +64,9 @@ export default function NavBar() {
           </Link>
           <Link id="hover-underline" href="./vevo"  className="block md:inline-block mt-4 md:mt-0">
             VEVŐKNEK
+          </Link>
+          <Link id="hover-underline" href="./videok"  className="block md:inline-block mt-4 md:mt-0">
+            VIDEÓK
           </Link>
           <Link id="hover-underline" href="./ingatlanok"  className="block md:inline-block mt-4 md:mt-0">
             INGATLANOK
@@ -103,6 +106,9 @@ export default function NavBar() {
             </Link>
             <Link href="./vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               VEVŐKNEK
+            </Link>
+            <Link href="./videok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              VIDEÓK
             </Link>
             <Link href="./ingatlanok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               KÍNÁLAT

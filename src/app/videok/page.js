@@ -1,4 +1,4 @@
-/*import NavBar from "@/app/components/NavBar"
+import NavBar from "@/app/components/NavBar"
 import Contact from "@/app/components/Contact"
 import Videok from "@/app/components/Videok"
 
@@ -18,4 +18,4 @@ export default function Ingatlanok() {
           <div className="w-full justify-center" id="contact"><Contact></Contact></div>
       </main>
     )
-  }*/
+  }

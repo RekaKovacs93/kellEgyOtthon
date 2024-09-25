@@ -27,7 +27,7 @@ const videok = [
     },
     {
         title: "Gödöllő Csanak luxus családi ház",
-        forras: "Gödöllő Csanak luxus családi ház.mp4"
+        forras: "Gödöllő Csanak luxus családi ház.mp4"
     },
     {
         title: "Gödöllő, családi ház",

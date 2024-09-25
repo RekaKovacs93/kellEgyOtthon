@@ -10,10 +10,6 @@ const videok = [
         forras: "3. kerület 3 szobás 1. emeleti, új építésű lakás.mp4"
     },
     {
-        title: "3. kerület penthouse lakás új építésű",
-        forras: "3. kerület penthouse lakás új építésű.mp4"
-    },
-    {
         title: "17. kerület 60 nm-es kertkapcsolatos lakás",
         forras: "17. kerület 60 nm-es kertkapcsolatos lakás.mp4"
     },

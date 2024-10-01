@@ -39,7 +39,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className={`fixed top-0 w-full lg:h-30 bg-white z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+    <nav className={`fixed top-0 w-full xl:h-30 bg-white z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6 lg:pt-10 lg:pb-8">
       {/* <div > */}
         <Link href="/" className="font-bold text-xl">
@@ -55,7 +55,7 @@ export default function NavBar() {
           />
         </Link>
 
-        <div className="hidden md:flex flex-grow items-center justify-end space-x-4">
+        <div className="hidden md:flex flex-grow items-center justify-end space-x-6">
           <Link id="hover-underline" href="/"  className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
@@ -66,11 +66,14 @@ export default function NavBar() {
             VEVŐKNEK
           </Link>
           <Link id="hover-underline" href="./videok"  className="block md:inline-block mt-4 md:mt-0">
-            VIDEÓK
+            INGATLAN VIDEÓK
           </Link>
-          <Link id="hover-underline" href="./ingatlanok"  className="block md:inline-block mt-4 md:mt-0">
+          <Link id="hover-underline" href="./reelek"  className="block md:inline-block mt-4 md:mt-0">
+            REEL VIDEÓK
+          </Link>
+          {/* <Link id="hover-underline" href="./ingatlanok"  className="block md:inline-block mt-4 md:mt-0">
             INGATLANOK
-          </Link>
+          </Link> */}
           <Link id="hover-underline" href="./kapcsolat"  className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
@@ -108,7 +111,10 @@ export default function NavBar() {
               VEVŐKNEK
             </Link>
             <Link href="./videok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-              VIDEÓK
+              INGATLAN VIDEÓK
+            </Link>
+            <Link href="./reelek" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              REEL VIDEÓK
             </Link>
             <Link href="./ingatlanok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               KÍNÁLAT

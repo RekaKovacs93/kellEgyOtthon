@@ -26,8 +26,8 @@ export default function Contact() {
         <h1 className="text-center text-4xl justify-center text-white mt-40 mb-20">Lépjen kapcsolatba cegünk képviselőjével</h1>
         <div className=" bg-white rounded-lg flex-col divide-y justify-center z-5 mx-20 px-10">
         <div className="flex">
-        <div className="flex gap-x-80 justify-center items-center py-10">
-        <div className=" justify-left w-2/5">
+        <div className="flex gap-x-60 justify-center items-center py-10">
+        <div className=" justify-left w-3/5">
             <h3 className="text-2xl mb-5"><b>Ingyenes konzultáció</b></h3>
             <p className="text-lg">Szolgáltatásainkat egyaránt kínáljuk ingatlan eladóknak, illetve ingatlankeresőknek. Ha velünk szerződik, minden tőlünk telhetőt megteszünk azért, hogy ingatlanügyletei kezelése kellemes élmény legyen az Ön számára.</p>
             
@@ -96,7 +96,7 @@ export default function Contact() {
       </div>
       
       </div>
-      <div className="absolute bottom-0 bg-black bg-opacity-70 flex w-screen items-center mt-20 px-14 py-10 lg:px-8">
+      <div className=" absolute bottom-0 bg-black bg-opacity-70 flex w-screen items-center mt-20 px-14 py-10 lg:px-8">
             <div className="text-left items-center justify-center flex-grow">
             <Image
             src="/Mindenkinek.png"

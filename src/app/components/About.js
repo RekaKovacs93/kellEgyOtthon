@@ -5,7 +5,7 @@ export default function About() {
     <div className="">
       {/* Mobile View */}
       <div className="md:hidden flex flex-col items-center justify-between h-screen px-8 text-center">
-          <h1 className="text-3xl mt-20">
+          <h1 className="text-3xl my-20">
           Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>
           <p className="text-sm mb-5">

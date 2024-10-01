@@ -22,8 +22,8 @@ export default function About() {
       </div>
 
       {/* Desktop View */}
-      <div className="hidden md:flex items-center justify-center min-h-screen mt-20">
-        <div className="w-2/5 mx-20 px-8 py-10">
+      <div className="hidden md:flex items-center justify-center min-h-screen mt-40">
+        <div className="w-1/3 mx-20 px-4 py-10">
           <h1 className="text-2xl text-center mb-12">
           Miben vagyunk mások, mint a többi ingatlanközvetítő cég?
           </h1>

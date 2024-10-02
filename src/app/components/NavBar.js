@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
+
 export default function NavBar() {
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -65,12 +66,20 @@ export default function NavBar() {
           <Link id="hover-underline" href="./vevo"  className="block md:inline-block mt-4 md:mt-0">
             VEVŐKNEK
           </Link>
-          <Link id="hover-underline" href="./videok"  className="block md:inline-block mt-4 md:mt-0">
+          <span id="video-link" className="block lg:inline-block mt-4 lg:mt-0 relative">
+            VIDEÓK &#9660;
+            <div className="dropdown-menu bg-white rounded-lg w-40">
+              <Link  href="./videok" className="block text-right text-sm m-3" ><p id="hover-underline-sm">INGATLAN VIDEÓK</p></Link>
+              <Link id="hover-underline-sm" href="./reelek" className="block text-right text-sm m-3">REEL VIDEÓK</Link>
+              <Link id="hover-underline-sm" href="./setak" className="block text-right text-sm m-3">INGATLAN SÉTÁK</Link>
+            </div>
+          </span>
+          {/* <Link id="hover-underline" href="./videok"  className="block md:inline-block mt-4 md:mt-0">
             INGATLAN VIDEÓK
           </Link>
           <Link id="hover-underline" href="./reelek"  className="block md:inline-block mt-4 md:mt-0">
             REEL VIDEÓK
-          </Link>
+          </Link> */}
           {/* <Link id="hover-underline" href="./ingatlanok"  className="block md:inline-block mt-4 md:mt-0">
             INGATLANOK
           </Link> */}
@@ -110,6 +119,7 @@ export default function NavBar() {
             <Link href="./vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               VEVŐKNEK
             </Link>
+            
             <Link href="./videok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               INGATLAN VIDEÓK
             </Link>

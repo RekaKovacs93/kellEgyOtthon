@@ -100,7 +100,7 @@ export default function Reels() {
             {/* Loop for portrait videos */}
             <div className='flex flex-wrap justify-center gap-5 my-10'>
                 {videok.filter(video => video.portrait === true).map((video, index) => (
-                    <div key={index} className='bg-white rounded-lg border px-5 pb-5 w-full md:w-1/4 flex flex-col items-center'>
+                    <div key={index} className='bg-white rounded-lg border w-full md:w-1/5 flex flex-col items-center'>
                         <div className="h-20 px-5 flex flex-col justify-center">
                             <h1 className="px-2 text-center "><b>{video.title}</b></h1>
                         </div>
@@ -121,8 +121,8 @@ export default function Reels() {
             {/* Loop for landscape videos */}
             <div className='flex flex-wrap justify-center gap-5 my-10'>
                 {videok.filter(video => video.portrait === false).map((video, index) => (
-                    <div key={index} className='bg-white rounded-lg border p-5 w-full md:w-2/5 flex flex-col items-center'>
-                        <div className="h-20 px-5">
+                    <div key={index} className='bg-white rounded-lg border w-full md:w-2/5 flex flex-col items-center'>
+                        <div className="h-10 px-5 flex flex-col justify-center">
                             <h1 className="px-2 text-center "><b>{video.title}</b></h1>
                         </div>
                         <div className="relative w-full" style={{ paddingTop: '56.25%' /* 16:9 for Landscape Videos */ }}>

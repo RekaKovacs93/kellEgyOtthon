@@ -2,12 +2,12 @@
 
 const videok = [
     {
-        title: "3.kerület Penthouse lakás",
+        title: "16.kerület új építésű 5 szobás lakás",
         forras: "https://drive.google.com/file/d/1vZ9C0jJ8_g20XhqBQVDXPps8R2XCmloY/preview",
         portrait: true // Landscape
     },
     {
-        title: "16.kerület új építésű 5 szobás lakás",
+        title: "3.kerület Penthouse lakás",
         forras: "https://drive.google.com/file/d/1aa5m0idUHphyx7FmK2nOSsbP2Er6SPMx/preview",
         portrait: true // Landscape
     },

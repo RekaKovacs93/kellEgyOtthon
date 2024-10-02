@@ -119,12 +119,14 @@ export default function NavBar() {
             <Link href="./vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               VEVŐKNEK
             </Link>
-            
             <Link href="./videok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               INGATLAN VIDEÓK
             </Link>
             <Link href="./reelek" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               REEL VIDEÓK
+            </Link>
+            <Link href="./setak" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              INGATLAN SÉTÁK
             </Link>
             <Link href="./ingatlanok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               KÍNÁLAT

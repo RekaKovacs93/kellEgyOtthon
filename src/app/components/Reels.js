@@ -88,7 +88,7 @@ const videok = [
 
 export default function Reels() {
     return (
-        <div className="flex min-h-screen flex-col items-center mt-10 mx-5 md:mt-40 md:mx-20">
+        <div className="flex min-h-screen flex-col items-center mt-20 mx-5 md:mt-40 md:mx-20">
             <h1 className='text-center text-3xl px-5 md:px-10 md:py-5 py-10'>
                 Így dolgozunk mi
             </h1>

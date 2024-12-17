@@ -86,10 +86,17 @@ export default function Contact() {
             </div>
             </a>
             <a href="https://www.facebook.com/mindenkinek.kell.egy.otthon" target="_blank">
-            <div className="flex items-center">
+            <div className="flex items-center mr-10">
               <div><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 512 512"><path fill="#797470" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
             </div>
               <div><p className=" ml-2"><b>mindenkinek.kell.egy.otthon</b></p></div>
+            </div>
+            </a>
+            <a href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon" target="_blank">
+            <div className="flex items-center">
+            <div><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 24 24" fill="#797470"><path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v2h16V4H4zm0 4v10h16V8H4zm4 2h8v2H8v-2zm0 4h5v2H8v-2z" /></svg>
+            </div>
+              <div><p className=" ml-2"><b>ingatlan.com</b></p></div>
             </div>
             </a>
             </div>
@@ -165,6 +172,13 @@ export default function Contact() {
               <div><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 512 512"><path fill="#797470" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
             </div>
               <div><p className=" ml-2"><b>mindenkinek.kell.egy.otthon</b></p></div>
+            </div>
+            </a>
+            <a href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon">
+            <div className="flex items-center mt-2">
+            <div><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 24 24" fill="#797470"><path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v2h16V4H4zm0 4v10h16V8H4zm4 2h8v2H8v-2zm0 4h5v2H8v-2z" /></svg>
+            </div>
+              <div><p className=" ml-2"><b>ingatlan.com</b></p></div>
             </div>
             </a>
             </div>

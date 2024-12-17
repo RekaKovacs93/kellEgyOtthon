@@ -38,6 +38,9 @@ export default function Setak() {
                 Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik
                 szolgáltatásaink minőségét
             </p>
+            <h1 className="text-center">
+                Tekintse meg kínálatunkat az <a href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon" target="_blank"><b className="text-lg">Ingatlan.com-on &gt;&gt;</b></a>
+            </h1>
             <div className='flex flex-wrap justify-center gap-10 my-10'>
                 {videok.map((video, index) => (
                     <div key={index} className='bg-white rounded-lg border p-5 w-full md:w-4/5 flex flex-col items-center'>
@@ -55,9 +58,7 @@ export default function Setak() {
                     </div>
                 ))}
             </div>
-            <h1 className="text-center">
-                Tekintse meg kínálatunkat az <a href="https://m-indenkinekkellegyotthon.ingatlan.com/" target="_blank"><b className="text-lg">Ingatlan.com-on &gt;&gt;</b></a>
-            </h1>
+            
         </div>
     );
 }

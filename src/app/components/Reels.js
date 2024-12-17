@@ -96,6 +96,9 @@ export default function Reels() {
                 Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik
                 szolgáltatásaink minőségét
             </p>
+            <h1 className="text-center">
+                Tekintse meg kínálatunkat az <a href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon" target="_blank"><b className="text-lg">Ingatlan.com-on &gt;&gt;</b></a>
+            </h1>
 
             {/* Loop for portrait videos */}
             <div className='flex flex-wrap justify-center gap-5 my-10'>
@@ -139,9 +142,7 @@ export default function Reels() {
                 ))}
             </div>
 
-            <h1 className="text-center">
-                Tekintse meg kínálatunkat az <a href="https://m-indenkinekkellegyotthon.ingatlan.com/" target="_blank"><b className="text-lg">Ingatlan.com-on &gt;&gt;</b></a>
-            </h1>
+            
         </div>
     );
 }

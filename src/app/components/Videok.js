@@ -2,69 +2,40 @@
 
 const videok = [
     {
-        title: "3. kerület 2 szobás 1. emeleti új építésű lakás",
-        forras: "https://drive.google.com/file/d/1Vf-gmx4qRiP8kA12a2YWp2F3FBG2_EPL/preview"
+        title: "10. ker. Óhegy",
+        forras: "https://drive.google.com/file/d/1ulzzLUFPPxfUJAH-pGNAIdp5Fo_3Cqes/preview"
 
     },
     {
-        title: "3. kerület 3 szobás 1. emeleti, új építésű lakás",
-        forras: "https://drive.google.com/file/d/1hrtEX7Ri2XtKDBmTrTW1DAk-jrytOed3/preview"
+        title: "17. ker. Helikopter lakópark",
+        forras: "https://drive.google.com/file/d/1-jDCDkVbXs7d-ETIVP3Xga3x5XGwrzJf/preview"
 
     },
     {
-        title: "3. kerület penthouse lakás új építésű",
-        forras: "https://drive.google.com/file/d/1JnNGN4mSrI3bOvzYLoW1B_Zq4Wage-oW/preview"
+        title: "17. ker. Jászivány utca",
+        forras: "https://drive.google.com/file/d/1b7LC6xOpsmJ5CwBuWb4d0Jdnwa9aYq3c/preview"
 
     },
     {
-        title: "16. kerületi 110nm-es új építésű lakás",
-        forras: "https://drive.google.com/file/d/1BBomoZNGAsNbyHLoHfdr58bGOWeB_2HQ/preview"
+        title: "17. ker. Szabadság utca",
+        forras: "https://drive.google.com/file/d/1mdUQdvT9939Jx5F5Fe0qJZl71kKz657A/preview"
 },
     {
-        title: "17. kerület új építésű emeleti lakás",
-        forras: "https://drive.google.com/file/d/1wTpbNvFLo6HrFetc7-G6fYBJA0dV2YNF/preview"
+        title: "18. ker. Királyhágó lakópark",
+        forras: "https://drive.google.com/file/d/14DExg2ZQp63b6UhML4hdJcDrI0Pj5HkV/preview"
 },
     {
-        title: "17.kerület családi ház emeleti lakása",
-        forras: "https://drive.google.com/file/d/1LpRG1_suM8SDPrgLr73mh9eMMFKl02p9/preview"
+        title: "Gödöllő-panorámás ház",
+        forras: "https://drive.google.com/file/d/1ECfhlqAsxkhiCMZIfJiC3y_cwx-Z06cg/preview"
 },
     {
-        title: "17.kerület felújított lakás Újlak utca",
-        forras: "https://drive.google.com/file/d/1e71RUQZp4F51SevepjkP79HSdbaQmVCR/preview"
+        title: "Pécel, Kond vezér utca",
+        forras: "https://drive.google.com/file/d/1I0C993x8OEfj_Kj6-LlWNQk677_P_j6H/preview"
 },
     {
-        title: "17. kerület ipari, játszóház",
-        forras: "https://drive.google.com/file/d/1ozhgDuZ-wMz1CFOHdm_f44ROJAcR5BBH/preview"
-    },
-    {
-        title: "17.kerület új építésű",
-        forras: "https://drive.google.com/file/d/1exGqCrZSpIS7jU47AP-EcTK0zCRWGv_o/preview"
-},
-    {
-        title: "17.kerület új építésű családi ház Postakocsi utca",
-        forras: "https://drive.google.com/file/d/1S33JG57WnpA8ZybYa8QNSLni9IbLyasU/preview"
-},
-    {
-        title: "Gödöllő Csanak luxus családi ház",
-        forras: "https://drive.google.com/file/d/1wTpbNvFLo6HrFetc7-G6fYBJA0dV2YNF/preview"
-    ,        forras: "https://drive.google.com/file/d/1r6dvPmfGx7T1H0yX8y05nzYVg5Jylou8/preview"
-},
-    {
-        title: "Gödöllő új építésű ikerház",
-        forras: "https://drive.google.com/file/d/1U6NvUBxeu-EPIkr2jMl2BtyD-uXnn918/preview"
-},
-    {
-        title: "Gödöllő új építésű ikerház",
-        forras: "https://drive.google.com/file/d/1mi0JpwYvxAWs1pMtaTXxRrDnjY9hlLhx/preview"
-    },
-    {
-        title: "Gödöllő családi ház",
-        forras: "https://drive.google.com/file/d/1aMxpsNkXYHsenjzTDTdKMoI6rJ6j4vtL/preview",
-},
-    {
-        title: "Kartal ikerház új építésű",
-        forras: "https://drive.google.com/file/d/1DDzTnucwCziw7wQsutQi3l-aG8UosLoq/preview"
-}
+        title: "Rendelő utca 16.ker",
+        forras: "https://drive.google.com/file/d/16FJejvYu1h39sPh3XzX2kJDgWku8xWJx/preview"
+    }
 ];
 
 

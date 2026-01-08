@@ -4,6 +4,9 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const key = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
+    key.private_key = key.private_key.replace(/\\n/g, '\n');
+
+    console.log("Service account email:", key.client_email);
 
     const auth = new google.auth.JWT(
       key.client_email,
@@ -14,25 +17,21 @@ export async function GET() {
 
     const drive = google.drive({ version: "v3", auth });
 
-    const FOLDER_ID = "1uORw3OMyousz-QMAW1GaG_Ss0VcfcuF2?fbclid=IwY2xjawOWyQVleHRuA2FlbQIxMABicmlkETBzdERQRzU2WkFRVWhRcmZTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHj4RorbbWDKxVIp-Y1n7EFxi-RJoPr45vgF6iM4KrxqAQJ8bpnMzXN1WAbAP_aem_dIP_Ttkb3sY7hAB-rpPqMA";
+    const FOLDER_ID = "YOUR_FOLDER_ID_HERE";
 
     const response = await drive.files.list({
       q: `'${FOLDER_ID}' in parents and trashed=false`,
       fields: "files(id,name,mimeType,thumbnailLink,webViewLink,modifiedTime)",
-      orderBy: "modifiedTime desc",
       pageSize: 100
     });
 
-    return NextResponse.json(response.data.files, {
-      headers: {
-        "Cache-Control": "s-maxage=300, stale-while-revalidate"
-      }
-    });
+    console.log("Drive API response:", response.data);
 
+    return NextResponse.json(response.data.files);
   } catch (error) {
-    console.error(error);
+    console.error("Drive API error:", error);
     return NextResponse.json(
-      { error: "Failed to fetch Drive files" },
+      { error: error.message, details: error.errors || error.response?.data },
       { status: 500 }
     );
   }

@@ -14,7 +14,7 @@ export async function GET() {
 
     const drive = google.drive({ version: "v3", auth });
 
-    const FOLDER_ID = "Y1uORw3OMyousz-QMAW1GaG_Ss0VcfcuF2?fbclid=IwY2xjawOWyQVleHRuA2FlbQIxMABicmlkETBzdERQRzU2WkFRVWhRcmZTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHj4RorbbWDKxVIp-Y1n7EFxi-RJoPr45vgF6iM4KrxqAQJ8bpnMzXN1WAbAP_aem_dIP_Ttkb3sY7hAB-rpPqMA";
+    const FOLDER_ID = "1uORw3OMyousz-QMAW1GaG_Ss0VcfcuF2?fbclid=IwY2xjawOWyQVleHRuA2FlbQIxMABicmlkETBzdERQRzU2WkFRVWhRcmZTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHj4RorbbWDKxVIp-Y1n7EFxi-RJoPr45vgF6iM4KrxqAQJ8bpnMzXN1WAbAP_aem_dIP_Ttkb3sY7hAB-rpPqMA";
 
     const response = await drive.files.list({
       q: `'${FOLDER_ID}' in parents and trashed=false`,

@@ -1,38 +1,19 @@
-import { google } from "googleapis";
+// src/app/api/drive/route.js
 import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const key = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_KEY);
-    key.private_key = key.private_key.replace(/\\n/g, '\n');
+    const FOLDER_ID = "1uORw3OMyousz-QMAW1GaG_Ss0VcfcuF2?fbclid=IwY2xjawOWyQVleHRuA2FlbQIxMABicmlkETBzdERQRzU2WkFRVWhRcmZTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHj4RorbbWDKxVIp-Y1n7EFxi-RJoPr45vgF6iM4KrxqAQJ8bpnMzXN1WAbAP_aem_dIP_Ttkb3sY7hAB-rpPqMA"; // paste your folder ID
+    const API_KEY = process.env.GOOGLE_API_KEY; // store your API key in Vercel env vars
 
-    console.log("Service account email:", key.client_email);
+    // Fetch files from the folder
+    const url = `https://www.googleapis.com/drive/v3/files?q='${FOLDER_ID}'+in+parents&fields=files(id,name,mimeType,webViewLink,thumbnailLink)&key=${API_KEY}`;
 
-    const auth = new google.auth.JWT(
-      key.client_email,
-      null,
-      key.private_key,
-      ["https://www.googleapis.com/auth/drive.readonly"]
-    );
+    const response = await fetch(url);
+    const data = await response.json();
 
-    const drive = google.drive({ version: "v3", auth });
-
-    const FOLDER_ID = "YOUR_FOLDER_ID_HERE";
-
-    const response = await drive.files.list({
-      q: `'${FOLDER_ID}' in parents and trashed=false`,
-      fields: "files(id,name,mimeType,thumbnailLink,webViewLink,modifiedTime)",
-      pageSize: 100
-    });
-
-    console.log("Drive API response:", response.data);
-
-    return NextResponse.json(response.data.files);
+    return NextResponse.json(data.files);
   } catch (error) {
-    console.error("Drive API error:", error);
-    return NextResponse.json(
-      { error: error.message, details: error.errors || error.response?.data },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }

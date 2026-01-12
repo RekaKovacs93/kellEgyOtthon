@@ -13,11 +13,14 @@ export default function Videok() {
         // Normalize API response
 
         // Only include video files (skip folders)
-        const videoFiles = files
+        const driveFiles = Array.isArray(data) ? data : [];
+
+        // Only include video files (skip folders)
+        const videoFiles = driveFiles
           .filter(
             (file) =>
               file.mimeType &&
-              file.mimeType !== "application/vnd.google-apps.folder"
+              file.mimeType.startsWith("video/")
           )
           .map((file) => ({
             title: file.name,

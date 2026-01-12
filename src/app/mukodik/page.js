@@ -19,6 +19,7 @@ export default function Gallery() {
           setFiles([]);
         }
       })
+      
       .catch(err => {
         console.error("Fetch error:", err);
         setFiles([]);

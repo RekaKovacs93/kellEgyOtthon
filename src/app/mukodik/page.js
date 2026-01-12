@@ -13,7 +13,7 @@ export default function Videok() {
         // Normalize API response
 
         // Only include video files (skip folders)
-        const videoFiles = data.files
+        const videoFiles = files
           .filter(
             (file) =>
               file.mimeType &&

@@ -13,18 +13,20 @@ export async function GET() {
       return NextResponse.json({ error: "Missing Google API key" }, { status: 500 });
     }
 
+    // Fetch files from Google Drive
     const driveUrl = `https://www.googleapis.com/drive/v3/files?q='${FOLDER_ID}'+in+parents+and+mimeType+contains+'video/'&fields=files(id,name,thumbnailLink)&key=${API_KEY}`;
     const driveRes = await fetch(driveUrl);
     const driveData = await driveRes.json();
     const files = driveData.files || [];
 
     if (!files.length) {
+      console.log("No files found in Drive folder:", FOLDER_ID);
       return NextResponse.json([]);
     }
 
-    // DEBUG: log files
     console.log("Files fetched from Drive:", files);
 
+    // Loop through each file and call GDPlayer to get playable stream
     const videos = await Promise.all(
       files.map(async (file) => {
         try {
@@ -34,24 +36,23 @@ export async function GET() {
             body: JSON.stringify({ file_id: file.id }),
           });
 
-          const gdText = await gdRes.text(); // <-- capture raw response
-          console.log(`GDPlayer response for ${file.id}:`, gdText);
+          const gdText = await gdRes.text(); // capture raw response
+          console.log(`GDPlayer raw response for ${file.id}:`, gdText);
 
-          // Try parsing JSON
-          let gdData;
+          // Attempt to parse JSON safely
+          let gdData = {};
           try {
             gdData = JSON.parse(gdText);
           } catch (err) {
             console.error(`Failed to parse GDPlayer response for ${file.id}:`, err);
-            gdData = {};
           }
 
           return {
             id: file.id,
             title: file.name,
             thumbnail: file.thumbnailLink,
-            stream: gdData.stream || gdData.embed || null,
-            rawGDPlayer: gdData, // <-- for debugging
+            stream: gdData.stream || gdData.embed || null, // ensure null if no stream
+            rawGDPlayer: gdData, // for debugging
           };
         } catch (err) {
           console.error(`GDPlayer fetch error for ${file.id}:`, err);

@@ -10,15 +10,15 @@ export default function Videok() {
     fetch("/api/drive")
       .then((res) => res.json())
       .then((data) => {
-        // Normalize API response
         const driveFiles = Array.isArray(data) ? data : [];
 
-        // Map files to usable structure
         const videoFiles = driveFiles.map((file) => ({
           id: file.id,
           title: file.title || file.name,
           thumbnail: file.thumbnail || file.thumbnailLink,
-          stream: file.stream || file.forras || null, // your GDPlayer or Drive URL
+          // url returned by server (stream or embed fallback)
+          url: file.url || file.stream || file.forras || null,
+          isEmbed: !!file.isEmbed, // tells us if we should use iframe
         }));
 
         setVideos(videoFiles);
@@ -72,20 +72,30 @@ export default function Videok() {
               <b>{video.title}</b>
             </h2>
 
-            {video.stream ? (
-              <video
-                controls
-                preload="metadata"
-                poster={video.thumbnail}
-                className="w-full rounded"
-              >
-                <source src={video.stream} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            {video.url ? (
+              video.isEmbed ? (
+                <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src={video.url}
+                    allowFullScreen
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true"
+                  />
+                </div>
+              ) : (
+                <video
+                  controls
+                  preload="metadata"
+                  poster={video.thumbnail}
+                  className="w-full rounded"
+                >
+                  <source src={video.url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              )
             ) : (
-              <p className="text-center text-red-500">
-                Stream not available
-              </p>
+              <p className="text-center text-red-500">Stream not available</p>
             )}
           </div>
         ))}

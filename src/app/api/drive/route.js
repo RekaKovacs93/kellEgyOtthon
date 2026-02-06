@@ -7,14 +7,14 @@ export async function GET() {
     const FOLDER_ID = "1uORw3OMyousz-QMAW1GaG_Ss0VcfcuF2";
     const API_KEY = process.env.GOOGLE_API_KEY;
 
-    // Get all video files in folder
+    // 1️⃣ Get all video files from Google Drive folder
     const url = `https://www.googleapis.com/drive/v3/files?q='${FOLDER_ID}'+in+parents+and+mimeType+contains+'video/'&fields=files(id,name,thumbnailLink)&key=${API_KEY}`;
 
     const res = await fetch(url);
     const data = await res.json();
     const files = data.files || [];
 
-    // For each file, get GDPlayer stream
+    // 2️⃣ Call GDPlayer server-side for each file
     const videos = await Promise.all(
       files.map(async (file) => {
         try {
@@ -23,10 +23,14 @@ export async function GET() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ file_id: file.id }),
           });
+
           const gdData = await gdRes.json();
 
-          // Skip if no playable stream
-          if (!gdData.stream && !gdData.embed) return null;
+          // Skip files without a playable stream
+          if (!gdData.stream && !gdData.embed) {
+            console.warn("No playable stream for file", file.id);
+            return null;
+          }
 
           return {
             id: file.id,
@@ -41,7 +45,7 @@ export async function GET() {
       })
     );
 
-    // Remove failed items
+    // 3️⃣ Return only valid videos
     return NextResponse.json(videos.filter(Boolean));
 
   } catch (error) {

@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect} from "react";
+
 import NavBar from './components/NavBar'
 import Contact from './components/Contact'
 import Hero from './components/Hero'
@@ -5,6 +9,24 @@ import About from './components/About'
 import Viktor from './components/Viktor'
 
 export default function Home() {
+
+    // 🔥 Warm video streams on homepage load
+    useEffect(() => {
+      fetch("/api/drive")
+        .then(res => res.json())
+        .then(videos => {
+          (Array.isArray(videos) ? videos : [])
+            .slice(0, 3) // only first 3 videos
+            .forEach(video => {
+              const link = document.createElement("link");
+              link.rel = "prefetch";
+              link.href = video.stream;
+              document.head.appendChild(link);
+            });
+        })
+        .catch(() => {});
+    }, []);
+
   return (
     <main className="flex min-h-screen flex-col items-center">
 

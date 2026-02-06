@@ -7,7 +7,7 @@ export default function Videok() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api") // your updated API route that returns GDPlayer streams
+    fetch("/api/drive") // your updated API route that returns GDPlayer streams
       .then((res) => res.json())
       .then((data) => {
         // Ensure we have an array

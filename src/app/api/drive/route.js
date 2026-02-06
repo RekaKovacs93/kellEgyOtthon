@@ -46,9 +46,9 @@ export async function GET() {
     );
 
     // 3️⃣ Filter out any failed streams
-    const validVideos = videos.filter((v) => v && v.stream);
+    // const validVideos = videos.filter((v) => v && v.stream);
 
-    return NextResponse.json(validVideos);
+    // return NextResponse.json(validVideos);
   } catch (error) {
     console.error("Drive API error:", error);
     return NextResponse.json([]);

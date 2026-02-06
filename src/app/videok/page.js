@@ -1,39 +1,42 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
 
 export default function Videok() {
   const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/api/drive")
       .then((res) => res.json())
       .then((data) => {
         // Normalize API response
-
-        // Only include video files (skip folders)
         const driveFiles = Array.isArray(data) ? data : [];
 
-        // Only include video files (skip folders)
-        const videoFiles = driveFiles
-          .filter(
-            (file) =>
-              file.mimeType &&
-              file.mimeType.startsWith("video/")
-          )
-          .map((file) => ({
-            title: file.name,
-            forras: `https://drive.google.com/file/d/${file.id}/preview`,
-          }));
+        // Map files to usable structure
+        const videoFiles = driveFiles.map((file) => ({
+          id: file.id,
+          title: file.title || file.name,
+          thumbnail: file.thumbnail || file.thumbnailLink,
+          stream: file.stream || file.forras || null, // your GDPlayer or Drive URL
+        }));
 
         setVideos(videoFiles);
       })
       .catch((err) => {
         console.error("Error fetching Drive videos:", err);
         setVideos([]);
-      });
+      })
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <p>Videók betöltése...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen flex-col items-center mt-20 mx-5 md:mt-40 md:mx-20">
@@ -49,6 +52,7 @@ export default function Videok() {
         <a
           href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <b className="text-lg">Ingatlan.com-on &gt;&gt;</b>
         </a>
@@ -56,29 +60,33 @@ export default function Videok() {
 
       <div className="flex flex-wrap justify-center gap-10 my-10">
         {videos.length === 0 && (
-          <p className="text-center w-full">Nincs elérhető videó.</p>
+          <p className="text-center w-full text-red-500">Nincs elérhető videó.</p>
         )}
-        {videos.map((video, index) => (
+
+        {videos.map((video) => (
           <div
-            key={index}
+            key={video.id}
             className="bg-white rounded-lg border p-5 w-full md:w-2/5 flex flex-col items-center"
           >
-            <h1 className="px-2 pb-4 text-center">
+            <h2 className="px-2 pb-4 text-center">
               <b>{video.title}</b>
-            </h1>
-            <div
-              className="relative w-full"
-              style={{ paddingTop: "56.25%" }}
-            >
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src={video.forras}
-                allowFullScreen
-                mozallowfullscreen="true"
-                webkitallowfullscreen="true"
+            </h2>
+
+            {video.stream ? (
+              <video
+                controls
                 preload="metadata"
-              />
-            </div>
+                poster={video.thumbnail}
+                className="w-full rounded"
+              >
+                <source src={video.stream} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <p className="text-center text-red-500">
+                Stream not available
+              </p>
+            )}
           </div>
         ))}
       </div>

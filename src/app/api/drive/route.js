@@ -35,11 +35,14 @@ export async function GET() {
         };
       })
     );
+    console.log("Videos from GDPlayer:", videos);
+
 
     return NextResponse.json(videos);
 
   } catch (error) {
     console.error("Drive API error:", error);
+    
     return NextResponse.json([]);
   }
 }

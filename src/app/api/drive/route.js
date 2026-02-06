@@ -15,13 +15,26 @@ export async function GET() {
     });
 
     const data = await res.json();
+    const files = data.files || [];
 
-    const videos = (data.files || []).map((file) => ({
-      id: file.id,
-      title: file.name,
-      stream: `https://drive.google.com/uc?id=${file.id}`,
-      thumbnail: file.thumbnailLink
-    }));
+    // Call GDPlayer for each file to get a playable stream
+    const videos = await Promise.all(
+      files.map(async (file) => {
+        const gdRes = await fetch("https://gdplayer.vip/api/video", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ file_id: file.id }),
+        });
+        const gdData = await gdRes.json();
+
+        return {
+          id: file.id,
+          title: file.name,
+          stream: gdData.stream || gdData.embed, // playable URL
+          thumbnail: file.thumbnailLink
+        };
+      })
+    );
 
     return NextResponse.json(videos);
 

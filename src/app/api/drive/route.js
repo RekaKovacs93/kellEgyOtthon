@@ -25,6 +25,8 @@ export async function GET() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ file_id: file.id }),
         });
+        const text = await gdRes.text();
+        console.log("GDPlayer response for", file.id, text);
         const gdData = await gdRes.json();
 
         return {

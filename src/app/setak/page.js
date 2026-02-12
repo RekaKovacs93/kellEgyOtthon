@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import NavBar from "@/components/NavBar"; // adjust path if needed
+import NavBar from "../components/NavBar"
 
 export default function Videok() {
   const [setakVideos, setSetakVideos] = useState([]);

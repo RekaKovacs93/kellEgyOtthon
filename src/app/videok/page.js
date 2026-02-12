@@ -1,5 +1,7 @@
 "use client";
 
+import NavBar from "../components/NavBar"
+
 import { useEffect, useState } from "react";
 
 export default function Videok() {

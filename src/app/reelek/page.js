@@ -45,9 +45,16 @@ export default function Reels() {
 
       <div className="flex min-h-screen flex-col items-center mt-20 mx-5 md:mt-40 md:mx-20">
 
-        <h1 className="text-center text-3xl px-5 md:px-10 md:py-5 py-10">
-          Reels
-        </h1>
+      <h1 className='text-center text-3xl px-5 md:px-10 md:py-5 py-10'>
+                Így dolgozunk mi
+            </h1>
+            <p className='text-center px-5'>
+                Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik
+                szolgáltatásaink minőségét
+            </p>
+            <h1 className="text-center">
+                Tekintse meg kínálatunkat az <a href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon" target="_blank"><b className="text-lg">Ingatlan.com-on &gt;&gt;</b></a>
+            </h1>
 
         <div className="flex flex-wrap justify-center gap-10 my-10">
 

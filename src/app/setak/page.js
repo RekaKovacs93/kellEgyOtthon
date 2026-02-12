@@ -62,17 +62,17 @@ export default function Videok() {
               </h2>
 
               {video.url ? (
-                <div className="w-full aspect-video" style={{ paddingTop: '177.78%' /* 9:16 for Portrait Videos */ }}>
-                  <iframe
-                                className="absolute top-0 left-0 w-full h-full"
-                                allowFullScreen
-                                mozallowfullscreen="true"
-                                webkitallowfullscreen="true"
-                                src={video.url}
-                                preload="metadata"
-                            />
-                  
-                </div>
+                <div
+                className="relative w-full"
+                style={{ paddingTop: "177.78%" }} // portrait 9:16
+              >
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={video.url}
+                  allowFullScreen
+                />
+              </div>
+              
               ) : (
                 <p className="text-center text-red-500">
                   Videó nem elérhető

@@ -13,22 +13,14 @@ export default function Videok() {
       .then((data) => {
         const files = Array.isArray(data?.setak) ? data.setak : [];
 
-        // Add orientation based on thumbnail ratio (fallback if no width/height info)
+        // Add orientation and aspect ratio based on width/height
         const withOrientation = files.map((file) => {
-          let orientation = "landscape"; // default
+          const width = file.width || 16; // fallback
+          const height = file.height || 9; // fallback
+          const orientation = height > width ? "portrait" : "landscape";
+          const aspectRatio = (height / width) * 100; // padding-top %
 
-          if (file.thumbnail) {
-            // Extract width/height from Google Drive thumbnail URL if possible
-            // Usually URLs contain =sXXX or =wXXX-hXXX
-            const match = file.thumbnail.match(/=w(\d+)-h(\d+)/);
-            if (match) {
-              const width = parseInt(match[1], 10);
-              const height = parseInt(match[2], 10);
-              orientation = height > width ? "portrait" : "landscape";
-            }
-          }
-
-          return { ...file, orientation };
+          return { ...file, orientation, aspectRatio };
         });
 
         // Sort: portrait first, then landscape
@@ -60,18 +52,25 @@ export default function Videok() {
 
       <div className="flex min-h-screen flex-col items-center mt-20 mx-5 md:mt-40 md:mx-20">
         <h1 className="text-center text-3xl px-5 md:px-10 md:py-5 py-10">
-          Séták
+          Így dolgozunk mi
         </h1>
         <p className="text-center px-5">
-          Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik
-          szolgáltatásaink minőségét
+          Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik szolgáltatásaink minőségét
         </p>
+        <h1 className="text-center">
+          Tekintse meg kínálatunkat az{" "}
+          <a
+            href="https://iroda.ingatlan.com/m-indenkinekkellegyotthon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <b className="text-lg">Ingatlan.com-on &gt;&gt;</b>
+          </a>
+        </h1>
 
         <div className="flex flex-wrap justify-center gap-10 my-10">
           {videos.length === 0 && (
-            <p className="text-center w-full text-red-500">
-              Nincs elérhető séta videó.
-            </p>
+            <p className="text-center w-full text-red-500">Nincs elérhető séta videó.</p>
           )}
 
           {videos.map((video) => (
@@ -87,7 +86,7 @@ export default function Videok() {
                 <div
                   className="relative w-full"
                   style={{
-                    paddingTop: video.orientation === "portrait" ? "177.78%" : "56.25%",
+                    paddingTop: `${video.aspectRatio}%`, // dynamic based on width/height
                   }}
                 >
                   <iframe

@@ -36,9 +36,12 @@ async function walkFolder(
       const width = item.videoMediaMetadata?.width || null;
       const height = item.videoMediaMetadata?.height || null;
 
+      // Remove ".mp4" or "mp4" at the end of the title
+      const cleanTitle = item.name.replace(/\.?mp4$/i, "").trim();
+
       const video = {
         id: item.id,
-        title: item.name,
+        title: cleanTitle,
         thumbnail: item.thumbnailLink || null,
         url: `https://drive.google.com/file/d/${item.id}/preview`,
         width,

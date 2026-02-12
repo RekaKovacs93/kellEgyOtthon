@@ -15,18 +15,12 @@ export default function Videok() {
 
         // Add orientation and aspect ratio based on width/height
         const withOrientation = files.map((file) => {
-          const width = file.width || 16; // fallback
-          const height = file.height || 9; // fallback
+          const width = file.width || 16;
+          const height = file.height || 9;
           const orientation = height > width ? "portrait" : "landscape";
           const aspectRatio = (height / width) * 100; // padding-top %
 
           return { ...file, orientation, aspectRatio };
-        });
-
-        // Sort: portrait first, then landscape
-        withOrientation.sort((a, b) => {
-          if (a.orientation === b.orientation) return 0;
-          return a.orientation === "portrait" ? -1 : 1;
         });
 
         setVideos(withOrientation);
@@ -45,6 +39,10 @@ export default function Videok() {
       </div>
     );
   }
+
+  // Separate portrait and landscape videos
+  const portraitVideos = videos.filter(v => v.orientation === "portrait");
+  const landscapeVideos = videos.filter(v => v.orientation === "landscape");
 
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -68,39 +66,72 @@ export default function Videok() {
           </a>
         </h1>
 
-        <div className="flex flex-wrap justify-center gap-10 my-10">
-          {videos.length === 0 && (
-            <p className="text-center w-full text-red-500">Nincs elérhető séta videó.</p>
-          )}
+        {/* Portrait videos */}
+        {portraitVideos.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-10 my-10 w-full">
+            {portraitVideos.map((video) => (
+              <div
+                key={video.id}
+                className="bg-white rounded-lg border p-5 w-full md:w-2/5 flex flex-col items-center"
+              >
+                <h2 className="px-2 pb-4 text-center">
+                  <b>{video.title}</b>
+                </h2>
+                {video.url ? (
+                  <div
+                    className="relative w-full"
+                    style={{ paddingTop: `${video.aspectRatio}%` }}
+                  >
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src={video.url}
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  <p className="text-center text-red-500">Videó nem elérhető</p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
 
-          {videos.map((video) => (
-            <div
-              key={video.id}
-              className="bg-white rounded-lg border p-5 w-full md:w-2/5 flex flex-col items-center"
-            >
-              <h2 className="px-2 pb-4 text-center">
-                <b>{video.title}</b>
-              </h2>
+        {/* Landscape videos */}
+        {landscapeVideos.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-10 my-10 w-full">
+            {landscapeVideos.map((video) => (
+              <div
+                key={video.id}
+                className="bg-white rounded-lg border p-5 w-full md:w-2/5 flex flex-col items-center"
+              >
+                <h2 className="px-2 pb-4 text-center">
+                  <b>{video.title}</b>
+                </h2>
+                {video.url ? (
+                  <div
+                    className="relative w-full"
+                    style={{ paddingTop: `${video.aspectRatio}%` }}
+                  >
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src={video.url}
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  <p className="text-center text-red-500">Videó nem elérhető</p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
 
-              {video.url ? (
-                <div
-                  className="relative w-full"
-                  style={{
-                    paddingTop: `${video.aspectRatio}%`, // dynamic based on width/height
-                  }}
-                >
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src={video.url}
-                    allowFullScreen
-                  />
-                </div>
-              ) : (
-                <p className="text-center text-red-500">Videó nem elérhető</p>
-              )}
-            </div>
-          ))}
-        </div>
+        {/* No videos fallback */}
+        {videos.length === 0 && (
+          <p className="text-center w-full text-red-500">
+            Nincs elérhető séta videó.
+          </p>
+        )}
       </div>
     </main>
   );

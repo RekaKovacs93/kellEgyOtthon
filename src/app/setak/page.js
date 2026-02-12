@@ -41,8 +41,8 @@ export default function Videok() {
   }
 
   // Separate portrait and landscape videos
-  const portraitVideos = videos.filter(v => v.orientation === "portrait");
-  const landscapeVideos = videos.filter(v => v.orientation === "landscape");
+  const portraitVideos = videos.filter((v) => v.orientation === "portrait");
+  const landscapeVideos = videos.filter((v) => v.orientation === "landscape");
 
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -53,7 +53,8 @@ export default function Videok() {
           Így dolgozunk mi
         </h1>
         <p className="text-center px-5">
-          Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik szolgáltatásaink minőségét
+          Mutatunk néhányat kedvenc munkáink közül, melyek jól tükrözik
+          szolgáltatásaink minőségét
         </p>
         <h1 className="text-center">
           Tekintse meg kínálatunkat az{" "}
@@ -89,16 +90,21 @@ export default function Videok() {
                     />
                   </div>
                 ) : (
-                  <p className="text-center text-red-500">Videó nem elérhető</p>
+                  <p className="text-center text-red-500">
+                    Videó nem elérhető
+                  </p>
                 )}
               </div>
             ))}
           </div>
         )}
 
-        {/* Landscape videos */}
+        {/* Landscape videos on a new line */}
         {landscapeVideos.length > 0 && (
           <div className="flex flex-wrap justify-center gap-10 my-10 w-full">
+            <h2 className="w-full text-center mb-5 text-xl font-bold">
+              Landscape Videos
+            </h2>
             {landscapeVideos.map((video) => (
               <div
                 key={video.id}
@@ -119,7 +125,9 @@ export default function Videok() {
                     />
                   </div>
                 ) : (
-                  <p className="text-center text-red-500">Videó nem elérhető</p>
+                  <p className="text-center text-red-500">
+                    Videó nem elérhető
+                  </p>
                 )}
               </div>
             ))}

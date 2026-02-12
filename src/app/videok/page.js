@@ -12,17 +12,17 @@ export default function Videok() {
     fetch("/api/drive")
       .then((res) => res.json())
       .then((data) => {
-        const driveFiles = Array.isArray(data) ? data : [];
-
-        const videoFiles = driveFiles.map((file) => ({
+        // root folder videos are in data.videos
+        const files = Array.isArray(data?.videos) ? data.videos : [];
+  
+        const videoFiles = files.map((file) => ({
           id: file.id,
           title: file.title || file.name,
           thumbnail: file.thumbnail || file.thumbnailLink,
-          // url returned by server (stream or embed fallback)
-          url: file.url || file.stream || file.forras || null,
-          isEmbed: !!file.isEmbed, // tells us if we should use iframe
+          url: file.url || null,
+          isEmbed: !!file.isEmbed,
         }));
-
+  
         setVideos(videoFiles);
       })
       .catch((err) => {

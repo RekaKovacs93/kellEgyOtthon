@@ -102,9 +102,7 @@ export default function Videok() {
         {/* Landscape videos on a new line */}
         {landscapeVideos.length > 0 && (
           <div className="flex flex-wrap justify-center gap-10 my-10 w-full">
-            <h2 className="w-full text-center mb-5 text-xl font-bold">
-              Landscape Videos
-            </h2>
+            
             {landscapeVideos.map((video) => (
               <div
                 key={video.id}

@@ -1,8 +1,7 @@
 "use client";
 
-import NavBar from "../components/NavBar"
-
 import { useEffect, useState } from "react";
+import NavBar from "../components/NavBar";
 
 export default function Videok() {
   const [videos, setVideos] = useState([]);
@@ -14,15 +13,13 @@ export default function Videok() {
       .then((data) => {
         // root folder videos are in data.videos
         const files = Array.isArray(data?.videos) ? data.videos : [];
-  
+
         const videoFiles = files.map((file) => ({
           id: file.id,
           title: file.title || file.name,
-          thumbnail: file.thumbnail || file.thumbnailLink,
           url: file.url || null,
-          isEmbed: !!file.isEmbed,
         }));
-  
+
         setVideos(videoFiles);
       })
       .catch((err) => {
@@ -42,8 +39,8 @@ export default function Videok() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <NavBar class="flex flex-col items-end md:flex-row md:items-center"></NavBar>
-      
+      <NavBar class="flex flex-col items-end md:flex-row md:items-center" />
+
       <div className="flex min-h-screen flex-col items-center mt-20 mx-5 md:mt-40 md:mx-20">
         <h1 className="text-center text-3xl px-5 md:px-10 md:py-5 py-10">
           Így dolgozunk mi
@@ -65,7 +62,9 @@ export default function Videok() {
 
         <div className="flex flex-wrap justify-center gap-10 my-10">
           {videos.length === 0 && (
-            <p className="text-center w-full text-red-500">Nincs elérhető videó.</p>
+            <p className="text-center w-full text-red-500">
+              Nincs elérhető videó.
+            </p>
           )}
 
           {videos.map((video) => (
@@ -78,35 +77,20 @@ export default function Videok() {
               </h2>
 
               {video.url ? (
-                video.isEmbed ? (
-                  <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full"
-                      src={video.url}
-                      allowFullScreen
-                      mozallowfullscreen="true"
-                      webkitallowfullscreen="true"
-                    />
-                  </div>
-                ) : (
-                  <video
-                    controls
-                    preload="metadata"
-                    poster={video.thumbnail}
-                    className="w-full rounded"
-                  >
-                    <source src={video.url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                )
+                <div className="w-full aspect-video"> {/* 16:9 landscape */}
+                  <iframe
+                    className="w-full h-full"
+                    src={video.url}
+                    allowFullScreen
+                  />
+                </div>
               ) : (
-                <p className="text-center text-red-500">Stream not available</p>
+                <p className="text-center text-red-500">Videó nem elérhető</p>
               )}
             </div>
           ))}
         </div>
       </div>
     </main>
-
   );
 }

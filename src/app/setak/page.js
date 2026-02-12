@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import NavBar from "../components/NavBar"
+import NavBar from "../components/NavBar";
 
 export default function Videok() {
   const [setakVideos, setSetakVideos] = useState([]);
@@ -16,7 +16,6 @@ export default function Videok() {
         const formatted = files.map((file) => ({
           id: file.id,
           title: file.title,
-          thumbnail: file.thumbnail,
           url: file.url,
         }));
 
@@ -42,13 +41,11 @@ export default function Videok() {
       <NavBar class="flex flex-col items-end md:flex-row md:items-center" />
 
       <div className="flex min-h-screen flex-col items-center mt-20 mx-5 md:mt-40 md:mx-20">
-
         <h1 className="text-center text-3xl px-5 md:px-10 md:py-5 py-10">
           Séták
         </h1>
 
         <div className="flex flex-wrap justify-center gap-10 my-10">
-
           {setakVideos.length === 0 && (
             <p className="text-center w-full text-red-500">
               Nincs elérhető séta videó.
@@ -65,9 +62,9 @@ export default function Videok() {
               </h2>
 
               {video.url ? (
-                <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                <div className="w-full aspect-video">
                   <iframe
-                    className="absolute top-0 left-0 w-full h-full"
+                    className="w-full h-full"
                     src={video.url}
                     allowFullScreen
                   />
@@ -79,7 +76,6 @@ export default function Videok() {
               )}
             </div>
           ))}
-
         </div>
       </div>
     </main>

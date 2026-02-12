@@ -67,13 +67,13 @@ export default function Reels() {
               </h2>
 
               {video.url ? (
-                <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src={video.url}
-                    allowFullScreen
-                  />
-                </div>
+                <div className="w-full aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src={video.url}
+                  allowFullScreen
+                />
+              </div>
               ) : (
                 <p className="text-center text-red-500">
                   Videó nem elérhető

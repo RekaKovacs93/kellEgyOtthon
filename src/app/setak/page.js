@@ -64,10 +64,14 @@ export default function Videok() {
               {video.url ? (
                 <div className="w-full aspect-video" style={{ paddingTop: '177.78%' /* 9:16 for Portrait Videos */ }}>
                   <iframe
-                    className="w-full h-full"
-                    src={video.url}
-                    allowFullScreen
-                  />
+                                className="absolute top-0 left-0 w-full h-full"
+                                allowFullScreen
+                                mozallowfullscreen="true"
+                                webkitallowfullscreen="true"
+                                src={video.url}
+                                preload="metadata"
+                            />
+                  
                 </div>
               ) : (
                 <p className="text-center text-red-500">

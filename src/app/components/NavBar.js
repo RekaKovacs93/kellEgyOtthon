@@ -71,7 +71,7 @@ export default function NavBar() {
             <div className="dropdown-menu bg-white rounded-lg w-40">
               <Link  href="./videok" className="block text-right text-sm m-3" ><p id="hover-underline-sm">INGATLAN VIDEÓK</p></Link>
               <Link id="hover-underline-sm" href="./reelek" className="block text-right text-sm m-3">REEL VIDEÓK</Link>
-              <Link id="hover-underline-sm" href="./setak" className="block text-right text-sm m-3">INGATLAN SÉTÁK</Link>
+              <Link id="hover-underline-sm" href="./setak" className="block text-right text-sm m-3">PROMÓCIÓS VIDEÓK</Link>
             </div>
           </span>
           {/* <Link id="hover-underline" href="./videok"  className="block md:inline-block mt-4 md:mt-0">
@@ -126,7 +126,7 @@ export default function NavBar() {
               REEL VIDEÓK
             </Link>
             <Link href="./setak" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-              INGATLAN SÉTÁK
+              PROMÓCIÓS VIDEÓK
             </Link>
             <Link href="./ingatlanok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               KÍNÁLAT
